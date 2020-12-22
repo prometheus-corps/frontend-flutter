@@ -145,7 +145,7 @@ class _CreateLockScreenState extends State<CreateLockScreen> {
                       child: PinCodeTextField(
                         appContext: context,
                         length: 4,
-                        obscureText: false,
+                        obscureText: true,
                         obscuringCharacter: '*',
                         animationType: AnimationType.fade,
                         validator: (v) {
