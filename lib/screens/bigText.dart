@@ -34,7 +34,7 @@ class _UserGuideState extends State<UserGuide> {
                   direction: Axis.vertical,
                   length: height * 0.5,
                   dashLength: 12,
-                  dashColor: mainBgColor,
+                  dashColor: whiteColor,
                 ),
               ),
             ),
