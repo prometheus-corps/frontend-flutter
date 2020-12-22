@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:crowdgain/utilities/constants.dart';
 import 'package:flutter/material.dart';
 
 String routeKey = 'createLock';
@@ -21,24 +22,31 @@ class _SplashScreenState extends State<SplashScreen> {
       child: Scaffold(
         resizeToAvoidBottomInset: false,
         resizeToAvoidBottomPadding: false,
-        backgroundColor: mainBgColor,
-        body: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            Center(
-              child: Image(
-                width: MediaQuery.of(context).size.width * 0.6,
-                image: AssetImage('images/icon1.png'),
+        backgroundColor: blueColor,
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Padding(
+                padding: EdgeInsets.symmetric(
+                  horizontal: MediaQuery.of(context).size.width * 0.1,
+                  vertical: 25,
+                ),
+                child: Image(
+                  image: AssetImage('images/image.png'),
+                ),
               ),
-            ),
-            Center(
-              child: Image(
-                width: MediaQuery.of(context).size.width * 0.6,
-                image: AssetImage('images/remito.png'),
+              Text(
+                'PayUp',
+                style: TextStyle(
+                  fontFamily: 'Bambino',
+                  fontSize: 35,
+                  color: whiteColor,
+                  fontWeight: FontWeight.w600,
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
