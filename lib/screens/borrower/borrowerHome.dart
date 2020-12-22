@@ -10,12 +10,12 @@ double _sigmaY = 0.0;
 double _opacity = 0.1;
 bool isLogged = false;
 
-class UserHome extends StatefulWidget {
+class BorrowerHome extends StatefulWidget {
   @override
-  _UserHomeState createState() => _UserHomeState();
+  _BorrowerHomeState createState() => _BorrowerHomeState();
 }
 
-class _UserHomeState extends State<UserHome> {
+class _BorrowerHomeState extends State<BorrowerHome> {
   GlobalKey<ScaffoldState> _scaffoldKeyHome = GlobalKey<ScaffoldState>();
   Map crossItem = {};
   bool dropColor = true;
