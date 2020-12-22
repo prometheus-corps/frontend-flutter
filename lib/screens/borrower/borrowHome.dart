@@ -108,6 +108,22 @@ class _BorrowHomeScreenState extends State<BorrowHomeScreen> {
                     ),
                   ),
                 ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(left: 20),
+                      child: Text(
+                        'Use The Steps',
+                        style: GoogleFonts.raleway(
+                          color: whiteColor,
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               ],
             ),
           ),
