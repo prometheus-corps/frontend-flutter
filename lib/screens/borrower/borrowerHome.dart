@@ -423,16 +423,16 @@ class _UserHomeState extends State<UserHome> {
                                     children: [
                                       GestureDetector(
                                         onTap: () {
-                                          Navigator.of(context).push(
-                                            SlideRightRoute(
-                                              page: UserGuide(
-                                                iconData:
-                                                    Icons.app_registration,
-                                                desc: desc[1],
-                                                pageName: title[0],
-                                              ),
-                                            ),
-                                          );
+                                          // Navigator.of(context).push(
+                                          //   SlideRightRoute(
+                                          //     page: UserGuide(
+                                          //       iconData:
+                                          //           Icons.app_registration,
+                                          //       desc: desc[1],
+                                          //       pageName: title[0],
+                                          //     ),
+                                          //   ),
+                                          // );
                                         },
                                         child: Column(
                                           mainAxisAlignment:
@@ -446,16 +446,16 @@ class _UserHomeState extends State<UserHome> {
                                                 size: 30,
                                               ),
                                               callback: () {
-                                                Navigator.of(context).push(
-                                                  SlideRightRoute(
-                                                    page: UserGuide(
-                                                      iconData: Icons
-                                                          .app_registration,
-                                                      desc: desc[1],
-                                                      pageName: title[0],
-                                                    ),
-                                                  ),
-                                                );
+                                                // Navigator.of(context).push(
+                                                //   SlideRightRoute(
+                                                //     page: UserGuide(
+                                                //       iconData: Icons
+                                                //           .app_registration,
+                                                //       desc: desc[1],
+                                                //       pageName: title[0],
+                                                //     ),
+                                                //   ),
+                                                // );
                                               },
                                               increaseHeightBy: 25,
                                               increaseWidthBy: 25,
