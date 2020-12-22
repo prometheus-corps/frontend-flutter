@@ -77,10 +77,7 @@ class _BorrowerRegistrationScreenState
                                 alignment: Alignment.topLeft,
                                 child: Padding(
                                   padding: EdgeInsets.only(
-                                    left: ScreenUtil().setWidth(100),
-                                    // left: width * 0.1,
-                                    // right: width * 0.1,
-                                    // top: height * 0.05,
+                                    left: ScreenUtil().setWidth(90),
                                   ),
                                   child: Text(
                                     'Register',
