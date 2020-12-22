@@ -88,6 +88,20 @@ class _BorrowHomeScreenState extends State<BorrowHomeScreen> {
                 ),
                 BottomNavigationBarItem(
                   icon: Icon(
+                    FontAwesomeIcons.search,
+                    size: ScreenUtil().setSp(45),
+                  ),
+                  label: 'Search',
+                ),
+                BottomNavigationBarItem(
+                  icon: Icon(
+                    FontAwesomeIcons.search,
+                    size: ScreenUtil().setSp(45),
+                  ),
+                  label: 'Search',
+                ),
+                BottomNavigationBarItem(
+                  icon: Icon(
                     FontAwesomeIcons.userAlt,
                     size: ScreenUtil().setSp(45),
                   ),
