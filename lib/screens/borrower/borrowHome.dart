@@ -172,6 +172,9 @@ State Agency""",
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
+          SizedBox(
+            height: ScreenUtil().setHeight(20),
+          ),
           RaisedButton(
             shape: CircleBorder(
               side: BorderSide(
@@ -189,6 +192,9 @@ State Agency""",
               ),
             ),
             onPressed: () {},
+          ),
+          SizedBox(
+            height: ScreenUtil().setHeight(20),
           ),
           Text(
             name,
