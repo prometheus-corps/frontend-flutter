@@ -497,16 +497,16 @@ For Free''',
                                                 size: 30,
                                               ),
                                               callback: () {
-                                                Navigator.of(context).push(
-                                                  SlideRightRoute(
-                                                    page: UserGuide(
-                                                      iconData: Icons
-                                                          .wallet_membership_rounded,
-                                                      desc: desc[1],
-                                                      pageName: title[1],
-                                                    ),
-                                                  ),
-                                                );
+                                                // Navigator.of(context).push(
+                                                //   SlideRightRoute(
+                                                //     page: UserGuide(
+                                                //       iconData: Icons
+                                                //           .wallet_membership_rounded,
+                                                //       desc: desc[1],
+                                                //       pageName: title[1],
+                                                //     ),
+                                                //   ),
+                                                // );
                                               },
                                               increaseHeightBy: 25,
                                               increaseWidthBy: 25,
@@ -525,16 +525,16 @@ Topup''',
                                       ),
                                       GestureDetector(
                                         onTap: () {
-                                          Navigator.of(context).push(
-                                            SlideRightRoute(
-                                              page: UserGuide(
-                                                iconData:
-                                                    Icons.comment_bank_rounded,
-                                                desc: desc[2],
-                                                pageName: title[2],
-                                              ),
-                                            ),
-                                          );
+                                          // Navigator.of(context).push(
+                                          //   SlideRightRoute(
+                                          //     page: UserGuide(
+                                          //       iconData:
+                                          //           Icons.comment_bank_rounded,
+                                          //       desc: desc[2],
+                                          //       pageName: title[2],
+                                          //     ),
+                                          //   ),
+                                          // );
                                         },
                                         child: Column(
                                           mainAxisAlignment:
