@@ -1,6 +1,5 @@
 import 'dart:convert';
 import 'dart:ui';
-import 'package:floating_bottom_navigation_bar/floating_bottom_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
