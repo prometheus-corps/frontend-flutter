@@ -30,7 +30,10 @@ class _UserGuideState extends State<UserGuide> {
             Align(
               alignment: Alignment.centerLeft,
               child: Padding(
-                padding: const EdgeInsets.only(left: 40, top: 50),
+                padding: EdgeInsets.only(
+                  left: ScreenUtil().setWidth(110),
+                  top: ScreenUtil().setWidth(110),
+                ),
                 child: Dash(
                   direction: Axis.vertical,
                   length: ScreenUtil().setHeight(1600),
