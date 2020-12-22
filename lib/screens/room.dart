@@ -54,7 +54,7 @@ class _RoomScreenState extends State<RoomScreen> {
                   children: [
                     Center(
                       child: Text(
-                        'Hello ',
+                        'Make More Money',
                         style: TextStyle(
                           fontFamily: 'Bambino',
                           fontSize: ScreenUtil().setSp(90),
