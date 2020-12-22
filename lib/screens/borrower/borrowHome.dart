@@ -183,8 +183,7 @@ class CircularButtonKey extends StatelessWidget {
               onPressed: () {},
             ),
             Text(
-              '''Register
-For Free''',
+              name,
               textAlign: TextAlign.center,
               style: TextStyle(
                   fontSize: 12, fontWeight: FontWeight.w600, color: whiteColor),
