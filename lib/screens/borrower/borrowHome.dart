@@ -123,7 +123,7 @@ class _BorrowHomeScreenState extends State<BorrowHomeScreen> {
                         child: Text(
                           'Simple Steps',
                           style: GoogleFonts.raleway(
-                            fontSize: 18,
+                            fontSize: ScreenUtil().setSp(50),
                             fontWeight: FontWeight.bold,
                           ),
                         ),
