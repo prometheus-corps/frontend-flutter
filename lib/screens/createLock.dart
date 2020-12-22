@@ -171,16 +171,20 @@ class _CreateLockScreenState extends State<CreateLockScreen> {
                         },
                       )),
                 ),
+                SizedBox(
+                  height: ScreenUtil().setHeight(36),
+                ),
                 Padding(
                   padding: EdgeInsets.symmetric(
                     vertical: ScreenUtil().setHeight(36),
+                    horizontal: ScreenUtil().setWidth(140),
                   ),
                   child: ButtonTheme(
                     minWidth: ScreenUtil().setWidth(1080),
                     height: ScreenUtil().setHeight(150),
                     child: RaisedButton(
                       onPressed: () {},
-                      color: whiteColor,
+                      color: blueColor,
                       child: Text('Enter'),
                     ),
                   ),
