@@ -145,7 +145,7 @@ class _LendHomeScreenState extends State<LendHomeScreen> {
                   ),
                 ),
                 SizedBox(
-                  height: ScreenUtil().setHeight(800),
+                  height: ScreenUtil().setHeight(600),
                 ),
                 Padding(
                   padding: EdgeInsets.symmetric(
