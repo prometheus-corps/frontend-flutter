@@ -1064,16 +1064,16 @@ Topup''',
                                       ),
                                       GestureDetector(
                                         onTap: () {
-                                          Navigator.of(context).push(
-                                            SlideRightRoute(
-                                              page: UserGuide(
-                                                iconData:
-                                                    Icons.comment_bank_rounded,
-                                                desc: desc[2],
-                                                pageName: title[2],
-                                              ),
-                                            ),
-                                          );
+                                          // Navigator.of(context).push(
+                                          //   SlideRightRoute(
+                                          //     page: UserGuide(
+                                          //       iconData:
+                                          //           Icons.comment_bank_rounded,
+                                          //       desc: desc[2],
+                                          //       pageName: title[2],
+                                          //     ),
+                                          //   ),
+                                          // );
                                         },
                                         child: Column(
                                           mainAxisAlignment:
