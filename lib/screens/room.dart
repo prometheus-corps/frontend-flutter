@@ -46,13 +46,15 @@ class _RoomScreenState extends State<RoomScreen> {
               children: [
                 Image.asset(
                   'images/room.png',
+                  height: ScreenUtil().setHeight(100),
+                  width: ScreenUtil().setWidth(60),
                   fit: BoxFit.fitWidth,
                 ),
                 Column(
                   children: [
                     Center(
                       child: Text(
-                        'New Here?',
+                        'Hello ',
                         style: TextStyle(
                           fontFamily: 'Bambino',
                           fontSize: ScreenUtil().setSp(90),
