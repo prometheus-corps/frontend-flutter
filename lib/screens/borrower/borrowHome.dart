@@ -91,7 +91,7 @@ class _BorrowHomeScreenState extends State<BorrowHomeScreen> {
                 BottomNavigationBarItem(
                   icon: Icon(
                     Icons.home,
-                    size: ScreenUtil().setSp(45),
+                    size: ScreenUtil().setSp(80),
                   ),
                   label: 'Home',
                 ),
