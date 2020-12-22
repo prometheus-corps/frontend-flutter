@@ -40,6 +40,7 @@ class _RoomScreenState extends State<RoomScreen> {
         ),
         home: SafeArea(
           child: Scaffold(
+            backgroundColor: blueColor,
             body: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
