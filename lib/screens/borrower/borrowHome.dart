@@ -133,6 +133,9 @@ class _BorrowHomeScreenState extends State<BorrowHomeScreen> {
                             dashColor: isDarkMode ? whiteColor : blackColor,
                           ),
                         ),
+                        Row(
+                          children: [],
+                        )
                       ],
                     )
                   ],
