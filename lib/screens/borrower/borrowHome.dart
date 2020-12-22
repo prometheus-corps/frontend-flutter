@@ -74,7 +74,7 @@ class _BorrowHomeScreenState extends State<BorrowHomeScreen> {
               items: [
                 BottomNavigationBarItem(
                   icon: Icon(
-                    FontAwesomeIcons.compass,
+                    FontAwesomeIcons.sortAmountUpAlt,
                     size: ScreenUtil().setSp(65),
                   ),
                   label: 'Transactions',
