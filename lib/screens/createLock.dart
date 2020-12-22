@@ -144,9 +144,6 @@ class _CreateLockScreenState extends State<CreateLockScreen> {
                           vertical: 8.0, horizontal: 30),
                       child: PinCodeTextField(
                         appContext: context,
-                        pastedTextStyle: TextStyle(
-                          fontWeight: FontWeight.bold,
-                        ),
                         length: 4,
                         obscureText: false,
                         obscuringCharacter: '*',
