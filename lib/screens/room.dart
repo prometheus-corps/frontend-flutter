@@ -38,7 +38,114 @@ class _RoomScreenState extends State<RoomScreen> {
           textTheme: Typography.material2018().white,
         ),
         home: SafeArea(
-          child: Scaffold(),
+          child: Scaffold(
+            body: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Image.asset(
+                  'images/car_3.gif',
+                  fit: BoxFit.fitWidth,
+                ),
+                Column(
+                  children: [
+                    Center(
+                      child: Text(
+                        'New Here?',
+                        style: TextStyle(
+                          fontFamily: 'Bambino',
+                          fontSize: ScreenUtil().setSp(90),
+                          fontWeight: FontWeight.w700,
+                          color: whiteColor,
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.all(0.0),
+                      child: Center(
+                        child: Text(
+                          '''Create or Join to Continue''',
+                          textAlign: TextAlign.center,
+                          style: GoogleFonts.raleway(
+                            fontSize: ScreenUtil().setSp(50),
+                            fontWeight: FontWeight.w400,
+                            color: mainTextColor,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                Padding(
+                  padding: EdgeInsets.symmetric(
+                      horizontal: ScreenUtil().setWidth(
+                    75,
+                  )),
+                  child: Column(
+                    children: [
+                      Padding(
+                        padding: EdgeInsets.symmetric(
+                          vertical: ScreenUtil().setHeight(36),
+                        ),
+                        child: ButtonTheme(
+                          minWidth: ScreenUtil().setWidth(1080),
+                          height: ScreenUtil().setHeight(150),
+                          child: RaisedButton(
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => CreateRoomScreen(),
+                                ),
+                              );
+                            },
+                            color: whiteColor,
+                            child: Text(
+                              'Create Room',
+                              style: TextStyle(
+                                fontFamily: 'Bambino',
+                                fontSize: ScreenUtil().setSp(48),
+                                color: darkFadeTextColor,
+                                fontWeight: FontWeight.w200,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.symmetric(
+                          vertical: ScreenUtil().setHeight(36),
+                        ),
+                        child: ButtonTheme(
+                          minWidth: ScreenUtil().setWidth(1080),
+                          height: ScreenUtil().setHeight(150),
+                          child: RaisedButton(
+                            onPressed: () async {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => QRScanner(),
+                                ),
+                              );
+                            },
+                            color: whiteColor,
+                            child: Text(
+                              'Join Room',
+                              style: TextStyle(
+                                fontFamily: 'Bambino',
+                                fontSize: ScreenUtil().setSp(48),
+                                color: darkFadeTextColor,
+                                fontWeight: FontWeight.w200,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
         ),
       ),
     );
