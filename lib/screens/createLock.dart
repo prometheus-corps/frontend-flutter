@@ -150,7 +150,7 @@ class _CreateLockScreenState extends State<CreateLockScreen> {
                         animationType: AnimationType.fade,
                         validator: (v) {
                           if (v.length < 3) {
-                            return "I'm from validator";
+                            return "Enter 4 Digit Pin";
                           } else {
                             return null;
                           }
