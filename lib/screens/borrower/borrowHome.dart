@@ -45,7 +45,10 @@ class _BorrowHomeScreenState extends State<BorrowHomeScreen> {
           textTheme: Typography.material2018().white,
         ),
         home: SafeArea(
-          child: Scaffold(),
+          child: Scaffold(
+            extendBodyBehindAppBar: true,
+            body: Column(),
+          ),
         ),
       ),
     );
