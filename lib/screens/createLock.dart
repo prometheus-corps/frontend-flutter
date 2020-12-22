@@ -45,6 +45,8 @@ class _CreateLockScreenState extends State<CreateLockScreen> {
 
   @override
   Widget build(BuildContext context) {
+    bool isDarkMode =
+        MediaQuery.of(context).platformBrightness == Brightness.dark;
     ScreenUtil.init(context,
         designSize: Size(1080, 2400), allowFontScaling: false);
     return WillPopScope(
@@ -131,7 +133,8 @@ class _CreateLockScreenState extends State<CreateLockScreen> {
                             return null;
                           }
                         },
-                        // backgroundColor: Color(0xFFEFEFF2),
+                        backgroundColor:
+                            isDarkMode ? blackColor : Color(0xFFF8F8F8),
                         pinTheme: PinTheme(
                           inactiveFillColor: whiteColor,
                           activeColor: whiteColor,
