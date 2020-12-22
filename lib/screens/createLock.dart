@@ -1,6 +1,7 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -16,13 +17,27 @@ class _CreateLockScreenState extends State<CreateLockScreen> {
   GlobalKey<ScaffoldState> _scaffold = GlobalKey<ScaffoldState>();
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
-    return WillPopScope(
-      onWillPop: () {
-        SystemNavigator.pop();
-        return Future.value(false);
-      },
-      child: SafeArea(
+    ScreenUtil.init(context,
+        designSize: Size(1080, 2400), allowFontScaling: false);
+    return MaterialApp(
+      builder: DevicePreview.appBuilder,
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primarySwatch: white,
+        canvasColor: Color(0xFFEFEFF4),
+        iconTheme: IconThemeData(color: darkFadeTextColor),
+        primaryTextTheme: Typography.material2018().black,
+        textTheme: Typography.material2018().black,
+      ),
+      darkTheme: ThemeData(
+        primarySwatch: black,
+        accentColor: black,
+        brightness: Brightness.dark,
+        canvasColor: mainTextColor,
+        primaryTextTheme: Typography.material2018().white,
+        textTheme: Typography.material2018().white,
+      ),
+      home: SafeArea(
         child: Scaffold(
           key: _scaffold,
           resizeToAvoidBottomInset: false,
