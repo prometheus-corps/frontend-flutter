@@ -139,9 +139,16 @@ class _BorrowHomeScreenState extends State<BorrowHomeScreen> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              CircularButtonKey(),
-                              CircularButtonKey(),
-                              CircularButtonKey(),
+                              CircularButtonKey(
+                                name: '''Register
+For Free''',
+                              ),
+                              CircularButtonKey(
+                                name: null,
+                              ),
+                              CircularButtonKey(
+                                name: null,
+                              ),
                             ],
                           )
                         ],
