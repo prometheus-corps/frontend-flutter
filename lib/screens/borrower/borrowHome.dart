@@ -134,7 +134,11 @@ class _BorrowHomeScreenState extends State<BorrowHomeScreen> {
                           ),
                         ),
                         Row(
-                          children: [],
+                          children: [
+                            CircularButtonKey(),
+                            CircularButtonKey(),
+                            CircularButtonKey(),
+                          ],
                         )
                       ],
                     )
