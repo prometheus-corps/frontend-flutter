@@ -1,3 +1,4 @@
+import 'package:crowdgain/utilities/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_dash/flutter_dash.dart';
@@ -80,7 +81,7 @@ class _UserGuideState extends State<UserGuide> {
                     child: Text(
                       widget.pageName,
                       style: GoogleFonts.roboto(
-                        color: mainBgColor,
+                        color: whiteColor,
                         fontSize: 36,
                         fontWeight: FontWeight.bold,
                       ),
@@ -97,7 +98,7 @@ class _UserGuideState extends State<UserGuide> {
                     child: Text(
                       widget.desc,
                       style: GoogleFonts.raleway(
-                        color: mainBgColor,
+                        color: whiteColor,
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
                       ),
