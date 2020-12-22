@@ -124,14 +124,11 @@ class _BorrowHomeScreenState extends State<BorrowHomeScreen> {
                     ),
                     Stack(
                       children: [
-                        Padding(
-                          padding: const EdgeInsets.only(left: 40, top: 50),
-                          child: Dash(
-                            direction: Axis.horizontal,
-                            length: ScreenUtil().scaleWidth * 0.7,
-                            dashLength: 12,
-                            dashColor: isDarkMode ? whiteColor : blackColor,
-                          ),
+                        Dash(
+                          direction: Axis.horizontal,
+                          length: ScreenUtil().scaleWidth,
+                          dashLength: 12,
+                          dashColor: isDarkMode ? whiteColor : blackColor,
                         ),
                         Row(
                           children: [
