@@ -960,16 +960,16 @@ Bank Details''',
                                     children: [
                                       GestureDetector(
                                         onTap: () {
-                                          Navigator.of(context).push(
-                                            SlideRightRoute(
-                                              page: UserGuide(
-                                                iconData:
-                                                    Icons.app_registration,
-                                                desc: desc[1],
-                                                pageName: title[0],
-                                              ),
-                                            ),
-                                          );
+                                          // Navigator.of(context).push(
+                                          //   SlideRightRoute(
+                                          //     page: UserGuide(
+                                          //       iconData:
+                                          //           Icons.app_registration,
+                                          //       desc: desc[1],
+                                          //       pageName: title[0],
+                                          //     ),
+                                          //   ),
+                                          // );
                                         },
                                         child: Column(
                                           mainAxisAlignment:
