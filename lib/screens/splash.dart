@@ -1,4 +1,4 @@
-// import 'dart:async';
+import 'dart:async';
 import 'package:crowdgain/utilities/constants.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +13,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    // Timer(Duration(seconds: 3), () => Navigator.pushNamed(context, 'routeKey'));
+    Timer(Duration(seconds: 3), () => Navigator.pushNamed(context, 'routeKey'));
   }
 
   @override
