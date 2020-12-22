@@ -219,8 +219,11 @@ Verification""",
         Navigator.push(
           context,
           CupertinoPageRoute(
-            builder: (context) =>
-                UserGuide(desc: null, pageName: name, iconData: null),
+            builder: (context) => UserGuide(
+              desc: desc,
+              pageName: name,
+              iconData: icon,
+            ),
           ),
         );
       },
