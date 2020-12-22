@@ -125,12 +125,12 @@ class _CreateLockScreenState extends State<CreateLockScreen> {
                         animationType: AnimationType.fade,
                         validator: (v) {
                           if (v.length < 3) {
-                            return "Enter 4 Digit Pin";
+                            return '';
                           } else {
                             return null;
                           }
                         },
-                        backgroundColor: Color(0xFFEFEFF4),
+                        backgroundColor: Color(0xFFEFEFF2),
                         pinTheme: PinTheme(
                           inactiveFillColor: whiteColor,
                           activeColor: whiteColor,
