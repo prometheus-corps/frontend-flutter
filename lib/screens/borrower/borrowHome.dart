@@ -121,6 +121,19 @@ class _BorrowHomeScreenState extends State<BorrowHomeScreen> {
                         ),
                       ),
                     ),
+                    Stack(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(left: 40, top: 50),
+                          child: Dash(
+                            direction: Axis.horizontal,
+                            length: width * 0.7,
+                            dashLength: 12,
+                            dashColor: whiteColor,
+                          ),
+                        ),
+                      ],
+                    )
                   ],
                 ),
               ],
