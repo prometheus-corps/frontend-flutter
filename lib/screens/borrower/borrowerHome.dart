@@ -42,28 +42,11 @@ class _UserHomeState extends State<UserHome> {
 
   @override
   void initState() {
-    getCode();
     getRates(items[indexTopCount], items[indexBottomCount]);
     currentIndex = 2;
     super.initState();
     _controllerTop = new TextEditingController(text: topCount.toString());
     _controllerBtm = new TextEditingController(text: bottomCount.toString());
-  }
-
-  void getCode() {
-    countries.forEach((element) {
-      element.forEach((key, value) {
-        if (key == 'Code') {
-          items.add(value);
-        }
-        if (key == 'Name') {
-          name.add(value);
-        }
-        if (key == 'Country') {
-          country.add(value);
-        }
-      });
-    });
   }
 
   void getRates(String fromCode, String toCode) async {
