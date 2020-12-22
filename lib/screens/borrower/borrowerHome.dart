@@ -680,16 +680,16 @@ Bank Details''',
                                                   size: 30,
                                                 ),
                                                 callback: () {
-                                                  Navigator.of(context).push(
-                                                    SlideRightRoute(
-                                                      page: UserGuide(
-                                                        iconData: Icons
-                                                            .receipt_long_rounded,
-                                                        desc: desc[4],
-                                                        pageName: title[4],
-                                                      ),
-                                                    ),
-                                                  );
+                                                  // Navigator.of(context).push(
+                                                  //   SlideRightRoute(
+                                                  //     page: UserGuide(
+                                                  //       iconData: Icons
+                                                  //           .receipt_long_rounded,
+                                                  //       desc: desc[4],
+                                                  //       pageName: title[4],
+                                                  //     ),
+                                                  //   ),
+                                                  // );
                                                 },
                                                 increaseHeightBy: 25,
                                                 increaseWidthBy: 25,
