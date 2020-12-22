@@ -22,7 +22,7 @@ final TextEditingController _nameController = TextEditingController();
 final TextEditingController _userNameController = TextEditingController();
 final TextEditingController _phoneController = TextEditingController();
 final TextEditingController _accountController = TextEditingController();
-GlobalKey<ScaffoldState> _registerSaffoldKey = GlobalKey();
+GlobalKey<ScaffoldState> _registerLenderSaffoldKey = GlobalKey();
 File _image = null;
 final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 final picker = ImagePicker();
@@ -57,7 +57,7 @@ class _BorrowerRegistrationScreenState
       ),
       home: SafeArea(
         child: Scaffold(
-          key: _registerSaffoldKey,
+          key: _registerLenderSaffoldKey,
           body: SingleChildScrollView(
             reverse: false,
             child: Container(
