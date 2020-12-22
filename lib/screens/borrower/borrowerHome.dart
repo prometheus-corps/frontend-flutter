@@ -249,7 +249,7 @@ class _UserHomeState extends State<UserHome> {
                                               style: TextStyle(
                                                   fontSize: 18,
                                                   fontWeight: FontWeight.w600,
-                                                  color: mainBgColor),
+                                                  color: whiteColor),
                                             )
                                           ],
                                         ),
@@ -260,7 +260,7 @@ class _UserHomeState extends State<UserHome> {
                                         margin: EdgeInsets.all(0),
                                         decoration: BoxDecoration(
                                             border: Border.all(
-                                              color: mainBgColor,
+                                              color: whiteColor,
                                             ),
                                             borderRadius: BorderRadius.all(
                                                 Radius.circular(5))),
