@@ -173,7 +173,11 @@ State Agency""",
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           RaisedButton(
-            shape: CircleBorder(),
+            shape: CircleBorder(
+              side: BorderSide(
+                color: blue,
+              ),
+            ),
             child: Icon(
               Icons.add_business_rounded,
               color: whiteColor,
