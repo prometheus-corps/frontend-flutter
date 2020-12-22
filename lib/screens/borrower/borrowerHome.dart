@@ -5,13 +5,6 @@ import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:gradient_widgets/gradient_widgets.dart';
 import 'package:http/http.dart' as http;
-import 'package:flutter_dash/flutter_dash.dart';
-import 'package:remito_demo/screens/userguide.dart';
-import 'package:remito_demo/utilities/constants.dart';
-import 'package:remito_demo/utilities/data.dart';
-import 'package:remito_demo/utilities/drawer.dart';
-import 'package:remito_demo/utilities/drivers.dart';
-import 'package:remito_demo/utilities/userdata.dart';
 
 double _sigmaX = 0.0;
 double _sigmaY = 0.0;
