@@ -107,6 +107,9 @@ class _CreateLockScreenState extends State<CreateLockScreen> {
                     ],
                   ),
                 ),
+                SizedBox(
+                  height: ScreenUtil().setHeight(200),
+                ),
                 Form(
                   key: formKey,
                   child: Padding(
