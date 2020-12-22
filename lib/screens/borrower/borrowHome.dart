@@ -1,4 +1,6 @@
+import 'package:crowdgain/screens/room.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class BorrowHomeScreen extends StatefulWidget {
   @override
@@ -14,7 +16,12 @@ class _BorrowHomeScreenState extends State<BorrowHomeScreen> {
         designSize: Size(1080, 2400), allowFontScaling: false);
     return WillPopScope(
       onWillPop: () {
-        SystemNavigator.pop();
+        Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => RoomScreen(),
+              ),
+            );
         return Future.value(false);
       },
       child: MaterialApp(
