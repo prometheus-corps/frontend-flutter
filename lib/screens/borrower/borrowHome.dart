@@ -54,6 +54,47 @@ class _BorrowHomeScreenState extends State<BorrowHomeScreen> {
         home: SafeArea(
           child: Scaffold(
             extendBodyBehindAppBar: true,
+            bottomNavigationBar: BottomNavigationBar(
+              selectedFontSize: ScreenUtil().setSp(18),
+              unselectedFontSize: ScreenUtil().setSp(12),
+              showSelectedLabels: false,
+              showUnselectedLabels: false,
+              unselectedItemColor: lightFadeText,
+              currentIndex: currentIndex,
+              onTap: (value) {
+                setState(() {
+                  currentIndex = value;
+                });
+                if (currentIndex == 1) {
+                  Navigator.pushNamed(context, 'search');
+                } else if (currentIndex == 2) {
+                  Navigator.pushNamed(context, 'user');
+                }
+              },
+              items: [
+                BottomNavigationBarItem(
+                  icon: Icon(
+                    FontAwesomeIcons.compass,
+                    size: ScreenUtil().setSp(65),
+                  ),
+                  label: 'Explore',
+                ),
+                BottomNavigationBarItem(
+                  icon: Icon(
+                    FontAwesomeIcons.search,
+                    size: ScreenUtil().setSp(45),
+                  ),
+                  label: 'Search',
+                ),
+                BottomNavigationBarItem(
+                  icon: Icon(
+                    FontAwesomeIcons.userAlt,
+                    size: ScreenUtil().setSp(45),
+                  ),
+                  label: 'Profile',
+                ),
+              ],
+            ),
             body: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
