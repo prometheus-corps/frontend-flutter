@@ -99,8 +99,8 @@ class _UserGuideState extends State<UserGuide> {
                   alignment: Alignment.topLeft,
                   child: Padding(
                     padding: EdgeInsets.only(
-                      left: 65,
-                      top: 25,
+                      left: ScreenUtil().setWidth(175),
+                      top: ScreenUtil().setHeight(300),
                     ),
                     child: Text(
                       widget.desc,
