@@ -86,7 +86,8 @@ class _VerificationScreenState extends State<VerificationScreen> {
                                       left: ScreenUtil().setWidth(90),
                                     ),
                                     child: Text(
-                                      'Register',
+                                      '''Verify
+Membership''',
                                       style: GoogleFonts.roboto(
                                         fontSize: 42,
                                         fontWeight: FontWeight.bold,
