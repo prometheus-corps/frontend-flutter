@@ -629,16 +629,16 @@ Details''',
                                                   size: 30,
                                                 ),
                                                 callback: () {
-                                                  Navigator.of(context).push(
-                                                    SlideRightRoute(
-                                                      page: UserGuide(
-                                                        iconData: Icons
-                                                            .add_business_rounded,
-                                                        desc: desc[3],
-                                                        pageName: title[3],
-                                                      ),
-                                                    ),
-                                                  );
+                                                  // Navigator.of(context).push(
+                                                  //   SlideRightRoute(
+                                                  //     page: UserGuide(
+                                                  //       iconData: Icons
+                                                  //           .add_business_rounded,
+                                                  //       desc: desc[3],
+                                                  //       pageName: title[3],
+                                                  //     ),
+                                                  //   ),
+                                                  // );
                                                 },
                                                 increaseHeightBy: 25,
                                                 increaseWidthBy: 25,
