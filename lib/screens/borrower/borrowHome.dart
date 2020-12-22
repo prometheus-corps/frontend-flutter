@@ -175,8 +175,8 @@ For Free''',
 a Request""",
                               ),
                               buildGestureDetector(
-                                """Verification By
-State Agency""",
+                                """Membership
+Verification""",
                               ),
                             ],
                           )
