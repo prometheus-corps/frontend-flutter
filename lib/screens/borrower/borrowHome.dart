@@ -1,4 +1,5 @@
 import 'package:crowdgain/screens/bigText.dart';
+import 'package:crowdgain/screens/borrower/registerBorrower.dart';
 import 'package:crowdgain/screens/room.dart';
 import 'package:crowdgain/utilities/constants.dart';
 import 'package:device_preview/device_preview.dart';
@@ -98,7 +99,12 @@ class _BorrowHomeScreenState extends State<BorrowHomeScreen> {
                   child: FlatButton(
                     color: blue,
                     onPressed: () {
-                      // Navigator.pushNamed(context, 'loginuser');
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => BorrowerRegistrationScreen(),
+                        ),
+                      );
                     },
                     minWidth: ScreenUtil().screenWidth,
                     height: ScreenUtil().setHeight(150),
