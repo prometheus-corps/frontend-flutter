@@ -60,6 +60,8 @@ class _BorrowHomeScreenState extends State<BorrowHomeScreen> {
               unselectedFontSize: ScreenUtil().setSp(12),
               showSelectedLabels: false,
               showUnselectedLabels: false,
+              selectedItemColor: blueColor,
+              unselectedItemColor: fadeColor,
               currentIndex: currentIndex,
               onTap: (value) {
                 setState(() {
