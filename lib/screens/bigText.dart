@@ -19,7 +19,8 @@ class _UserGuideState extends State<UserGuide> {
   @override
   Widget build(BuildContext context) {
     SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
-    final double height = MediaQuery.of(context).size.height;
+    ScreenUtil.init(context,
+        designSize: Size(1080, 2400), allowFontScaling: false);
     return SafeArea(
       child: Scaffold(
         backgroundColor: blueColor,
