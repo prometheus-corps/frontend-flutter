@@ -7,9 +7,10 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class SignInScreen extends StatefulWidget {
+class BorrowerRegistrationScreen extends StatefulWidget {
   @override
-  _SignInScreenState createState() => _SignInScreenState();
+  _BorrowerRegistrationScreenState createState() =>
+      _BorrowerRegistrationScreenState();
 }
 
 bool isWaiting = false;
@@ -20,7 +21,8 @@ final TextEditingController _userNameController = TextEditingController();
 final TextEditingController _phoneController = TextEditingController();
 GlobalKey<ScaffoldState> _registerSaffoldKey = GlobalKey();
 
-class _SignInScreenState extends State<SignInScreen> {
+class _BorrowerRegistrationScreenState
+    extends State<BorrowerRegistrationScreen> {
   @override
   void initState() {
     super.initState();
