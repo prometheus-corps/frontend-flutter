@@ -65,7 +65,7 @@ class _LendHomeScreenState extends State<LendHomeScreen> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        'Borrow Money',
+                        'Lend Money',
                         style: GoogleFonts.roboto(
                           fontSize: ScreenUtil().setSp(80),
                           fontWeight: FontWeight.bold,
