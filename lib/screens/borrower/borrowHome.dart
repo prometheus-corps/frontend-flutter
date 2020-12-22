@@ -86,17 +86,18 @@ class _BorrowHomeScreenState extends State<BorrowHomeScreen> {
                   height: ScreenUtil().setHeight(600),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(
-                    top: ScreenUtil().setHeight(45),
+                  padding: EdgeInsets.symmetric(
+                    vertical: ScreenUtil().setHeight(45),
                   ),
-                  child: RaisedButton(
+                  child: FlatButton(
                     onPressed: () {
-                      Navigator.pushNamed(context, 'loginuser');
+                      // Navigator.pushNamed(context, 'loginuser');
                     },
+                    minWidth: ScreenUtil().screenWidth,
                     child: Text(
                       'Get Started',
                       style: GoogleFonts.raleway(
-                        fontSize: 22,
+                        fontSize: ScreenUtil().setSp(20),
                         fontWeight: FontWeight.w700,
                       ),
                     ),
