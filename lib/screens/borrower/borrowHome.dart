@@ -91,7 +91,7 @@ class _BorrowHomeScreenState extends State<BorrowHomeScreen> {
                     FontAwesomeIcons.search,
                     size: ScreenUtil().setSp(45),
                   ),
-                  label: 'Search',
+                  label: 'Home',
                 ),
                 BottomNavigationBarItem(
                   icon: Icon(
