@@ -84,9 +84,9 @@ class _CreateLockScreenState extends State<CreateLockScreen> {
                     children: [
                       Center(
                         child: Text(
-                          'Log In to PayUp',
+                          'Enter Your Car Details',
                           style: GoogleFonts.raleway(
-                            fontSize: 24,
+                            fontSize: ScreenUtil().setSp(65),
                             fontWeight: FontWeight.w700,
                           ),
                         ),
@@ -95,10 +95,10 @@ class _CreateLockScreenState extends State<CreateLockScreen> {
                         padding: EdgeInsets.all(8.0),
                         child: Center(
                           child: Text(
-                            '''Carpool with friends. It's always fun!!!''',
+                            '''You can fill this in later if you want.!!!''',
                             textAlign: TextAlign.center,
                             style: GoogleFonts.raleway(
-                              fontSize: 14,
+                              fontSize: ScreenUtil().setSp(40),
                               fontWeight: FontWeight.w400,
                             ),
                           ),
