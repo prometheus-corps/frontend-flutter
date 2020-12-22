@@ -7,7 +7,6 @@ import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 class CreateLockScreen extends StatefulWidget {
   @override
@@ -29,6 +28,23 @@ class _CreateLockScreenState extends State<CreateLockScreen> {
   final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
   final formKey = GlobalKey<FormState>();
   GlobalKey<ScaffoldState> _scaffold = GlobalKey<ScaffoldState>();
+  @override
+  void initState() {
+    onTapRecognizer = TapGestureRecognizer()
+      ..onTap = () {
+        Navigator.pop(context);
+      };
+    errorController = StreamController<ErrorAnimationType>();
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    errorController.close();
+
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     ScreenUtil.init(context,
