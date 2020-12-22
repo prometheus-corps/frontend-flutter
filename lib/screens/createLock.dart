@@ -81,7 +81,9 @@ class _CreateLockScreenState extends State<CreateLockScreen> {
               children: [
                 Padding(
                   padding: EdgeInsets.only(
-                      top: ScreenUtil().setHeight(600), bottom: 0),
+                    top: ScreenUtil().setHeight(150),
+                    bottom: 0,
+                  ),
                   child: Column(
                     children: [
                       Center(
