@@ -80,7 +80,8 @@ class _CreateLockScreenState extends State<CreateLockScreen> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(top: 50, bottom: 0),
+                  padding: EdgeInsets.only(
+                      top: ScreenUtil().setHeight(600), bottom: 0),
                   child: Column(
                     children: [
                       Center(
