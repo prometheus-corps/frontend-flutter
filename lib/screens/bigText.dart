@@ -89,7 +89,7 @@ class _UserGuideState extends State<UserGuide> {
                       widget.pageName,
                       style: GoogleFonts.roboto(
                         color: whiteColor,
-                        fontSize: ScreenUtil().setSp(40),
+                        fontSize: ScreenUtil().setSp(100),
                         fontWeight: FontWeight.bold,
                       ),
                     ),
