@@ -160,8 +160,9 @@ class _BorrowHomeScreenState extends State<BorrowHomeScreen> {
 
 class CircularButtonKey extends StatelessWidget {
   const CircularButtonKey({
-    Key key,
-  }) : super(key: key);
+    @required this.name,
+  });
+  final String name;
 
   @override
   Widget build(BuildContext context) {
