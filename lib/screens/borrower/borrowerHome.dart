@@ -365,10 +365,7 @@ class _UserHomeState extends State<UserHome> {
                       child: Align(
                         alignment: Alignment.topCenter,
                         child: RaisedButton(
-                          increaseHeightBy: 20,
-                          increaseWidthBy: width * 0.58,
-                          gradient: gradientBtn,
-                          shapeRadius: BorderRadius.circular(5),
+                         
                           onPressed: () {
                             Navigator.pushNamed(context, 'loginuser');
                           },
