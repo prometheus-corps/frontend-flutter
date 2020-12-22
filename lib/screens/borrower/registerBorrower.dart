@@ -214,7 +214,7 @@ class _BorrowerRegistrationScreenState
                                                   ),
                                                 )
                                               : Text(
-                                                  'Sign In',
+                                                  'Register',
                                                   style: GoogleFonts.openSans(
                                                     fontSize:
                                                         ScreenUtil().setSp(48),
