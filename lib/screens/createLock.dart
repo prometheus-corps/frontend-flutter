@@ -18,17 +18,14 @@ String pinKey;
 
 class _CreateLockScreenState extends State<CreateLockScreen> {
   var onTapRecognizer;
-
   TextEditingController textEditingController = TextEditingController();
-  // ..text = "123456";
-
   StreamController<ErrorAnimationType> errorController;
-
   bool hasError = false;
   String currentText = "";
   final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
   final formKey = GlobalKey<FormState>();
   GlobalKey<ScaffoldState> _scaffold = GlobalKey<ScaffoldState>();
+
   @override
   void initState() {
     onTapRecognizer = TapGestureRecognizer()
