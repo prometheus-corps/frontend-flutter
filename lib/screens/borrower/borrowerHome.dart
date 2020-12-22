@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:ui';
+import 'package:crowdgain/utilities/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -76,7 +77,7 @@ class _UserHomeState extends State<UserHome> {
                     size: 32.0,
                   ),
                 ),
-                backgroundColor: mainBgColor,
+                backgroundColor: blackColor,
               ),
             ),
             backgroundColor: splashBgColor,
