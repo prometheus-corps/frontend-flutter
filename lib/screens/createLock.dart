@@ -2,9 +2,6 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:gradient_widgets/gradient_widgets.dart';
-import 'package:pin_input_text_field/pin_input_text_field.dart';
-import 'package:remito_demo/utilities/constants.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class CreateLockScreen extends StatefulWidget {
