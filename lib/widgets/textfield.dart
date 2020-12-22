@@ -20,7 +20,7 @@ class TextFormWidget extends StatelessWidget {
       style: TextStyle(
         color: blackColor,
       ),
-      cursorColor: mainTextColor,
+      cursorColor: blackColor,
       controller: firstNameController,
       keyboardType: type,
       maxLength: 50,
