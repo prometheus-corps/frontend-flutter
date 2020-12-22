@@ -84,7 +84,7 @@ class _CreateLockScreenState extends State<CreateLockScreen> {
                     children: [
                       Center(
                         child: Text(
-                          'Enter Your Car Details',
+                          'Create Password',
                           style: GoogleFonts.raleway(
                             fontSize: ScreenUtil().setSp(65),
                             fontWeight: FontWeight.w700,
@@ -95,7 +95,7 @@ class _CreateLockScreenState extends State<CreateLockScreen> {
                         padding: EdgeInsets.all(8.0),
                         child: Center(
                           child: Text(
-                            '''You can fill this in later if you want.!!!''',
+                            '''Create 4 Digit Screen Lock Password''',
                             textAlign: TextAlign.center,
                             style: GoogleFonts.raleway(
                               fontSize: ScreenUtil().setSp(40),
