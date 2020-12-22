@@ -552,9 +552,7 @@ Topup''',
                                                   //   ),
                                                   // );
                                                 },
-                                                increaseHeightBy: 25,
-                                                increaseWidthBy: 25,
-                                                gradient: gradientBtn),
+                                                ),
                                             Text(
                                               '''Transfer
 Details''',
@@ -634,9 +632,7 @@ Details''',
                                                   //   ),
                                                   // );
                                                 },
-                                                increaseHeightBy: 25,
-                                                increaseWidthBy: 25,
-                                                gradient: gradientBtn,
+                                                ,
                                               ),
                                               Text(
                                                 '''Add Recipient's
@@ -685,9 +681,7 @@ Bank Details''',
                                                   //   ),
                                                   // );
                                                 },
-                                                increaseHeightBy: 25,
-                                                increaseWidthBy: 25,
-                                                gradient: gradientBtn,
+                                                ,
                                               ),
                                               Text(
                                                 '''Acknowledgement''',
@@ -1097,9 +1091,7 @@ Topup''',
                                                   //   ),
                                                   // );
                                                 },
-                                                increaseHeightBy: 25,
-                                                increaseWidthBy: 25,
-                                                gradient: gradientBtn),
+                                                ),
                                             Text(
                                               '''Transfer 
 Details''',
@@ -1168,20 +1160,17 @@ Details''',
                                                   size: 30,
                                                 ),
                                                 onPressed: () {
-                                                  Navigator.of(context).push(
-                                                    SlideRightRoute(
-                                                      page: UserGuide(
-                                                        iconData: Icons
-                                                            .add_business_rounded,
-                                                        desc: desc[3],
-                                                        pageName: title[3],
-                                                      ),
-                                                    ),
-                                                  );
+                                                  // Navigator.of(context).push(
+                                                  //   SlideRightRoute(
+                                                  //     page: UserGuide(
+                                                  //       iconData: Icons
+                                                  //           .add_business_rounded,
+                                                  //       desc: desc[3],
+                                                  //       pageName: title[3],
+                                                  //     ),
+                                                  //   ),
+                                                  // );
                                                 },
-                                                increaseHeightBy: 25,
-                                                increaseWidthBy: 25,
-                                                gradient: gradientBtn,
                                               ),
                                               Text(
                                                 '''Add Recipient's
@@ -1230,9 +1219,7 @@ Bank Details''',
                                                     ),
                                                   );
                                                 },
-                                                increaseHeightBy: 25,
-                                                increaseWidthBy: 25,
-                                                gradient: gradientBtn,
+                                                ,
                                               ),
                                               Text(
                                                 '''Acknowledgement''',
