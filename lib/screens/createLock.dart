@@ -184,7 +184,12 @@ class _CreateLockScreenState extends State<CreateLockScreen> {
                     child: RaisedButton(
                       onPressed: () {},
                       color: blueColor,
-                      child: Text('Enter'),
+                      child: Text(
+                        'Enter',
+                        style: GoogleFonts.openSans(
+                          color: whiteColor,
+                        ),
+                      ),
                     ),
                   ),
                 ),
