@@ -1039,16 +1039,16 @@ For Free''',
                                                 size: 30,
                                               ),
                                               onPressed: () {
-                                                Navigator.of(context).push(
-                                                  SlideRightRoute(
-                                                    page: UserGuide(
-                                                      iconData: Icons
-                                                          .wallet_membership_rounded,
-                                                      desc: desc[1],
-                                                      pageName: title[1],
-                                                    ),
-                                                  ),
-                                                );
+                                                // Navigator.of(context).push(
+                                                //   SlideRightRoute(
+                                                //     page: UserGuide(
+                                                //       iconData: Icons
+                                                //           .wallet_membership_rounded,
+                                                //       desc: desc[1],
+                                                //       pageName: title[1],
+                                                //     ),
+                                                //   ),
+                                                // );
                                               },
                                             ),
                                             Text(
