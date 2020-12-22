@@ -33,7 +33,7 @@ class _UserGuideState extends State<UserGuide> {
                 padding: const EdgeInsets.only(left: 40, top: 50),
                 child: Dash(
                   direction: Axis.vertical,
-                  length: height * 0.5,
+                  length: ScreenUtil().scaleHeight * 0.6,
                   dashLength: 12,
                   dashColor: whiteColor,
                 ),
@@ -77,7 +77,7 @@ class _UserGuideState extends State<UserGuide> {
                   child: Padding(
                     padding: EdgeInsets.only(
                       left: 65,
-                      top: height * 0.13,
+                      top: ScreenUtil().setHeight(300),
                     ),
                     child: Text(
                       widget.pageName,
