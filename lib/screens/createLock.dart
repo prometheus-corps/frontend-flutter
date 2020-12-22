@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:ui';
+import 'package:crowdgain/screens/room.dart';
 import 'package:crowdgain/utilities/constants.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/gestures.dart';
@@ -185,7 +186,14 @@ class _CreateLockScreenState extends State<CreateLockScreen> {
                     minWidth: ScreenUtil().setWidth(1080),
                     height: ScreenUtil().setHeight(150),
                     child: RaisedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => RoomScreen(),
+                          ),
+                        );
+                      },
                       color: blueColor,
                       child: Text(
                         'Enter',
