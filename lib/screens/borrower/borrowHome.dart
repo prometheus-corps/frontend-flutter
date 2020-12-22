@@ -84,7 +84,7 @@ class _BorrowHomeScreenState extends State<BorrowHomeScreen> {
                   ),
                 ),
                 SizedBox(
-                  height: ScreenUtil().setHeight(600),
+                  height: ScreenUtil().setHeight(800),
                 ),
                 Padding(
                   padding: EdgeInsets.symmetric(
