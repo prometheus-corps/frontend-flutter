@@ -109,44 +109,54 @@ class _BorrowHomeScreenState extends State<BorrowHomeScreen> {
                     ),
                   ),
                 ),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'Simple Steps',
-                      style: GoogleFonts.raleway(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    Stack(
-                      alignment: Alignment.center,
-                      children: [
-                        Dash(
-                          length: ScreenUtil().setWidth(800),
-                          dashLength: 12,
-                          dashColor: isDarkMode ? whiteColor : blackColor,
+                Padding(
+                  padding: EdgeInsets.symmetric(
+                    horizontal: ScreenUtil().setWidth(50),
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: EdgeInsets.only(
+                          left: ScreenUtil().setWidth(50),
                         ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            buildGestureDetector(
-                              '''Register
+                        child: Text(
+                          'Simple Steps',
+                          style: GoogleFonts.raleway(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                      Stack(
+                        alignment: Alignment.center,
+                        children: [
+                          Dash(
+                            length: ScreenUtil().setWidth(800),
+                            dashLength: 12,
+                            dashColor: isDarkMode ? whiteColor : blackColor,
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              buildGestureDetector(
+                                '''Register
 For Free''',
-                            ),
-                            buildGestureDetector(
-                              """Draft 
+                              ),
+                              buildGestureDetector(
+                                """Draft 
 a Request""",
-                            ),
-                            buildGestureDetector(
-                              """Verification By
+                              ),
+                              buildGestureDetector(
+                                """Verification By
 State Agency""",
-                            ),
-                          ],
-                        )
-                      ],
-                    )
-                  ],
+                              ),
+                            ],
+                          )
+                        ],
+                      )
+                    ],
+                  ),
                 ),
               ],
             ),
