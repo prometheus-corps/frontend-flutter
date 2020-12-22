@@ -17,6 +17,7 @@ class LendHomeScreen extends StatefulWidget {
 class _LendHomeScreenState extends State<LendHomeScreen> {
   @override
   Widget build(BuildContext context) {
+    int currentIndex = 2;
     bool isDarkMode =
         MediaQuery.of(context).platformBrightness == Brightness.dark;
     ScreenUtil.init(context,
