@@ -11,29 +11,8 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
-    getRoute();
     super.initState();
-    Timer(Duration(seconds: 3), () => Navigator.pushNamed(context, routeKey));
-  }
-
-  void getRoute() async {
-    final SharedPreferences prefs = await SharedPreferences.getInstance();
-    try {
-      bool isReady = prefs.getBool('isNew');
-      if (isReady) {
-        setState(() {
-          routeKey = 'lock';
-        });
-      } else {
-        setState(() {
-          routeKey = 'createLock';
-        });
-      }
-    } catch (e) {
-      setState(() {
-        routeKey = 'createLock';
-      });
-    }
+    // Timer(Duration(seconds: 3), () => Navigator.pushNamed(context, 'routeKey'));
   }
 
   @override
