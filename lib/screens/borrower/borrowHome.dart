@@ -1,6 +1,8 @@
+import 'package:crowdgain/screens/bigText.dart';
 import 'package:crowdgain/screens/room.dart';
 import 'package:crowdgain/utilities/constants.dart';
 import 'package:device_preview/device_preview.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_dash/flutter_dash.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -198,7 +200,15 @@ Verification""",
     String name,
   ) {
     return GestureDetector(
-      onTap: () {},
+      onTap: () {
+        Navigator.push(
+          context,
+          CupertinoPageRoute(
+            builder: (context) =>
+                UserGuide(desc: null, pageName: null, iconData: null),
+          ),
+        );
+      },
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
