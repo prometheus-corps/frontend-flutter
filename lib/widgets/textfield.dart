@@ -1,6 +1,5 @@
 import 'package:crowdgain/utilities/constants.dart';
 import 'package:flutter/material.dart';
-import 'package:payup/utilities/constants.dart';
 
 class TextFormWidget extends StatelessWidget {
   const TextFormWidget({
@@ -40,7 +39,7 @@ class TextFormWidget extends StatelessWidget {
         filled: true,
         fillColor: cardColor,
         hintStyle: TextStyle(
-          color: mainTextColor,
+          color: blackColor,
         ),
         counterText: '',
       ),

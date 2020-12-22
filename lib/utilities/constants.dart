@@ -7,6 +7,9 @@ final Color blackColor = Color(0xFF000000);
 final Color fadeColor = Colors.grey;
 final Color cardInsideColor = Colors.grey[300];
 final Color blueColor = Color(0xff2B96ED);
+final Color redColor = Color(0xFFFE2C55);
+final Color greenColor = Color(0xFF80b918);
+final Color cardColor = Color(0xFFD1D2D3);
 // Material Colors
 const MaterialColor white = const MaterialColor(
   0xFFFFFFFF,
