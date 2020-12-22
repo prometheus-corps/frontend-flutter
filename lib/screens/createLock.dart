@@ -158,6 +158,7 @@ class _CreateLockScreenState extends State<CreateLockScreen> {
                           }
                         },
                         pinTheme: PinTheme(
+                          inactiveFillColor: whiteColor,
                           activeColor: whiteColor,
                           activeFillColor: whiteColor,
                           inactiveColor: whiteColor,
