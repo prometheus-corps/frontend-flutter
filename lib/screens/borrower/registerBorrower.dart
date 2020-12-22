@@ -23,16 +23,18 @@ final TextEditingController _userNameController = TextEditingController();
 final TextEditingController _phoneController = TextEditingController();
 final TextEditingController _accountController = TextEditingController();
 GlobalKey<ScaffoldState> _registerSaffoldKey = GlobalKey();
-  File _image = null;
-  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
-  final picker = ImagePicker();
+File _image = null;
+final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
+final picker = ImagePicker();
+
 class _BorrowerRegistrationScreenState
     extends State<BorrowerRegistrationScreen> {
   @override
   void initState() {
     super.initState();
   }
-_imgFromGallery() async {
+
+  _imgFromGallery() async {
     final pickedFile = await picker.getImage(
       source: ImageSource.gallery,
       imageQuality: 50,
@@ -97,6 +99,7 @@ _imgFromGallery() async {
       },
     );
   }
+
   @override
   Widget build(BuildContext context) {
     ScreenUtil.init(context,
@@ -356,6 +359,7 @@ _imgFromGallery() async {
       ),
     );
   }
+
   void _showPicker(context) {
     showModalBottomSheet(
         context: context,
@@ -384,4 +388,5 @@ _imgFromGallery() async {
             ),
           );
         });
+  }
 }
