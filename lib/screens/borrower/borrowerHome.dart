@@ -208,16 +208,7 @@ class _UserHomeState extends State<UserHome> {
                                                   _controllerTop =
                                                       TextEditingController(
                                                           text: value);
-                                                  setState(() {
-                                                    topCount =
-                                                        double.tryParse(value);
-                                                    getRates(
-                                                        items[indexTopCount],
-                                                        items[
-                                                            indexBottomCount]);
-                                                    _selectedLocationBottom =
-                                                        value;
-                                                  });
+                                                  setState(() {});
                                                 },
                                                 controller: _controllerTop,
                                                 keyboardType:
