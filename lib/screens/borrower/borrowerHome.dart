@@ -1086,16 +1086,16 @@ Topup''',
                                                   size: 30,
                                                 ),
                                                 onPressed: () {
-                                                  Navigator.of(context).push(
-                                                    SlideRightRoute(
-                                                      page: UserGuide(
-                                                        iconData: Icons
-                                                            .comment_bank_rounded,
-                                                        desc: desc[2],
-                                                        pageName: title[2],
-                                                      ),
-                                                    ),
-                                                  );
+                                                  // Navigator.of(context).push(
+                                                  //   SlideRightRoute(
+                                                  //     page: UserGuide(
+                                                  //       iconData: Icons
+                                                  //           .comment_bank_rounded,
+                                                  //       desc: desc[2],
+                                                  //       pageName: title[2],
+                                                  //     ),
+                                                  //   ),
+                                                  // );
                                                 },
                                                 increaseHeightBy: 25,
                                                 increaseWidthBy: 25,
