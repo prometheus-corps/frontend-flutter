@@ -1,3 +1,4 @@
+import 'package:crowdgain/screens/borrower/borrowHome.dart';
 import 'package:flutter/material.dart';
 
 class VerificationScreen extends StatefulWidget {
@@ -18,7 +19,7 @@ class _VerificationScreenState extends State<VerificationScreen> {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => RoomScreen(),
+            builder: (context) => BorrowHomeScreen(),
           ),
         );
         return Future.value(false);
