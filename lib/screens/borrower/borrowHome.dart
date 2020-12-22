@@ -123,7 +123,11 @@ class _BorrowHomeScreenState extends State<BorrowHomeScreen> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(8.0),
+                      padding: EdgeInsets.symmetric(
+                        horizontal: ScreenUtil().setWidth(
+                          50,
+                        ),
+                      ),
                       child: Stack(
                         alignment: Alignment.center,
                         children: [
