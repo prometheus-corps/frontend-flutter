@@ -219,7 +219,7 @@ class _BorrowerRegistrationScreenState
                                                   ),
                                                 )
                                               : Text(
-                                                  'Register',
+                                                  'Upload Id Proof',
                                                   style: GoogleFonts.openSans(
                                                     fontSize:
                                                         ScreenUtil().setSp(48),
