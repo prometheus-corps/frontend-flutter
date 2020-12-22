@@ -37,7 +37,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 ),
               ),
               Text(
-                'PayUp',
+                'CrowdPay',
                 style: TextStyle(
                   fontFamily: 'Bambino',
                   fontSize: 35,
