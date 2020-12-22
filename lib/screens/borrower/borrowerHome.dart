@@ -547,16 +547,16 @@ Topup''',
                                                   size: 30,
                                                 ),
                                                 callback: () {
-                                                  Navigator.of(context).push(
-                                                    SlideRightRoute(
-                                                      page: UserGuide(
-                                                        iconData: Icons
-                                                            .comment_bank_rounded,
-                                                        desc: desc[2],
-                                                        pageName: title[2],
-                                                      ),
-                                                    ),
-                                                  );
+                                                  // Navigator.of(context).push(
+                                                  //   SlideRightRoute(
+                                                  //     page: UserGuide(
+                                                  //       iconData: Icons
+                                                  //           .comment_bank_rounded,
+                                                  //       desc: desc[2],
+                                                  //       pageName: title[2],
+                                                  //     ),
+                                                  //   ),
+                                                  // );
                                                 },
                                                 increaseHeightBy: 25,
                                                 increaseWidthBy: 25,
@@ -606,16 +606,16 @@ Details''',
                                       children: [
                                         GestureDetector(
                                           onTap: () {
-                                            Navigator.of(context).push(
-                                              SlideRightRoute(
-                                                page: UserGuide(
-                                                  iconData: Icons
-                                                      .add_business_rounded,
-                                                  desc: desc[3],
-                                                  pageName: title[3],
-                                                ),
-                                              ),
-                                            );
+                                            // Navigator.of(context).push(
+                                            //   SlideRightRoute(
+                                            //     page: UserGuide(
+                                            //       iconData: Icons
+                                            //           .add_business_rounded,
+                                            //       desc: desc[3],
+                                            //       pageName: title[3],
+                                            //     ),
+                                            //   ),
+                                            // );
                                           },
                                           child: Column(
                                             mainAxisAlignment:
