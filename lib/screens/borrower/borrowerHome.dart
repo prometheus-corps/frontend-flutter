@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:crowdgain/utilities/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_dash/flutter_dash.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:http/http.dart' as http;
 
@@ -135,7 +136,7 @@ class _UserHomeState extends State<UserHome> {
                                     direction: Axis.vertical,
                                     length: height * 0.15,
                                     dashLength: 15,
-                                    dashColor: mainBgColor,
+                                    dashColor: whiteColor,
                                   ),
                                   Column(
                                     mainAxisAlignment: MainAxisAlignment.center,
@@ -146,7 +147,7 @@ class _UserHomeState extends State<UserHome> {
                                         margin: EdgeInsets.all(0),
                                         decoration: BoxDecoration(
                                             border: Border.all(
-                                              color: mainBgColor,
+                                              color: whiteColor,
                                             ),
                                             borderRadius: BorderRadius.all(
                                                 Radius.circular(5))),
@@ -187,22 +188,12 @@ class _UserHomeState extends State<UserHome> {
                                                                   FontWeight
                                                                       .w600,
                                                               color:
-                                                                  mainBgColor),
+                                                                  whiteColor),
                                                         ),
                                                       );
                                                     }).toList(),
                                                     onChanged: (value) {
-                                                      setState(() {
-                                                        indexTopCount = items
-                                                            .indexOf(value);
-                                                        getRates(
-                                                            items[
-                                                                indexTopCount],
-                                                            items[
-                                                                indexBottomCount]);
-                                                        _selectedLocationTop =
-                                                            value;
-                                                      });
+                                                      setState(() {});
                                                     },
                                                   ),
                                                 ),
