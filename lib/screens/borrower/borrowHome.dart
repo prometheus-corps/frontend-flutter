@@ -32,7 +32,7 @@ class _BorrowHomeScreenState extends State<BorrowHomeScreen> {
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
           accentColor: blueColor,
-          primarySwatch: blueColor,
+          primarySwatch: blue,
           canvasColor: Color(0xFFEFEFF4),
           iconTheme: IconThemeData(color: blackColor),
           primaryTextTheme: Typography.material2018().black,
@@ -89,17 +89,21 @@ class _BorrowHomeScreenState extends State<BorrowHomeScreen> {
                 Padding(
                   padding: EdgeInsets.symmetric(
                     vertical: ScreenUtil().setHeight(45),
+                    horizontal: ScreenUtil().setWidth(50),
                   ),
                   child: FlatButton(
+                    color: blue,
                     onPressed: () {
                       // Navigator.pushNamed(context, 'loginuser');
                     },
                     minWidth: ScreenUtil().screenWidth,
+                    height: ScreenUtil().setHeight(150),
                     child: Text(
                       'Get Started',
                       style: GoogleFonts.raleway(
                         fontSize: ScreenUtil().setSp(50),
                         fontWeight: FontWeight.w700,
+                        color: whiteColor,
                       ),
                     ),
                   ),
