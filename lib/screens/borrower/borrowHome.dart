@@ -173,7 +173,7 @@ State Agency""",
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           SizedBox(
-            height: ScreenUtil().setHeight(20),
+            height: ScreenUtil().setHeight(50),
           ),
           RaisedButton(
             shape: CircleBorder(
