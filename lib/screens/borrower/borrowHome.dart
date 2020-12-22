@@ -155,130 +155,27 @@ class CircularButtonKey extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.only(top: 15),
-      child: Align(
-        alignment: Alignment.bottomCenter,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      child: GestureDetector(
+        onTap: () {},
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            GestureDetector(
-              onTap: () {},
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  RaisedButton(
-                    shape: CircleBorder(),
-                    child: Icon(
-                      Icons.app_registration,
-                      color: whiteColor,
-                      size: 30,
-                    ),
-                    onPressed: () {},
-                  ),
-                  Text(
-                    '''Register
+            RaisedButton(
+              shape: CircleBorder(),
+              child: Icon(
+                Icons.app_registration,
+                color: whiteColor,
+                size: 30,
+              ),
+              onPressed: () {},
+            ),
+            Text(
+              '''Register
 For Free''',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w600,
-                        color: whiteColor),
-                  )
-                ],
-              ),
-            ),
-            GestureDetector(
-              onTap: () {
-                // Navigator.of(context).push(
-                //   SlideRightRoute(
-                //     page: UserGuide(
-                //       iconData: Icons
-                //           .wallet_membership_rounded,
-                //       desc: desc[1],
-                //       pageName: title[1],
-                //     ),
-                //   ),
-                // );
-              },
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  RaisedButton(
-                    shape: CircleBorder(),
-                    child: Icon(
-                      Icons.wallet_membership_rounded,
-                      size: 30,
-                    ),
-                    onPressed: () {
-                      // Navigator.of(context).push(
-                      //   SlideRightRoute(
-                      //     page: UserGuide(
-                      //       iconData: Icons
-                      //           .wallet_membership_rounded,
-                      //       desc: desc[1],
-                      //       pageName: title[1],
-                      //     ),
-                      //   ),
-                      // );
-                    },
-                  ),
-                  Text(
-                    '''Wallet
-Topup''',
-                    style: TextStyle(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w600,
-                        color: whiteColor),
-                  )
-                ],
-              ),
-            ),
-            GestureDetector(
-              onTap: () {
-                // Navigator.of(context).push(
-                //   SlideRightRoute(
-                //     page: UserGuide(
-                //       iconData:
-                //           Icons.comment_bank_rounded,
-                //       desc: desc[2],
-                //       pageName: title[2],
-                //     ),
-                //   ),
-                // );
-              },
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  RaisedButton(
-                    shape: CircleBorder(),
-                    child: Icon(
-                      Icons.comment_bank_rounded,
-                      size: 30,
-                    ),
-                    onPressed: () {
-                      // Navigator.of(context).push(
-                      //   SlideRightRoute(
-                      //     page: UserGuide(
-                      //       iconData: Icons
-                      //           .comment_bank_rounded,
-                      //       desc: desc[2],
-                      //       pageName: title[2],
-                      //     ),
-                      //   ),
-                      // );
-                    },
-                  ),
-                  Text(
-                    '''Transfer
-Details''',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w600,
-                        color: whiteColor),
-                  )
-                ],
-              ),
-            ),
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                  fontSize: 12, fontWeight: FontWeight.w600, color: whiteColor),
+            )
           ],
         ),
       ),
