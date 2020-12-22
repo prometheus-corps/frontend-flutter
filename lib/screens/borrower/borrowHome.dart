@@ -81,7 +81,7 @@ class _BorrowHomeScreenState extends State<BorrowHomeScreen> {
                 ),
                 BottomNavigationBarItem(
                   icon: Icon(
-                    FontAwesomeIcons.search,
+                    FontAwesomeIcons.wallet,
                     size: ScreenUtil().setSp(45),
                   ),
                   label: 'Due',
