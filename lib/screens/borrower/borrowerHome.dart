@@ -284,9 +284,9 @@ class _UserHomeState extends State<UserHome> {
                                                     DropdownButtonHideUnderline(
                                                   child: DropdownButton<String>(
                                                     style: TextStyle(
-                                                        color: mainBgColor,
+                                                        color: whiteColor,
                                                         decorationColor:
-                                                            mainBgColor),
+                                                            whiteColor),
                                                     value:
                                                         _selectedLocationBottom,
                                                     items: items
@@ -302,7 +302,7 @@ class _UserHomeState extends State<UserHome> {
                                                                   FontWeight
                                                                       .w600,
                                                               color:
-                                                                  mainBgColor),
+                                                                  whiteColor),
                                                         ),
                                                       );
                                                     }).toList(),
@@ -347,7 +347,7 @@ class _UserHomeState extends State<UserHome> {
                                                     TextInputType.number,
                                                 textAlign: TextAlign.center,
                                                 style: GoogleFonts.raleway(
-                                                  color: mainBgColor,
+                                                  color: whiteColor,
                                                   fontSize: height * 0.03,
                                                   fontWeight: FontWeight.w600,
                                                 ),
@@ -411,7 +411,7 @@ class _UserHomeState extends State<UserHome> {
                             child: Text(
                               'Use The Steps',
                               style: GoogleFonts.raleway(
-                                color: mainBgColor,
+                                color: whiteColor,
                                 fontSize: 18,
                                 fontWeight: FontWeight.bold,
                               ),
@@ -426,7 +426,7 @@ class _UserHomeState extends State<UserHome> {
                                   direction: Axis.horizontal,
                                   length: width * 0.7,
                                   dashLength: 12,
-                                  dashColor: mainBgColor,
+                                  dashColor: whiteColor,
                                 ),
                               ),
                               Padding(
@@ -458,7 +458,7 @@ class _UserHomeState extends State<UserHome> {
                                               shape: CircleBorder(),
                                               child: Icon(
                                                 Icons.app_registration,
-                                                color: mainBgColor,
+                                                color: whiteColor,
                                                 size: 30,
                                               ),
                                               callback: () {
@@ -484,7 +484,7 @@ For Free''',
                                               style: TextStyle(
                                                   fontSize: 12,
                                                   fontWeight: FontWeight.w600,
-                                                  color: mainBgColor),
+                                                  color: whiteColor),
                                             )
                                           ],
                                         ),
@@ -534,7 +534,7 @@ Topup''',
                                               style: TextStyle(
                                                   fontSize: 12,
                                                   fontWeight: FontWeight.w600,
-                                                  color: mainBgColor),
+                                                  color: whiteColor),
                                             )
                                           ],
                                         ),
@@ -584,7 +584,7 @@ Details''',
                                               style: TextStyle(
                                                   fontSize: 12,
                                                   fontWeight: FontWeight.w600,
-                                                  color: mainBgColor),
+                                                  color: whiteColor),
                                             )
                                           ],
                                         ),
@@ -608,7 +608,7 @@ Details''',
                                       direction: Axis.horizontal,
                                       length: width * 0.7,
                                       dashLength: 12,
-                                      dashColor: mainBgColor,
+                                      dashColor: whiteColor,
                                     ),
                                   ),
                                 ),
@@ -641,7 +641,7 @@ Details''',
                                                 shape: CircleBorder(),
                                                 child: Icon(
                                                   Icons.add_business_rounded,
-                                                  color: mainBgColor,
+                                                  color: whiteColor,
                                                   size: 30,
                                                 ),
                                                 callback: () {
@@ -667,7 +667,7 @@ Bank Details''',
                                                 style: TextStyle(
                                                     fontSize: 12,
                                                     fontWeight: FontWeight.w600,
-                                                    color: mainBgColor),
+                                                    color: whiteColor),
                                               )
                                             ],
                                           ),
@@ -716,7 +716,7 @@ Bank Details''',
                                                 style: TextStyle(
                                                     fontSize: 12,
                                                     fontWeight: FontWeight.w600,
-                                                    color: mainBgColor),
+                                                    color: whiteColor),
                                               )
                                             ],
                                           ),
@@ -765,7 +765,7 @@ Bank Details''',
                                                 style: TextStyle(
                                                     fontSize: 12,
                                                     fontWeight: FontWeight.w600,
-                                                    color: mainBgColor),
+                                                    color: whiteColor),
                                               )
                                             ],
                                           ),
@@ -809,13 +809,13 @@ Bank Details''',
                             size: 32.0,
                           ),
                         ),
-                        backgroundColor: mainBgColor,
+                        backgroundColor: whiteColor,
                       ),
                       floatingActionButtonLocation:
                           FloatingActionButtonLocation.centerDocked,
                       bottomNavigationBar: FloatingNavbar(
-                        backgroundColor: mainBgColor,
-                        selectedBackgroundColor: mainBgColor,
+                        backgroundColor: whiteColor,
+                        selectedBackgroundColor: whiteColor,
                         selectedItemColor: blueColor,
                         unselectedItemColor: Colors.grey[600],
                         items: [
@@ -888,7 +888,7 @@ Bank Details''',
                     size: 32.0,
                   ),
                 ),
-                backgroundColor: mainBgColor,
+                backgroundColor: whiteColor,
               ),
             ),
             backgroundColor: splashBgColor,
@@ -910,7 +910,7 @@ Bank Details''',
                     child: Text(
                       'Home',
                       style: GoogleFonts.roboto(
-                        color: mainBgColor,
+                        color: whiteColor,
                         fontSize: 42,
                         fontWeight: FontWeight.bold,
                       ),
@@ -923,8 +923,7 @@ Bank Details''',
                       padding: EdgeInsets.symmetric(vertical: height * 0.18),
                       child: Center(
                         child: CircularProgressIndicator(
-                          valueColor:
-                              AlwaysStoppedAnimation<Color>(mainBgColor),
+                          valueColor: AlwaysStoppedAnimation<Color>(whiteColor),
                         ),
                       ),
                     ),
@@ -963,7 +962,7 @@ Bank Details''',
                             child: Text(
                               'Use The Steps',
                               style: GoogleFonts.raleway(
-                                color: mainBgColor,
+                                color: whiteColor,
                                 fontSize: 18,
                                 fontWeight: FontWeight.bold,
                               ),
@@ -978,7 +977,7 @@ Bank Details''',
                                   direction: Axis.horizontal,
                                   length: width * 0.7,
                                   dashLength: 12,
-                                  dashColor: mainBgColor,
+                                  dashColor: whiteColor,
                                 ),
                               ),
                               Padding(
@@ -1010,7 +1009,7 @@ Bank Details''',
                                               shape: CircleBorder(),
                                               child: Icon(
                                                 Icons.app_registration,
-                                                color: mainBgColor,
+                                                color: whiteColor,
                                                 size: 30,
                                               ),
                                               callback: () {
@@ -1036,7 +1035,7 @@ For Free''',
                                               style: TextStyle(
                                                   fontSize: 12,
                                                   fontWeight: FontWeight.w600,
-                                                  color: mainBgColor),
+                                                  color: whiteColor),
                                             )
                                           ],
                                         ),
@@ -1086,7 +1085,7 @@ Topup''',
                                               style: TextStyle(
                                                   fontSize: 12,
                                                   fontWeight: FontWeight.w600,
-                                                  color: mainBgColor),
+                                                  color: whiteColor),
                                             )
                                           ],
                                         ),
@@ -1136,7 +1135,7 @@ Details''',
                                               style: TextStyle(
                                                   fontSize: 12,
                                                   fontWeight: FontWeight.w600,
-                                                  color: mainBgColor),
+                                                  color: whiteColor),
                                             )
                                           ],
                                         ),
@@ -1160,7 +1159,7 @@ Details''',
                                       direction: Axis.horizontal,
                                       length: width * 0.7,
                                       dashLength: 12,
-                                      dashColor: mainBgColor,
+                                      dashColor: whiteColor,
                                     ),
                                   ),
                                 ),
@@ -1193,7 +1192,7 @@ Details''',
                                                 shape: CircleBorder(),
                                                 child: Icon(
                                                   Icons.add_business_rounded,
-                                                  color: mainBgColor,
+                                                  color: whiteColor,
                                                   size: 30,
                                                 ),
                                                 callback: () {
@@ -1219,7 +1218,7 @@ Bank Details''',
                                                 style: TextStyle(
                                                     fontSize: 12,
                                                     fontWeight: FontWeight.w600,
-                                                    color: mainBgColor),
+                                                    color: whiteColor),
                                               )
                                             ],
                                           ),
@@ -1268,7 +1267,7 @@ Bank Details''',
                                                 style: TextStyle(
                                                     fontSize: 12,
                                                     fontWeight: FontWeight.w600,
-                                                    color: mainBgColor),
+                                                    color: whiteColor),
                                               )
                                             ],
                                           ),
@@ -1317,7 +1316,7 @@ Bank Details''',
                                                 style: TextStyle(
                                                     fontSize: 12,
                                                     fontWeight: FontWeight.w600,
-                                                    color: mainBgColor),
+                                                    color: whiteColor),
                                               )
                                             ],
                                           ),
@@ -1361,13 +1360,13 @@ Bank Details''',
                             size: 32.0,
                           ),
                         ),
-                        backgroundColor: mainBgColor,
+                        backgroundColor: whiteColor,
                       ),
                       floatingActionButtonLocation:
                           FloatingActionButtonLocation.centerDocked,
                       bottomNavigationBar: FloatingNavbar(
-                        backgroundColor: mainBgColor,
-                        selectedBackgroundColor: mainBgColor,
+                        backgroundColor: whiteColor,
+                        selectedBackgroundColor: whiteColor,
                         selectedItemColor: blueColor,
                         unselectedItemColor: Colors.grey[600],
                         items: [
