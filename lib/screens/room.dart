@@ -67,7 +67,7 @@ class _RoomScreenState extends State<RoomScreen> {
                       padding: EdgeInsets.all(0.0),
                       child: Center(
                         child: Text(
-                          '''Create or Join to Continue''',
+                          '''Making your money work for you''',
                           textAlign: TextAlign.center,
                           style: GoogleFonts.raleway(
                             fontSize: ScreenUtil().setSp(50),
