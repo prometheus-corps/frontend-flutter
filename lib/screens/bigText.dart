@@ -1,1 +1,114 @@
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_dash/flutter_dash.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:remito_demo/utilities/constants.dart';
 
+class UserGuide extends StatefulWidget {
+  UserGuide(
+      {@required this.desc, @required this.pageName, @required this.iconData});
+  final String pageName;
+  final String desc;
+  final IconData iconData;
+
+  @override
+  _UserGuideState createState() => _UserGuideState();
+}
+
+class _UserGuideState extends State<UserGuide> {
+  @override
+  Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+    final double height = MediaQuery.of(context).size.height;
+    return SafeArea(
+      child: Scaffold(
+        backgroundColor: blueColor,
+        body: Stack(
+          children: [
+            Align(
+              alignment: Alignment.centerLeft,
+              child: Padding(
+                padding: const EdgeInsets.only(left: 40, top: 50),
+                child: Dash(
+                  direction: Axis.vertical,
+                  length: height * 0.5,
+                  dashLength: 12,
+                  dashColor: mainBgColor,
+                ),
+              ),
+            ),
+            Scaffold(
+              backgroundColor: Colors.transparent,
+              floatingActionButtonLocation:
+                  FloatingActionButtonLocation.startTop,
+              floatingActionButton: Padding(
+                padding: const EdgeInsets.only(top: 25, right: 25.0),
+                child: FloatingActionButton(
+                  heroTag: "btn1",
+                  elevation: 8,
+                  onPressed: () {},
+                  child: ShaderMask(
+                    shaderCallback: (Rect bounds) {
+                      return RadialGradient(
+                        center: Alignment.center,
+                        radius: 0.5,
+                        colors: <Color>[
+                          blueColor,
+                          blueColor,
+                        ],
+                        tileMode: TileMode.repeated,
+                      ).createShader(bounds);
+                    },
+                    child: Icon(
+                      widget.iconData,
+                      size: 32.0,
+                    ),
+                  ),
+                  backgroundColor: mainBgColor,
+                ),
+              ),
+            ),
+            Column(
+              children: [
+                Align(
+                  alignment: Alignment.topLeft,
+                  child: Padding(
+                    padding: EdgeInsets.only(
+                      left: 65,
+                      top: height * 0.13,
+                    ),
+                    child: Text(
+                      widget.pageName,
+                      style: GoogleFonts.roboto(
+                        color: mainBgColor,
+                        fontSize: 36,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ),
+                Align(
+                  alignment: Alignment.topLeft,
+                  child: Padding(
+                    padding: EdgeInsets.only(
+                      left: 65,
+                      top: 25,
+                    ),
+                    child: Text(
+                      widget.desc,
+                      style: GoogleFonts.raleway(
+                        color: mainBgColor,
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                )
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
