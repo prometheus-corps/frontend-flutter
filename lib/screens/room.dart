@@ -105,7 +105,7 @@ class _RoomScreenState extends State<RoomScreen> {
                               style: TextStyle(
                                 fontFamily: 'Bambino',
                                 fontSize: ScreenUtil().setSp(48),
-                                color: darkFadeTextColor,
+                                color: blackColor,
                                 fontWeight: FontWeight.w200,
                               ),
                             ),
