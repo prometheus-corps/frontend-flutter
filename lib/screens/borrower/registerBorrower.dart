@@ -164,6 +164,19 @@ class _BorrowerRegistrationScreenState
                                                   ScreenUtil().setHeight(24),
                                             ),
                                             child: TextFormWidget(
+                                              hint: 'Phone Number',
+                                              firstNameController:
+                                                  _phoneController,
+                                              type: TextInputType.phone,
+                                              obscure: false,
+                                            ),
+                                          ),
+                                          Padding(
+                                            padding: EdgeInsets.symmetric(
+                                              vertical:
+                                                  ScreenUtil().setHeight(24),
+                                            ),
+                                            child: TextFormWidget(
                                               hint: 'Password',
                                               firstNameController:
                                                   _passwordController,
