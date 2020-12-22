@@ -55,6 +55,10 @@ class _BorrowHomeScreenState extends State<BorrowHomeScreen> {
                     vertical: ScreenUtil().setHeight(60),
                     horizontal: ScreenUtil().setWidth(50),
                   ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [],
+                  ),
                 )
               ],
             ),
