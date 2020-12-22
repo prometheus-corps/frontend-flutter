@@ -78,63 +78,29 @@ class _CreateLockScreenState extends State<CreateLockScreen> {
             backgroundColor: splashBgColor,
             body: Column(
               children: [
-                Align(
-                  alignment: Alignment.topCenter,
-                  child: Padding(
-                    padding: const EdgeInsets.only(top: 50, bottom: 0),
-                    child: Stack(
-                      children: [
-                        Align(
-                          alignment: Alignment.topCenter,
-                          child: Column(
-                            children: [
-                              Text(
-                                'Create Password',
-                                style: GoogleFonts.raleway(
-                                  fontSize: 28,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                              Text(
-                                'Create a 4-digit code',
-                                style: GoogleFonts.raleway(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                        Align(
-                          alignment: Alignment.topLeft,
-                          child: Padding(
-                            padding: const EdgeInsets.only(left: 25),
-                            child: GestureDetector(
-                              onTap: () {
-                                Navigator.pop(context);
-                              },
-                              child: ShaderMask(
-                                shaderCallback: (Rect bounds) {
-                                  return RadialGradient(
-                                    center: Alignment.center,
-                                    radius: 0.5,
-                                    colors: <Color>[
-                                      blueColor,
-                                      blueColor,
-                                    ],
-                                    tileMode: TileMode.repeated,
-                                  ).createShader(bounds);
-                                },
-                                child: Icon(
-                                  Icons.arrow_back_ios_rounded,
-                                  size: 32.0,
-                                ),
-                              ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 50, bottom: 0),
+                  child: Stack(
+                    children: [
+                      Column(
+                        children: [
+                          Text(
+                            'Create Password',
+                            style: GoogleFonts.raleway(
+                              fontSize: 28,
+                              fontWeight: FontWeight.bold,
                             ),
                           ),
-                        ),
-                      ],
-                    ),
+                          Text(
+                            'Create a 4-digit code',
+                            style: GoogleFonts.raleway(
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
                   ),
                 ),
                 Form(
