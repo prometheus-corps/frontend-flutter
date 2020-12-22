@@ -227,7 +227,7 @@ State Agency""",
             name,
             textAlign: TextAlign.center,
             style: TextStyle(
-              fontSize: 12,
+              fontSize: ScreenUtil().setSp(35),
               fontWeight: FontWeight.w600,
             ),
           )
