@@ -32,7 +32,7 @@ class _UserGuideState extends State<UserGuide> {
               child: Padding(
                 padding: EdgeInsets.only(
                   left: ScreenUtil().setWidth(110),
-                  top: ScreenUtil().setWidth(110),
+                  top: ScreenUtil().setHeight(100),
                 ),
                 child: Dash(
                   direction: Axis.vertical,
