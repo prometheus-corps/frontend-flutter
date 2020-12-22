@@ -33,7 +33,7 @@ class _UserGuideState extends State<UserGuide> {
                 padding: const EdgeInsets.only(left: 40, top: 50),
                 child: Dash(
                   direction: Axis.vertical,
-                  length: ScreenUtil().setHeight(700),
+                  length: ScreenUtil().setHeight(1600),
                   dashLength: 12,
                   dashColor: whiteColor,
                 ),
