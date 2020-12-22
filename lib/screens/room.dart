@@ -45,7 +45,7 @@ class _RoomScreenState extends State<RoomScreen> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Image.asset(
-                  'images/car_3.gif',
+                  'images/room.png',
                   fit: BoxFit.fitWidth,
                 ),
                 Column(
