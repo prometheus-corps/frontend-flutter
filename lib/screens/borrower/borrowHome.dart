@@ -49,7 +49,14 @@ class _BorrowHomeScreenState extends State<BorrowHomeScreen> {
             extendBodyBehindAppBar: true,
             body: Column(
               mainAxisAlignment: MainAxisAlignment.start,
-              children: [],
+              children: [
+                Padding(
+                  padding: EdgeInsets.symmetric(
+                    vertical: ScreenUtil().setHeight(60),
+                    horizontal: ScreenUtil().setWidth(50),
+                  ),
+                )
+              ],
             ),
           ),
         ),
