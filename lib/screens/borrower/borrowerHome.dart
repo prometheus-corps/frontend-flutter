@@ -728,9 +728,7 @@ Bank Details''',
                                                     //   ),
                                                     // );
                                                   },
-                                                  increaseHeightBy: 25,
-                                                  increaseWidthBy: 25,
-                                                  gradient: gradientBtn),
+                                                  ),
                                               Text(
                                                 '''Done''',
                                                 textAlign: TextAlign.center,
@@ -1254,20 +1252,18 @@ Bank Details''',
                                                     size: 30,
                                                   ),
                                                   onPressed: () {
-                                                    Navigator.of(context).push(
-                                                      SlideRightRoute(
-                                                        page: UserGuide(
-                                                          iconData: Icons
-                                                              .done_outline_rounded,
-                                                          desc: desc[5],
-                                                          pageName: title[5],
-                                                        ),
-                                                      ),
-                                                    );
+                                                    // Navigator.of(context).push(
+                                                    //   SlideRightRoute(
+                                                    //     page: UserGuide(
+                                                    //       iconData: Icons
+                                                    //           .done_outline_rounded,
+                                                    //       desc: desc[5],
+                                                    //       pageName: title[5],
+                                                    //     ),
+                                                    //   ),
+                                                    // );
                                                   },
-                                                  increaseHeightBy: 25,
-                                                  increaseWidthBy: 25,
-                                                  gradient: gradientBtn),
+                                                  ),
                                               Text(
                                                 '''Done''',
                                                 textAlign: TextAlign.center,
@@ -1291,69 +1287,69 @@ Bank Details''',
                     )
                   ],
                 ),
-                Align(
-                  alignment: Alignment.bottomCenter,
-                  child: Container(
-                    padding: EdgeInsets.only(top: height * 0.8),
-                    child: Scaffold(
-                      backgroundColor: Colors.transparent,
-                      floatingActionButton: FloatingActionButton(
-                        heroTag: "btn2",
-                        elevation: 8,
-                        onPressed: () {},
-                        child: ShaderMask(
-                          shaderonPressed: (Rect bounds) {
-                            return RadialGradient(
-                              center: Alignment.center,
-                              radius: 0.5,
-                              colors: <Color>[
-                                blueColor,
-                                blueColor,
-                              ],
-                              tileMode: TileMode.repeated,
-                            ).createShader(bounds);
-                          },
-                          child: Icon(
-                            Icons.home_rounded,
-                            size: 32.0,
-                          ),
-                        ),
-                        backgroundColor: whiteColor,
-                      ),
-                      floatingActionButtonLocation:
-                          FloatingActionButtonLocation.centerDocked,
-                      bottomNavigationBar: FloatingNavbar(
-                        backgroundColor: whiteColor,
-                        selectedBackgroundColor: whiteColor,
-                        selectedItemColor: blueColor,
-                        unselectedItemColor: Colors.grey[600],
-                        items: [
-                          FloatingNavbarItem(
-                            icon: Icons.transfer_within_a_station_rounded,
-                            title: 'Transfer',
-                          ),
-                          FloatingNavbarItem(
-                              icon: Icons.people_outline_rounded,
-                              title: 'Send'),
-                          FloatingNavbarItem(icon: null, title: 'Home'),
-                          FloatingNavbarItem(
-                              icon: Icons.money, title: 'Rewards'),
-                          FloatingNavbarItem(
-                              icon: Icons.settings_rounded, title: 'Settings')
-                        ],
-                        currentIndex: currentIndex,
-                        onTap: (value) {
-                          changePage(value);
-                          if (value == 0) {
-                          } else if (value == 1) {
-                          } else if (value == 2) {
-                          } else if (value == 3) {
-                          } else if (value == 4) {}
-                        },
-                      ),
-                    ),
-                  ),
-                ),
+                // Align(
+                //   alignment: Alignment.bottomCenter,
+                //   child: Container(
+                //     padding: EdgeInsets.only(top: height * 0.8),
+                //     child: Scaffold(
+                //       backgroundColor: Colors.transparent,
+                //       floatingActionButton: FloatingActionButton(
+                //         heroTag: "btn2",
+                //         elevation: 8,
+                //         onPressed: () {},
+                //         child: ShaderMask(
+                //           shaderonPressed: (Rect bounds) {
+                //             return RadialGradient(
+                //               center: Alignment.center,
+                //               radius: 0.5,
+                //               colors: <Color>[
+                //                 blueColor,
+                //                 blueColor,
+                //               ],
+                //               tileMode: TileMode.repeated,
+                //             ).createShader(bounds);
+                //           },
+                //           child: Icon(
+                //             Icons.home_rounded,
+                //             size: 32.0,
+                //           ),
+                //         ),
+                //         backgroundColor: whiteColor,
+                //       ),
+                //       floatingActionButtonLocation:
+                //           FloatingActionButtonLocation.centerDocked,
+                //       bottomNavigationBar: FloatingNavbar(
+                //         backgroundColor: whiteColor,
+                //         selectedBackgroundColor: whiteColor,
+                //         selectedItemColor: blueColor,
+                //         unselectedItemColor: Colors.grey[600],
+                //         items: [
+                //           FloatingNavbarItem(
+                //             icon: Icons.transfer_within_a_station_rounded,
+                //             title: 'Transfer',
+                //           ),
+                //           FloatingNavbarItem(
+                //               icon: Icons.people_outline_rounded,
+                //               title: 'Send'),
+                //           FloatingNavbarItem(icon: null, title: 'Home'),
+                //           FloatingNavbarItem(
+                //               icon: Icons.money, title: 'Rewards'),
+                //           FloatingNavbarItem(
+                //               icon: Icons.settings_rounded, title: 'Settings')
+                //         ],
+                //         currentIndex: currentIndex,
+                //         onTap: (value) {
+                //           changePage(value);
+                //           if (value == 0) {
+                //           } else if (value == 1) {
+                //           } else if (value == 2) {
+                //           } else if (value == 3) {
+                //           } else if (value == 4) {}
+                //         },
+                //       ),
+                //     ),
+                //   ),
+                // ),
               ],
             ),
           ),
