@@ -144,12 +144,12 @@ class _BorrowHomeScreenState extends State<BorrowHomeScreen> {
 For Free''',
                               ),
                               buildGestureDetector(
-                                """Draft 
-a Request""",
+                                """Draft a
+Request""",
                               ),
                               buildGestureDetector(
-                                """Verification By
-State Agency""",
+                                """Membership
+Verification""",
                               ),
                             ],
                           )
@@ -171,8 +171,8 @@ State Agency""",
 For Free''',
                               ),
                               buildGestureDetector(
-                                """Draft 
-a Request""",
+                                """Draft a
+Request""",
                               ),
                               buildGestureDetector(
                                 """Membership
@@ -193,7 +193,9 @@ Verification""",
     );
   }
 
-  GestureDetector buildGestureDetector(String name) {
+  GestureDetector buildGestureDetector(
+    String name,
+  ) {
     return GestureDetector(
       onTap: () {},
       child: Column(
