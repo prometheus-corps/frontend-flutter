@@ -50,7 +50,6 @@ class _UserHomeState extends State<UserHome> {
             key: _scaffoldKeyHome,
             resizeToAvoidBottomInset: false,
             resizeToAvoidBottomPadding: false,
-            drawer: AppDrawerHome(imageKey: null),
             floatingActionButtonLocation: FloatingActionButtonLocation.endTop,
             floatingActionButton: Padding(
               padding: const EdgeInsets.only(top: 25, right: 25.0),
