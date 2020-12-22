@@ -83,19 +83,6 @@ class _BorrowerRegistrationScreenState
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsets.all(8.0),
-                                child: Center(
-                                  child: Text(
-                                    '''Car Pool with friends. It's always fun!!!''',
-                                    textAlign: TextAlign.center,
-                                    style: GoogleFonts.raleway(
-                                      fontSize: ScreenUtil().setSp(40),
-                                      fontWeight: FontWeight.w400,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Padding(
                                 padding: EdgeInsets.symmetric(
                                   horizontal: ScreenUtil().setWidth(75),
                                 ),
