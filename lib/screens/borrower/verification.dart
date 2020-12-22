@@ -112,7 +112,7 @@ class _VerificationScreenState extends State<VerificationScreen> {
                                               CrossAxisAlignment.start,
                                           children: [
                                             Text(
-                                              'ACCOUNT INFORMATION',
+                                              'MEMBERSHIP VERIFICATION',
                                               style: GoogleFonts.openSans(
                                                 fontWeight: FontWeight.w600,
                                                 fontSize:
