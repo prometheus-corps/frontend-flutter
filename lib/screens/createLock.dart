@@ -67,7 +67,6 @@ class _CreateLockScreenState extends State<CreateLockScreen> {
                                 style: GoogleFonts.raleway(
                                   fontSize: 28,
                                   fontWeight: FontWeight.bold,
-                                  color: mainTextColor,
                                 ),
                               ),
                               Text(
@@ -75,7 +74,6 @@ class _CreateLockScreenState extends State<CreateLockScreen> {
                                 style: GoogleFonts.raleway(
                                   fontSize: 18,
                                   fontWeight: FontWeight.bold,
-                                  color: fadeColor,
                                 ),
                               ),
                             ],
@@ -155,49 +153,17 @@ class _CreateLockScreenState extends State<CreateLockScreen> {
                     ),
                   ),
                 ),
-                Align(
-                  alignment: Alignment.bottomCenter,
-                  child: Padding(
-                    padding: EdgeInsets.only(
-                        bottom: 40,
-                        top: MediaQuery.of(context).size.height * 0.7),
-                    child: GradientButton(
-                      increaseHeightBy: 20,
-                      increaseWidthBy: 250,
-                      gradient: gradientBtn,
-                      shapeRadius: BorderRadius.circular(5),
-                      child: Text(
-                        'Enter',
-                        style: GoogleFonts.raleway(
-                          fontSize: 22,
-                          fontWeight: FontWeight.w700,
-                        ),
-                      ),
-                      callback: () async {
-                        if (pinKey != null && pinKey != '') {
-                          final SharedPreferences prefs =
-                              await SharedPreferences.getInstance();
-                          try {
-                            setState(() {
-                              prefs.setBool('isNew', true);
-                              prefs.setInt('userPass', int.tryParse(pinKey));
-                            });
-                          } catch (e) {}
-                          Navigator.pushNamed(context, 'userHome');
-                        } else {
-                          _scaffold.currentState.showSnackBar(SnackBar(
-                            backgroundColor: errorCardColor,
-                            content: Text(
-                              'Try Another Password',
-                              style: GoogleFonts.raleway(
-                                fontWeight: FontWeight.w700,
-                              ),
-                            ),
-                            duration: Duration(seconds: 3),
-                          ));
-                        }
-                        _controller.clear();
-                      },
+                Padding(
+                  padding: EdgeInsets.symmetric(
+                    vertical: ScreenUtil().setHeight(36),
+                  ),
+                  child: ButtonTheme(
+                    minWidth: ScreenUtil().setWidth(1080),
+                    height: ScreenUtil().setHeight(150),
+                    child: RaisedButton(
+                      onPressed: () {},
+                      color: whiteColor,
+                      child: Text('Enter'),
                     ),
                   ),
                 ),
