@@ -171,9 +171,9 @@ class _UserHomeState extends State<UserHome> {
                                                     DropdownButtonHideUnderline(
                                                   child: DropdownButton<String>(
                                                     style: TextStyle(
-                                                        color: mainBgColor,
+                                                        color: whiteColor,
                                                         decorationColor:
-                                                            mainBgColor),
+                                                            whiteColor),
                                                     value: _selectedLocationTop,
                                                     items: items
                                                         .map((String value) {
