@@ -18,7 +18,7 @@ final TextEditingController _nameController = TextEditingController();
 final TextEditingController _userNameController = TextEditingController();
 final TextEditingController _phoneController = TextEditingController();
 final TextEditingController _accountController = TextEditingController();
-GlobalKey<ScaffoldState> _registerBorrowerSaffoldKey = GlobalKey();
+GlobalKey<ScaffoldState> _verificationrSaffoldKey = GlobalKey();
 
 class _VerificationScreenState extends State<VerificationScreen> {
   @override
