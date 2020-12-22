@@ -203,6 +203,7 @@ State Agency""",
             height: ScreenUtil().setHeight(90),
           ),
           RaisedButton(
+            color: blue,
             shape: CircleBorder(
               side: BorderSide(
                 color: blue,
