@@ -47,7 +47,10 @@ class _BorrowHomeScreenState extends State<BorrowHomeScreen> {
         home: SafeArea(
           child: Scaffold(
             extendBodyBehindAppBar: true,
-            body: Column(),
+            body: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [],
+            ),
           ),
         ),
       ),
