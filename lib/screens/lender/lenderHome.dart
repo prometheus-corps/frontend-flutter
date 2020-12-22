@@ -62,16 +62,7 @@ class _LendHomeScreenState extends State<LendHomeScreen> {
               selectedItemColor: blueColor,
               unselectedItemColor: fadeColor,
               currentIndex: currentIndex,
-              onTap: (value) {
-                setState(() {
-                  currentIndex = value;
-                });
-                if (currentIndex == 1) {
-                  Navigator.pushNamed(context, 'search');
-                } else if (currentIndex == 2) {
-                  Navigator.pushNamed(context, 'user');
-                }
-              },
+              onTap: (value) {},
               items: [
                 BottomNavigationBarItem(
                   icon: Icon(
