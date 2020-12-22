@@ -173,9 +173,10 @@ class _CreateLockScreenState extends State<CreateLockScreen> {
                       )),
                 ),
                 Padding(
-                  padding: EdgeInsets.symmetric(
-                    vertical: ScreenUtil().setHeight(36),
-                    horizontal: ScreenUtil().setWidth(140),
+                  padding: EdgeInsets.only(
+                    bottom: ScreenUtil().setHeight(36),
+                    left: ScreenUtil().setWidth(140),
+                    right: ScreenUtil().setWidth(140),
                   ),
                   child: ButtonTheme(
                     minWidth: ScreenUtil().setWidth(1080),
