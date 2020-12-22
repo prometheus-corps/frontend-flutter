@@ -3,6 +3,7 @@ import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/screenutil.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class RoomScreen extends StatefulWidget {
   @override
@@ -68,7 +69,7 @@ class _RoomScreenState extends State<RoomScreen> {
                           style: GoogleFonts.raleway(
                             fontSize: ScreenUtil().setSp(50),
                             fontWeight: FontWeight.w400,
-                            color: mainTextColor,
+                            color: blackColor,
                           ),
                         ),
                       ),
