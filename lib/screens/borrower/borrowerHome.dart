@@ -103,7 +103,7 @@ class _BorrowerHomeState extends State<BorrowerHome> {
                       top: 30,
                     ),
                     child: Text(
-                      'Home',
+                      'Borrow Money',
                       style: GoogleFonts.roboto(
                         color: whiteColor,
                         fontSize: 42,
