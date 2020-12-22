@@ -125,7 +125,7 @@ class _UserHomeState extends State<UserHome> {
                                   style: GoogleFonts.raleway(
                                     fontSize: 22,
                                     fontWeight: FontWeight.bold,
-                                    color: mainBgColor,
+                                    color: blackColor,
                                   ),
                                 ),
                               ),
