@@ -3,7 +3,6 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:gradient_widgets/gradient_widgets.dart';
 import 'package:http/http.dart' as http;
 
 double _sigmaX = 0.0;
