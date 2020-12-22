@@ -53,6 +53,62 @@ class _LendHomeScreenState extends State<LendHomeScreen> {
         home: SafeArea(
           child: Scaffold(
             extendBodyBehindAppBar: true,
+            bottomNavigationBar: BottomNavigationBar(
+              selectedFontSize: ScreenUtil().setSp(18),
+              unselectedFontSize: ScreenUtil().setSp(12),
+              showSelectedLabels: false,
+              showUnselectedLabels: false,
+              selectedItemColor: blueColor,
+              unselectedItemColor: fadeColor,
+              currentIndex: currentIndex,
+              onTap: (value) {
+                setState(() {
+                  currentIndex = value;
+                });
+                if (currentIndex == 1) {
+                  Navigator.pushNamed(context, 'search');
+                } else if (currentIndex == 2) {
+                  Navigator.pushNamed(context, 'user');
+                }
+              },
+              items: [
+                BottomNavigationBarItem(
+                  icon: Icon(
+                    FontAwesomeIcons.sortAmountUpAlt,
+                    size: ScreenUtil().setSp(65),
+                  ),
+                  label: 'Transactions',
+                ),
+                BottomNavigationBarItem(
+                  icon: Icon(
+                    FontAwesomeIcons.wallet,
+                    size: ScreenUtil().setSp(45),
+                  ),
+                  label: 'Due',
+                ),
+                BottomNavigationBarItem(
+                  icon: Icon(
+                    Icons.home,
+                    size: ScreenUtil().setSp(80),
+                  ),
+                  label: 'Home',
+                ),
+                BottomNavigationBarItem(
+                  icon: Icon(
+                    FontAwesomeIcons.search,
+                    size: ScreenUtil().setSp(45),
+                  ),
+                  label: 'Search',
+                ),
+                BottomNavigationBarItem(
+                  icon: Icon(
+                    FontAwesomeIcons.cog,
+                    size: ScreenUtil().setSp(45),
+                  ),
+                  label: 'Settings',
+                ),
+              ],
+            ),
             body: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
