@@ -98,7 +98,7 @@ class _CreateLockScreenState extends State<CreateLockScreen> {
                             '''Create 4 Digit Screen Lock Password''',
                             textAlign: TextAlign.center,
                             style: GoogleFonts.raleway(
-                              fontSize: ScreenUtil().setSp(40),
+                              fontSize: ScreenUtil().setSp(42),
                               fontWeight: FontWeight.w400,
                             ),
                           ),
