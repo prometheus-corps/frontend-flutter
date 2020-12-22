@@ -121,12 +121,12 @@ class _RoomScreenState extends State<RoomScreen> {
                           height: ScreenUtil().setHeight(150),
                           child: RaisedButton(
                             onPressed: () async {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => QRScanner(),
-                                ),
-                              );
+                              // Navigator.push(
+                              //   context,
+                              //   MaterialPageRoute(
+                              //     builder: (context) => QRScanner(),
+                              //   ),
+                              // );
                             },
                             color: whiteColor,
                             child: Text(
