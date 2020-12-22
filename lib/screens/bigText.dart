@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_dash/flutter_dash.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:remito_demo/utilities/constants.dart';
 
 class UserGuide extends StatefulWidget {
   UserGuide(
