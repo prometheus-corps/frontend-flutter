@@ -67,7 +67,7 @@ class _BorrowerRegistrationScreenState
                       children: [
                         Padding(
                           padding: EdgeInsets.only(
-                            top: ScreenUtil().setHeight(250),
+                            top: ScreenUtil().setHeight(150),
                             bottom: ScreenUtil().setHeight(10),
                           ),
                           child: Column(
