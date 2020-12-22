@@ -189,17 +189,6 @@ class _BorrowerRegistrationScreenState
                                         ],
                                       ),
                                     ),
-                                    SignInButton(
-                                      Buttons.Google,
-                                      padding: EdgeInsets.symmetric(
-                                        vertical: ScreenUtil().setHeight(22.5),
-                                        horizontal: ScreenUtil().setWidth(230),
-                                      ),
-                                      text: "Sign in with Google",
-                                      onPressed: () {
-                                        // Navigator.pushNamed(context, 'profile');
-                                      },
-                                    ),
                                     Padding(
                                       padding: EdgeInsets.symmetric(
                                         vertical: ScreenUtil().setHeight(36),
