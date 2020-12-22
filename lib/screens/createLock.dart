@@ -158,7 +158,7 @@ class _CreateLockScreenState extends State<CreateLockScreen> {
                         pinTheme: PinTheme(
                           shape: PinCodeFieldShape.box,
                           borderRadius: BorderRadius.circular(5),
-                          fieldHeight: 60,
+                          fieldHeight: ScreenUtil().setHeight(180),
                           fieldWidth: 50,
                           activeFillColor:
                               hasError ? Colors.orange : Colors.white,
