@@ -178,10 +178,15 @@ State Agency""",
                 color: blue,
               ),
             ),
-            child: Icon(
-              Icons.add_business_rounded,
-              color: whiteColor,
-              size: 30,
+            child: Padding(
+              padding: EdgeInsets.all(
+                ScreenUtil().setHeight(50),
+              ),
+              child: Icon(
+                Icons.add_business_rounded,
+                color: whiteColor,
+                size: 30,
+              ),
             ),
             onPressed: () {},
           ),
