@@ -63,7 +63,7 @@ class _UserHomeState extends State<UserHome> {
                   _scaffoldKeyHome.currentState.openDrawer();
                 },
                 child: ShaderMask(
-                  shaderCallback: (Rect bounds) {
+                  shaderonPressed: (Rect bounds) {
                     return RadialGradient(
                       center: Alignment.center,
                       radius: 0.5,
@@ -369,7 +369,7 @@ class _UserHomeState extends State<UserHome> {
                           increaseWidthBy: width * 0.58,
                           gradient: gradientBtn,
                           shapeRadius: BorderRadius.circular(5),
-                          callback: () {
+                          onPressed: () {
                             Navigator.pushNamed(context, 'loginuser');
                           },
                           child: Text(
@@ -445,7 +445,7 @@ class _UserHomeState extends State<UserHome> {
                                                 color: whiteColor,
                                                 size: 30,
                                               ),
-                                              callback: () {
+                                              onPressed: () {
                                                 // Navigator.of(context).push(
                                                 //   SlideRightRoute(
                                                 //     page: UserGuide(
@@ -493,7 +493,7 @@ For Free''',
                                                 Icons.wallet_membership_rounded,
                                                 size: 30,
                                               ),
-                                              callback: () {
+                                              onPressed: () {
                                                 // Navigator.of(context).push(
                                                 //   SlideRightRoute(
                                                 //     page: UserGuide(
@@ -540,7 +540,7 @@ Topup''',
                                                   Icons.comment_bank_rounded,
                                                   size: 30,
                                                 ),
-                                                callback: () {
+                                                onPressed: () {
                                                   // Navigator.of(context).push(
                                                   //   SlideRightRoute(
                                                   //     page: UserGuide(
@@ -622,7 +622,7 @@ Details''',
                                                   color: whiteColor,
                                                   size: 30,
                                                 ),
-                                                callback: () {
+                                                onPressed: () {
                                                   // Navigator.of(context).push(
                                                   //   SlideRightRoute(
                                                   //     page: UserGuide(
@@ -673,7 +673,7 @@ Bank Details''',
                                                   Icons.receipt_long_rounded,
                                                   size: 30,
                                                 ),
-                                                callback: () {
+                                                onPressed: () {
                                                   // Navigator.of(context).push(
                                                   //   SlideRightRoute(
                                                   //     page: UserGuide(
@@ -722,7 +722,7 @@ Bank Details''',
                                                     Icons.done_outline_rounded,
                                                     size: 30,
                                                   ),
-                                                  callback: () {
+                                                  onPressed: () {
                                                     // Navigator.of(context).push(
                                                     //   SlideRightRoute(
                                                     //     page: UserGuide(
@@ -771,7 +771,7 @@ Bank Details''',
                         elevation: 8,
                         onPressed: () {},
                         child: ShaderMask(
-                          shaderCallback: (Rect bounds) {
+                          shaderonPressed: (Rect bounds) {
                             return RadialGradient(
                               center: Alignment.center,
                               radius: 0.5,
@@ -850,7 +850,7 @@ Bank Details''',
                   _scaffoldKeyHome.currentState.openDrawer();
                 },
                 child: ShaderMask(
-                  shaderCallback: (Rect bounds) {
+                  shaderonPressed: (Rect bounds) {
                     return RadialGradient(
                       center: Alignment.center,
                       radius: 0.5,
@@ -914,7 +914,7 @@ Bank Details''',
                           increaseWidthBy: width * 0.58,
                           gradient: gradientBtn,
                           shapeRadius: BorderRadius.circular(5),
-                          callback: () {
+                          onPressed: () {
                             Navigator.pushNamed(context, 'loginuser');
                           },
                           child: Text(
@@ -1038,7 +1038,7 @@ For Free''',
                                                 Icons.wallet_membership_rounded,
                                                 size: 30,
                                               ),
-                                              callback: () {
+                                              onPressed: () {
                                                 Navigator.of(context).push(
                                                   SlideRightRoute(
                                                     page: UserGuide(
@@ -1085,7 +1085,7 @@ Topup''',
                                                   Icons.comment_bank_rounded,
                                                   size: 30,
                                                 ),
-                                                callback: () {
+                                                onPressed: () {
                                                   Navigator.of(context).push(
                                                     SlideRightRoute(
                                                       page: UserGuide(
@@ -1167,7 +1167,7 @@ Details''',
                                                   color: whiteColor,
                                                   size: 30,
                                                 ),
-                                                callback: () {
+                                                onPressed: () {
                                                   Navigator.of(context).push(
                                                     SlideRightRoute(
                                                       page: UserGuide(
@@ -1218,7 +1218,7 @@ Bank Details''',
                                                   Icons.receipt_long_rounded,
                                                   size: 30,
                                                 ),
-                                                callback: () {
+                                                onPressed: () {
                                                   Navigator.of(context).push(
                                                     SlideRightRoute(
                                                       page: UserGuide(
@@ -1267,7 +1267,7 @@ Bank Details''',
                                                     Icons.done_outline_rounded,
                                                     size: 30,
                                                   ),
-                                                  callback: () {
+                                                  onPressed: () {
                                                     Navigator.of(context).push(
                                                       SlideRightRoute(
                                                         page: UserGuide(
@@ -1316,7 +1316,7 @@ Bank Details''',
                         elevation: 8,
                         onPressed: () {},
                         child: ShaderMask(
-                          shaderCallback: (Rect bounds) {
+                          shaderonPressed: (Rect bounds) {
                             return RadialGradient(
                               center: Alignment.center,
                               radius: 0.5,
