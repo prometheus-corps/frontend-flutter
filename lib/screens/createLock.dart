@@ -140,8 +140,10 @@ class _CreateLockScreenState extends State<CreateLockScreen> {
                 Form(
                   key: formKey,
                   child: Padding(
-                      padding: const EdgeInsets.symmetric(
-                          vertical: 8.0, horizontal: 30),
+                      padding: EdgeInsets.symmetric(
+                        vertical: 8.0,
+                        horizontal: ScreenUtil().setWidth(150),
+                      ),
                       child: PinCodeTextField(
                         appContext: context,
                         length: 4,
@@ -156,6 +158,10 @@ class _CreateLockScreenState extends State<CreateLockScreen> {
                           }
                         },
                         pinTheme: PinTheme(
+                          activeColor: whiteColor,
+                          activeFillColor: whiteColor,
+                          inactiveColor: whiteColor,
+                          selectedFillColor: whiteColor,
                           shape: PinCodeFieldShape.box,
                           borderRadius: BorderRadius.circular(5),
                           fieldHeight: ScreenUtil().setHeight(200),
