@@ -174,7 +174,7 @@ class _CreateLockScreenState extends State<CreateLockScreen> {
                 ),
                 Padding(
                   padding: EdgeInsets.only(
-                    bottom: ScreenUtil().setHeight(36),
+                    bottom: ScreenUtil().setHeight(150),
                     left: ScreenUtil().setWidth(140),
                     right: ScreenUtil().setWidth(140),
                   ),
