@@ -158,15 +158,12 @@ class _CreateLockScreenState extends State<CreateLockScreen> {
                         pinTheme: PinTheme(
                           shape: PinCodeFieldShape.box,
                           borderRadius: BorderRadius.circular(5),
-                          fieldHeight: ScreenUtil().setHeight(180),
-                          fieldWidth: 50,
-                          activeFillColor:
-                              hasError ? Colors.orange : Colors.white,
+                          fieldHeight: ScreenUtil().setHeight(200),
+                          fieldWidth: ScreenUtil().setWidth(140),
                         ),
                         cursorColor: Colors.black,
                         animationDuration: Duration(milliseconds: 300),
                         textStyle: TextStyle(fontSize: 20, height: 1.6),
-                        backgroundColor: Colors.blue.shade50,
                         enableActiveFill: true,
                         errorAnimationController: errorController,
                         controller: textEditingController,
