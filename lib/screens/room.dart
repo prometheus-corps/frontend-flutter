@@ -71,8 +71,8 @@ class _RoomScreenState extends State<RoomScreen> {
                           textAlign: TextAlign.center,
                           style: GoogleFonts.raleway(
                             fontSize: ScreenUtil().setSp(50),
-                            fontWeight: FontWeight.w400,
-                            color: blackColor,
+                            fontWeight: FontWeight.w600,
+                            color: whiteColor,
                           ),
                         ),
                       ),
