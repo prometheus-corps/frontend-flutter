@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:crowdgain/utilities/constants.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -13,7 +14,6 @@ class SignInScreen extends StatefulWidget {
   _SignInScreenState createState() => _SignInScreenState();
 }
 
-String fcmToken = '';
 bool isWaiting = false;
 final TextEditingController _emailController = TextEditingController();
 final TextEditingController _passwordController = TextEditingController();
@@ -25,12 +25,7 @@ GlobalKey<ScaffoldState> _registerSaffoldKey = GlobalKey();
 class _SignInScreenState extends State<SignInScreen> {
   @override
   void initState() {
-    getReady();
     super.initState();
-  }
-
-  getReady() async {
-    fcmToken = await getFCMToken();
   }
 
   @override
@@ -43,7 +38,7 @@ class _SignInScreenState extends State<SignInScreen> {
       theme: ThemeData(
         primarySwatch: white,
         canvasColor: Color(0xFFEFEFF4),
-        iconTheme: IconThemeData(color: darkFadeTextColor),
+        iconTheme: IconThemeData(color: blackColor),
         primaryTextTheme: Typography.material2018().black,
         textTheme: Typography.material2018().black,
       ),
@@ -51,7 +46,7 @@ class _SignInScreenState extends State<SignInScreen> {
         primarySwatch: black,
         accentColor: black,
         brightness: Brightness.dark,
-        canvasColor: mainTextColor,
+        canvasColor: blackColor,
         primaryTextTheme: Typography.material2018().white,
         textTheme: Typography.material2018().white,
       ),
@@ -225,8 +220,7 @@ class _SignInScreenState extends State<SignInScreen> {
                                                     strokeWidth: 2,
                                                     valueColor:
                                                         AlwaysStoppedAnimation<
-                                                                Color>(
-                                                            mainTextColor),
+                                                            Color>(blackColor),
                                                   ),
                                                 )
                                               : Text(
@@ -234,7 +228,7 @@ class _SignInScreenState extends State<SignInScreen> {
                                                   style: GoogleFonts.openSans(
                                                     fontSize:
                                                         ScreenUtil().setSp(48),
-                                                    color: darkFadeTextColor,
+                                                    color: blackColor,
                                                     fontWeight: FontWeight.w600,
                                                   ),
                                                 ),
