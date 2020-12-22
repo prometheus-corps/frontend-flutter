@@ -82,7 +82,10 @@ class _BorrowHomeScreenState extends State<BorrowHomeScreen> {
                       ),
                     ],
                   ),
-                )
+                ),
+                SizedBox(
+                  height: ScreenUtil().setHeight(600),
+                ),
               ],
             ),
           ),
