@@ -171,9 +171,6 @@ class _CreateLockScreenState extends State<CreateLockScreen> {
                         },
                       )),
                 ),
-                SizedBox(
-                  height: ScreenUtil().setHeight(36),
-                ),
                 Padding(
                   padding: EdgeInsets.symmetric(
                     vertical: ScreenUtil().setHeight(36),
