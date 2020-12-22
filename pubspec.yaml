@@ -48,7 +48,7 @@ flutter:
   fonts:
     - family: KumbhSans
       fonts:
-        - asset: images/fonts/KumbhSans-Bold.ttf
+        - asset: fonts/KumbhSans-Bold.ttf
     - family: Bambino
       fonts:
-        - asset: images/fonts/Bambino-Bold.ttf
+        - asset: fonts/Bambino-Bold.ttf
