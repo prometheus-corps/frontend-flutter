@@ -111,47 +111,68 @@ class _CreateLockScreenState extends State<CreateLockScreen> {
                     ),
                   ),
                 ),
-                Align(
-                  alignment: Alignment.center,
+                Form(
+                  key: formKey,
                   child: Padding(
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 65, vertical: 20),
-                    child: PinInputTextFormField(
-                      controller: _controller,
-                      pinLength: 4,
-                      decoration: UnderlineDecoration(
-                        colorBuilder: PinListenColorBuilder(
-                            cardInsideColor, cardInsideColor),
-                        textStyle: GoogleFonts.raleway(
+                      padding: const EdgeInsets.symmetric(
+                          vertical: 8.0, horizontal: 30),
+                      child: PinCodeTextField(
+                        appContext: context,
+                        pastedTextStyle: TextStyle(
+                          color: Colors.green.shade600,
                           fontWeight: FontWeight.bold,
-                          color: mainTextColor,
-                          fontSize: 32,
                         ),
-                        obscureStyle: ObscureStyle(
-                          isTextObscure: true,
-                          obscureText: '*',
+                        length: 6,
+                        obscureText: false,
+                        obscuringCharacter: '*',
+                        animationType: AnimationType.fade,
+                        validator: (v) {
+                          if (v.length < 3) {
+                            return "I'm from validator";
+                          } else {
+                            return null;
+                          }
+                        },
+                        pinTheme: PinTheme(
+                          shape: PinCodeFieldShape.box,
+                          borderRadius: BorderRadius.circular(5),
+                          fieldHeight: 60,
+                          fieldWidth: 50,
+                          activeFillColor:
+                              hasError ? Colors.orange : Colors.white,
                         ),
-                      ),
-                      textInputAction: TextInputAction.go,
-                      enabled: true,
-                      keyboardType: TextInputType.number,
-                      onChanged: (pin) {
-                        setState(() {
-                          pinKey = pin;
-                        });
-                      },
-                      onSaved: (pin) {
-                        setState(() {
-                          pinKey = pin;
-                        });
-                      },
-                      onSubmit: (pin) {
-                        setState(() {
-                          pinKey = pin;
-                        });
-                      },
-                    ),
-                  ),
+                        cursorColor: Colors.black,
+                        animationDuration: Duration(milliseconds: 300),
+                        textStyle: TextStyle(fontSize: 20, height: 1.6),
+                        backgroundColor: Colors.blue.shade50,
+                        enableActiveFill: true,
+                        errorAnimationController: errorController,
+                        controller: textEditingController,
+                        keyboardType: TextInputType.number,
+                        boxShadows: [
+                          BoxShadow(
+                            offset: Offset(0, 1),
+                            color: Colors.black12,
+                            blurRadius: 10,
+                          )
+                        ],
+                        onCompleted: (v) {
+                          print("Completed");
+                        },
+                        // onTap: () {
+                        //   print("Pressed");
+                        // },
+                        onChanged: (value) {
+                          print(value);
+                          setState(() {
+                            currentText = value;
+                          });
+                        },
+                        beforeTextPaste: (text) {
+                          print("Allowing to paste $text");
+                          return true;
+                        },
+                      )),
                 ),
                 Padding(
                   padding: EdgeInsets.symmetric(
