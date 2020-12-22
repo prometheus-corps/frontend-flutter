@@ -179,18 +179,7 @@ State Agency""",
               color: whiteColor,
               size: 30,
             ),
-            onPressed: () {
-              // Navigator.of(context).push(
-              //   SlideRightRoute(
-              //     page: UserGuide(
-              //       iconData: Icons
-              //           .add_business_rounded,
-              //       desc: desc[3],
-              //       pageName: title[3],
-              //     ),
-              //   ),
-              // );
-            },
+            onPressed: () {},
           ),
           Text(
             name,
