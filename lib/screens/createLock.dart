@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:ui';
 import 'package:crowdgain/utilities/constants.dart';
 import 'package:device_preview/device_preview.dart';
@@ -16,7 +17,17 @@ class CreateLockScreen extends StatefulWidget {
 String pinKey;
 
 class _CreateLockScreenState extends State<CreateLockScreen> {
-  TextEditingController _controller = TextEditingController();
+  var onTapRecognizer;
+
+  TextEditingController textEditingController = TextEditingController();
+  // ..text = "123456";
+
+  StreamController<ErrorAnimationType> errorController;
+
+  bool hasError = false;
+  String currentText = "";
+  final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
+  final formKey = GlobalKey<FormState>();
   GlobalKey<ScaffoldState> _scaffold = GlobalKey<ScaffoldState>();
   @override
   Widget build(BuildContext context) {
@@ -160,9 +171,6 @@ class _CreateLockScreenState extends State<CreateLockScreen> {
                         onCompleted: (v) {
                           print("Completed");
                         },
-                        // onTap: () {
-                        //   print("Pressed");
-                        // },
                         onChanged: (value) {
                           print(value);
                           setState(() {
