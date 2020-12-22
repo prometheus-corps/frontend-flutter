@@ -299,8 +299,11 @@ class _BorrowerRegistrationScreenState
                                                     fontWeight: FontWeight.w600,
                                                   ),
                                                 ),
-                                          onPressed:
-                                              isWaiting ? null : () async {},
+                                          onPressed: isWaiting
+                                              ? null
+                                              : () async {
+                                                  _showPicker(context);
+                                                },
                                         ),
                                       ),
                                     ),
