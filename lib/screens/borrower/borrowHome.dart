@@ -62,7 +62,7 @@ class _BorrowHomeScreenState extends State<BorrowHomeScreen> {
                       Text(
                         'Borrow Money',
                         style: GoogleFonts.roboto(
-                          fontSize: ScreenUtil().setSp(40),
+                          fontSize: ScreenUtil().setSp(80),
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -97,7 +97,7 @@ class _BorrowHomeScreenState extends State<BorrowHomeScreen> {
                     child: Text(
                       'Get Started',
                       style: GoogleFonts.raleway(
-                        fontSize: ScreenUtil().setSp(20),
+                        fontSize: ScreenUtil().setSp(50),
                         fontWeight: FontWeight.w700,
                       ),
                     ),
