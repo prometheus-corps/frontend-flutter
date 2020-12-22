@@ -74,9 +74,10 @@ class _BorrowerHomeState extends State<BorrowerHome> {
                   child: Icon(
                     Icons.menu_rounded,
                     size: 32.0,
+                    color: whiteColor,
                   ),
                 ),
-                backgroundColor: blackColor,
+                backgroundColor: blueColor,
               ),
             ),
             backgroundColor: splashBgColor,
