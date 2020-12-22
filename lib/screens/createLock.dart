@@ -145,10 +145,9 @@ class _CreateLockScreenState extends State<CreateLockScreen> {
                       child: PinCodeTextField(
                         appContext: context,
                         pastedTextStyle: TextStyle(
-                          color: Colors.green.shade600,
                           fontWeight: FontWeight.bold,
                         ),
-                        length: 6,
+                        length: 4,
                         obscureText: false,
                         obscuringCharacter: '*',
                         animationType: AnimationType.fade,
