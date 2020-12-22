@@ -76,7 +76,7 @@ class _CreateLockScreenState extends State<CreateLockScreen> {
             resizeToAvoidBottomInset: false,
             resizeToAvoidBottomPadding: false,
             backgroundColor: splashBgColor,
-            body: Stack(
+            body: Column(
               children: [
                 Align(
                   alignment: Alignment.topCenter,
