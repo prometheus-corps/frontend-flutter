@@ -20,7 +20,7 @@ class _BorrowHomeScreenState extends State<BorrowHomeScreen> {
   Widget build(BuildContext context) {
     bool isDarkMode =
         MediaQuery.of(context).platformBrightness == Brightness.dark;
-    int currentIndex = 0;
+    int currentIndex = 2;
     ScreenUtil.init(context,
         designSize: Size(1080, 2400), allowFontScaling: false);
     return WillPopScope(
