@@ -34,21 +34,6 @@ class _UserHomeState extends State<UserHome> {
   double bottomCount = 1.0;
   int currentIndex;
 
-  void setRates() {
-    setState(
-      () {
-        if (_selectedLocationTop == '') _selectedLocationTop = items[0];
-        if (_selectedLocationBottom == '') _selectedLocationBottom = items[1];
-        bottomCount = topCount * rate;
-        bottomCount = bottomCount - (bottomCount * (percentCount / 100));
-        _controllerTop =
-            TextEditingController(text: topCount.toStringAsFixed(2));
-        _controllerBtm =
-            TextEditingController(text: bottomCount.toStringAsFixed(2));
-      },
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
