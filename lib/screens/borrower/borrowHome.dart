@@ -148,8 +148,8 @@ For Free''',
 a Request""",
                               ),
                               buildGestureDetector(
-                                """State
-Agency Verification""",
+                                """Verification By
+State Agency""",
                               ),
                             ],
                           )
