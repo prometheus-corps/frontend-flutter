@@ -187,6 +187,8 @@ class _CreateLockScreenState extends State<CreateLockScreen> {
                       child: Text(
                         'Enter',
                         style: GoogleFonts.openSans(
+                          fontSize: ScreenUtil().setSp(60),
+                          fontWeight: FontWeight.w600,
                           color: whiteColor,
                         ),
                       ),
