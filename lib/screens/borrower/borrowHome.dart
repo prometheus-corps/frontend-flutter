@@ -168,18 +168,7 @@ State Agency""",
 
   GestureDetector buildGestureDetector(String name) {
     return GestureDetector(
-      onTap: () {
-        // Navigator.of(context).push(
-        //   SlideRightRoute(
-        //     page: UserGuide(
-        //       iconData: Icons
-        //           .add_business_rounded,
-        //       desc: desc[3],
-        //       pageName: title[3],
-        //     ),
-        //   ),
-        // );
-      },
+      onTap: () {},
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
