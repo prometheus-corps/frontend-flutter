@@ -102,10 +102,10 @@ class _BorrowHomeScreenState extends State<BorrowHomeScreen> {
                 ),
                 BottomNavigationBarItem(
                   icon: Icon(
-                    FontAwesomeIcons.userAlt,
+                    FontAwesomeIcons.cog,
                     size: ScreenUtil().setSp(45),
                   ),
-                  label: 'Profile',
+                  label: 'Settings',
                 ),
               ],
             ),
