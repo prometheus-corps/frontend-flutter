@@ -46,8 +46,8 @@ class _RoomScreenState extends State<RoomScreen> {
               children: [
                 Image.asset(
                   'images/room.png',
-                  height: ScreenUtil().setHeight(100),
-                  width: ScreenUtil().setWidth(60),
+                  height: ScreenUtil().setHeight(650),
+                  width: ScreenUtil().setWidth(400),
                   fit: BoxFit.fitWidth,
                 ),
                 Column(
