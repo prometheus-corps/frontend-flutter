@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:crowdgain/utilities/constants.dart';
 import 'package:crowdgain/widgets/textfield.dart';
 import 'package:device_preview/device_preview.dart';
@@ -5,6 +7,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:image_picker/image_picker.dart';
 
 class BorrowerRegistrationScreen extends StatefulWidget {
   @override
@@ -20,7 +23,9 @@ final TextEditingController _userNameController = TextEditingController();
 final TextEditingController _phoneController = TextEditingController();
 final TextEditingController _accountController = TextEditingController();
 GlobalKey<ScaffoldState> _registerSaffoldKey = GlobalKey();
-
+File _image = null;
+final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
+final picker = ImagePicker();
 class _BorrowerRegistrationScreenState
     extends State<BorrowerRegistrationScreen> {
   @override
