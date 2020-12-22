@@ -19,6 +19,7 @@ final TextEditingController _passwordController = TextEditingController();
 final TextEditingController _nameController = TextEditingController();
 final TextEditingController _userNameController = TextEditingController();
 final TextEditingController _phoneController = TextEditingController();
+final TextEditingController _accountController = TextEditingController();
 GlobalKey<ScaffoldState> _registerSaffoldKey = GlobalKey();
 
 class _BorrowerRegistrationScreenState
