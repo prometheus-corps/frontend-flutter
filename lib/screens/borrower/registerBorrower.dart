@@ -196,7 +196,7 @@ class _BorrowerRegistrationScreenState
                                     ),
                                     Padding(
                                       padding: EdgeInsets.symmetric(
-                                        vertical: ScreenUtil().setHeight(36),
+                                        vertical: ScreenUtil().setHeight(0),
                                       ),
                                       child: ButtonTheme(
                                         minWidth: ScreenUtil().setWidth(1080),
