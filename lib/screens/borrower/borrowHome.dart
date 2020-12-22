@@ -154,6 +154,33 @@ State Agency""",
                             ],
                           )
                         ],
+                      ),
+                      Stack(
+                        alignment: Alignment.center,
+                        children: [
+                          Dash(
+                            length: ScreenUtil().setWidth(800),
+                            dashLength: 12,
+                            dashColor: isDarkMode ? whiteColor : blackColor,
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              buildGestureDetector(
+                                '''Register
+For Free''',
+                              ),
+                              buildGestureDetector(
+                                """Draft 
+a Request""",
+                              ),
+                              buildGestureDetector(
+                                """Verification By
+State Agency""",
+                              ),
+                            ],
+                          )
+                        ],
                       )
                     ],
                   ),
