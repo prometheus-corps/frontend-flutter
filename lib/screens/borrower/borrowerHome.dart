@@ -1,4 +1,5 @@
 import 'dart:ui';
+import 'package:crowdgain/screens/room.dart';
 import 'package:crowdgain/utilities/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -43,7 +44,12 @@ class _BorrowerHomeState extends State<BorrowerHome> {
       return SafeArea(
         child: WillPopScope(
           onWillPop: () async {
-            SystemNavigator.pop();
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => RoomScreen(),
+              ),
+            );
             return Future.value(false);
           },
           child: Scaffold(
