@@ -11,6 +11,15 @@ class VerificationScreen extends StatefulWidget {
   _VerificationScreenState createState() => _VerificationScreenState();
 }
 
+bool isWaiting = false;
+final TextEditingController _emailController = TextEditingController();
+final TextEditingController _passwordController = TextEditingController();
+final TextEditingController _nameController = TextEditingController();
+final TextEditingController _userNameController = TextEditingController();
+final TextEditingController _phoneController = TextEditingController();
+final TextEditingController _accountController = TextEditingController();
+GlobalKey<ScaffoldState> _registerBorrowerSaffoldKey = GlobalKey();
+
 class _VerificationScreenState extends State<VerificationScreen> {
   @override
   Widget build(BuildContext context) {
