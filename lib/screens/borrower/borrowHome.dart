@@ -122,23 +122,26 @@ class _BorrowHomeScreenState extends State<BorrowHomeScreen> {
                         ),
                       ),
                     ),
-                    Stack(
-                      alignment: Alignment.center,
-                      children: [
-                        Dash(
-                          length: ScreenUtil().setWidth(900),
-                          dashLength: 12,
-                          dashColor: isDarkMode ? whiteColor : blackColor,
-                        ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            CircularButtonKey(),
-                            CircularButtonKey(),
-                            CircularButtonKey(),
-                          ],
-                        )
-                      ],
+                    Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: Stack(
+                        alignment: Alignment.center,
+                        children: [
+                          Dash(
+                            length: ScreenUtil().setWidth(800),
+                            dashLength: 12,
+                            dashColor: isDarkMode ? whiteColor : blackColor,
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              CircularButtonKey(),
+                              CircularButtonKey(),
+                              CircularButtonKey(),
+                            ],
+                          )
+                        ],
+                      ),
                     )
                   ],
                 ),
