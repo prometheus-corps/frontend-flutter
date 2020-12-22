@@ -1,18 +1,10 @@
 import 'dart:convert';
-
 import 'package:device_preview/device_preview.dart';
-import 'package:flushbar/flushbar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:payup/backend/fcmToken.dart';
-import 'package:payup/screens/carDetails.dart';
-import 'package:payup/screens/login.dart';
-import 'package:payup/screens/room.dart';
-import 'package:payup/utilities/constants.dart';
-import 'package:payup/widgets/textform.dart';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 
