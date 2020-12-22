@@ -60,7 +60,7 @@ class _UserHomeState extends State<UserHome> {
                   _scaffoldKeyHome.currentState.openDrawer();
                 },
                 child: ShaderMask(
-                  shaderonPressed: (Rect bounds) {
+                  shaderCallback: (Rect bounds) {
                     return RadialGradient(
                       center: Alignment.center,
                       radius: 0.5,
@@ -362,7 +362,6 @@ class _UserHomeState extends State<UserHome> {
                       child: Align(
                         alignment: Alignment.topCenter,
                         child: RaisedButton(
-                         
                           onPressed: () {
                             Navigator.pushNamed(context, 'loginuser');
                           },
@@ -529,24 +528,24 @@ Topup''',
                                               MainAxisAlignment.start,
                                           children: [
                                             RaisedButton(
-                                                shape: CircleBorder(),
-                                                child: Icon(
-                                                  Icons.comment_bank_rounded,
-                                                  size: 30,
-                                                ),
-                                                onPressed: () {
-                                                  // Navigator.of(context).push(
-                                                  //   SlideRightRoute(
-                                                  //     page: UserGuide(
-                                                  //       iconData: Icons
-                                                  //           .comment_bank_rounded,
-                                                  //       desc: desc[2],
-                                                  //       pageName: title[2],
-                                                  //     ),
-                                                  //   ),
-                                                  // );
-                                                },
-                                                ),
+                                              shape: CircleBorder(),
+                                              child: Icon(
+                                                Icons.comment_bank_rounded,
+                                                size: 30,
+                                              ),
+                                              onPressed: () {
+                                                // Navigator.of(context).push(
+                                                //   SlideRightRoute(
+                                                //     page: UserGuide(
+                                                //       iconData: Icons
+                                                //           .comment_bank_rounded,
+                                                //       desc: desc[2],
+                                                //       pageName: title[2],
+                                                //     ),
+                                                //   ),
+                                                // );
+                                              },
+                                            ),
                                             Text(
                                               '''Transfer
 Details''',
@@ -626,7 +625,6 @@ Details''',
                                                   //   ),
                                                   // );
                                                 },
-                                                ,
                                               ),
                                               Text(
                                                 '''Add Recipient's
@@ -675,7 +673,6 @@ Bank Details''',
                                                   //   ),
                                                   // );
                                                 },
-                                                ,
                                               ),
                                               Text(
                                                 '''Acknowledgement''',
@@ -705,24 +702,24 @@ Bank Details''',
                                                 MainAxisAlignment.start,
                                             children: [
                                               RaisedButton(
-                                                  shape: CircleBorder(),
-                                                  child: Icon(
-                                                    Icons.done_outline_rounded,
-                                                    size: 30,
-                                                  ),
-                                                  onPressed: () {
-                                                    // Navigator.of(context).push(
-                                                    //   SlideRightRoute(
-                                                    //     page: UserGuide(
-                                                    //       iconData: Icons
-                                                    //           .done_outline_rounded,
-                                                    //       desc: desc[5],
-                                                    //       pageName: title[5],
-                                                    //     ),
-                                                    //   ),
-                                                    // );
-                                                  },
-                                                  ),
+                                                shape: CircleBorder(),
+                                                child: Icon(
+                                                  Icons.done_outline_rounded,
+                                                  size: 30,
+                                                ),
+                                                onPressed: () {
+                                                  // Navigator.of(context).push(
+                                                  //   SlideRightRoute(
+                                                  //     page: UserGuide(
+                                                  //       iconData: Icons
+                                                  //           .done_outline_rounded,
+                                                  //       desc: desc[5],
+                                                  //       pageName: title[5],
+                                                  //     ),
+                                                  //   ),
+                                                  // );
+                                                },
+                                              ),
                                               Text(
                                                 '''Done''',
                                                 textAlign: TextAlign.center,
@@ -746,7 +743,6 @@ Bank Details''',
                     )
                   ],
                 ),
-                
               ],
             ),
           ),
@@ -773,7 +769,7 @@ Bank Details''',
                   _scaffoldKeyHome.currentState.openDrawer();
                 },
                 child: ShaderMask(
-                  shaderonPressed: (Rect bounds) {
+                  shaderCallback: (Rect bounds) {
                     return RadialGradient(
                       center: Alignment.center,
                       radius: 0.5,
@@ -833,7 +829,6 @@ Bank Details''',
                       child: Align(
                         alignment: Alignment.topCenter,
                         child: RaisedButton(
-                          
                           onPressed: () {
                             Navigator.pushNamed(context, 'loginuser');
                           },
@@ -1000,24 +995,24 @@ Topup''',
                                               MainAxisAlignment.start,
                                           children: [
                                             RaisedButton(
-                                                shape: CircleBorder(),
-                                                child: Icon(
-                                                  Icons.comment_bank_rounded,
-                                                  size: 30,
-                                                ),
-                                                onPressed: () {
-                                                  // Navigator.of(context).push(
-                                                  //   SlideRightRoute(
-                                                  //     page: UserGuide(
-                                                  //       iconData: Icons
-                                                  //           .comment_bank_rounded,
-                                                  //       desc: desc[2],
-                                                  //       pageName: title[2],
-                                                  //     ),
-                                                  //   ),
-                                                  // );
-                                                },
-                                                ),
+                                              shape: CircleBorder(),
+                                              child: Icon(
+                                                Icons.comment_bank_rounded,
+                                                size: 30,
+                                              ),
+                                              onPressed: () {
+                                                // Navigator.of(context).push(
+                                                //   SlideRightRoute(
+                                                //     page: UserGuide(
+                                                //       iconData: Icons
+                                                //           .comment_bank_rounded,
+                                                //       desc: desc[2],
+                                                //       pageName: title[2],
+                                                //     ),
+                                                //   ),
+                                                // );
+                                              },
+                                            ),
                                             Text(
                                               '''Transfer 
 Details''',
@@ -1174,24 +1169,24 @@ Bank Details''',
                                                 MainAxisAlignment.start,
                                             children: [
                                               RaisedButton(
-                                                  shape: CircleBorder(),
-                                                  child: Icon(
-                                                    Icons.done_outline_rounded,
-                                                    size: 30,
-                                                  ),
-                                                  onPressed: () {
-                                                    // Navigator.of(context).push(
-                                                    //   SlideRightRoute(
-                                                    //     page: UserGuide(
-                                                    //       iconData: Icons
-                                                    //           .done_outline_rounded,
-                                                    //       desc: desc[5],
-                                                    //       pageName: title[5],
-                                                    //     ),
-                                                    //   ),
-                                                    // );
-                                                  },
-                                                  ),
+                                                shape: CircleBorder(),
+                                                child: Icon(
+                                                  Icons.done_outline_rounded,
+                                                  size: 30,
+                                                ),
+                                                onPressed: () {
+                                                  // Navigator.of(context).push(
+                                                  //   SlideRightRoute(
+                                                  //     page: UserGuide(
+                                                  //       iconData: Icons
+                                                  //           .done_outline_rounded,
+                                                  //       desc: desc[5],
+                                                  //       pageName: title[5],
+                                                  //     ),
+                                                  //   ),
+                                                  // );
+                                                },
+                                              ),
                                               Text(
                                                 '''Done''',
                                                 textAlign: TextAlign.center,
