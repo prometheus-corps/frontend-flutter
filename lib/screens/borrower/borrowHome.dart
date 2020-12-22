@@ -218,7 +218,7 @@ class CircularButtonKey extends StatelessWidget {
                 name,
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  fontSize: ScreenUtil().setSp(12),
+                  fontSize: 12,
                   fontWeight: FontWeight.w600,
                 ),
               )
