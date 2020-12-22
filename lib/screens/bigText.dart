@@ -47,7 +47,10 @@ class _UserGuideState extends State<UserGuide> {
               floatingActionButtonLocation:
                   FloatingActionButtonLocation.startTop,
               floatingActionButton: Padding(
-                padding: EdgeInsets.only(top: 25, right: 25.0),
+                padding: EdgeInsets.only(
+                  right: ScreenUtil().setWidth(110),
+                  top: ScreenUtil().setHeight(100),
+                ),
                 child: FloatingActionButton(
                   heroTag: "btn1",
                   elevation: 8,
