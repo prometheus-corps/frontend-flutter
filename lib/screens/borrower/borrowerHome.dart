@@ -34,55 +34,6 @@ class _UserHomeState extends State<UserHome> {
   double bottomCount = 1.0;
   int currentIndex;
 
-  void changePage(int index) {
-    setState(() {
-      currentIndex = index;
-    });
-  }
-
-  @override
-  void initState() {
-    getRates(items[indexTopCount], items[indexBottomCount]);
-    currentIndex = 2;
-    super.initState();
-    _controllerTop = new TextEditingController(text: topCount.toString());
-    _controllerBtm = new TextEditingController(text: bottomCount.toString());
-  }
-
-  void getRates(String fromCode, String toCode) async {
-    try {
-      final response = await http
-          .get('https://api.exchangeratesapi.io/latest?base=' + fromCode);
-      if (response.statusCode == 200) {
-        var list = json.decode(response.body) as Map;
-        list.forEach((key, value) {
-          if (key == 'rates') {
-            crossItem.addAll(value);
-            crossItem.forEach((key, value) {
-              if (key == toCode) {
-                setState(() {
-                  rate = value;
-                  setRates();
-                });
-              }
-            });
-          }
-        });
-      } else {
-        print(0);
-      }
-    } catch (e) {
-      _scaffoldKeyHome.currentState.showSnackBar(SnackBar(
-        backgroundColor: Colors.red,
-        content: Text(
-          'Check Your Internet Connection.',
-          style: TextStyle(color: mainBgColor),
-        ),
-        duration: Duration(seconds: 5),
-      ));
-    }
-  }
-
   void setRates() {
     setState(
       () {
