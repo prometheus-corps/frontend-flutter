@@ -67,6 +67,32 @@ class _BorrowHomeScreenState extends State<BorrowHomeScreen> {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
+                      FloatingActionButton(
+                        heroTag: "btn1",
+                        elevation: 8,
+                        onPressed: () {
+                          // _scaffoldKeyHome.currentState.openDrawer();
+                        },
+                        child: ShaderMask(
+                          shaderCallback: (Rect bounds) {
+                            return RadialGradient(
+                              center: Alignment.center,
+                              radius: 0.5,
+                              colors: <Color>[
+                                blueColor,
+                                blueColor,
+                              ],
+                              tileMode: TileMode.repeated,
+                            ).createShader(bounds);
+                          },
+                          child: Icon(
+                            Icons.menu_rounded,
+                            size: 32.0,
+                            color: whiteColor,
+                          ),
+                        ),
+                        backgroundColor: blueColor,
+                      ),
                     ],
                   ),
                 )
