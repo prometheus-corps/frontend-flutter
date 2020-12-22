@@ -27,7 +27,72 @@ class _BorrowerRegistrationScreenState
   void initState() {
     super.initState();
   }
+_imgFromGallery() async {
+    final pickedFile = await picker.getImage(
+      source: ImageSource.gallery,
+      imageQuality: 50,
+    );
 
+    setState(
+      () {
+        if (pickedFile != null) {
+          _image = File(pickedFile.path);
+          _cropImage();
+        } else {
+          print('No image selected.');
+        }
+      },
+    );
+  }
+
+  // Future _fileUploader() async {
+  //   if (_image != null) {
+  //     final storageReference =
+  //         FirebaseStorage.instance.ref().child('$userMail/dp');
+  //     final UploadTask uploadTask = storageReference.putFile(_image);
+  //     await uploadTask.whenComplete(() async {
+  //       _scaffoldKey.currentState.showSnackBar(SnackBar(
+  //         backgroundColor: okCardColor,
+  //         content: Text(
+  //           'Profile Picture Updated',
+  //           style: GoogleFonts.raleway(
+  //             fontWeight: FontWeight.w700,
+  //           ),
+  //         ),
+  //         duration: Duration(seconds: 3),
+  //       ));
+  //       userURL = await (storageReference.getDownloadURL());
+  //       print(userURL);
+  //     });
+  //   } else {
+  //     _scaffoldKey.currentState.showSnackBar(SnackBar(
+  //       backgroundColor: errorCardColor,
+  //       content: Text(
+  //         'No File',
+  //         style: GoogleFonts.raleway(
+  //           fontWeight: FontWeight.w700,
+  //         ),
+  //       ),
+  //       duration: Duration(seconds: 3),
+  //     ));
+  //   }
+  // }
+
+  _imgFromCamera() async {
+    final pickedFile = await picker.getImage(
+      source: ImageSource.camera,
+      imageQuality: 50,
+    );
+    setState(
+      () {
+        if (pickedFile != null) {
+          _image = File(pickedFile.path);
+        } else {
+          print('No image selected.');
+        }
+      },
+    );
+  }
   @override
   Widget build(BuildContext context) {
     ScreenUtil.init(context,
@@ -287,4 +352,32 @@ class _BorrowerRegistrationScreenState
       ),
     );
   }
+  void _showPicker(context) {
+    showModalBottomSheet(
+        context: context,
+        builder: (BuildContext bc) {
+          return SafeArea(
+            child: Container(
+              child: new Wrap(
+                children: <Widget>[
+                  new ListTile(
+                      leading: new Icon(Icons.photo_library),
+                      title: new Text('Photo Library'),
+                      onTap: () {
+                        _imgFromGallery();
+                        Navigator.of(context).pop();
+                      }),
+                  new ListTile(
+                    leading: new Icon(Icons.photo_camera),
+                    title: new Text('Camera'),
+                    onTap: () {
+                      _imgFromCamera();
+                      Navigator.of(context).pop();
+                    },
+                  ),
+                ],
+              ),
+            ),
+          );
+        });
 }
