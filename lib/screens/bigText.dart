@@ -107,7 +107,7 @@ class _UserGuideState extends State<UserGuide> {
                       widget.desc,
                       style: GoogleFonts.raleway(
                         color: whiteColor,
-                        fontSize: 18,
+                        fontSize: ScreenUtil().setSp(50),
                         fontWeight: FontWeight.bold,
                       ),
                     ),
