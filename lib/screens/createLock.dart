@@ -82,18 +82,26 @@ class _CreateLockScreenState extends State<CreateLockScreen> {
                   padding: const EdgeInsets.only(top: 50, bottom: 0),
                   child: Column(
                     children: [
-                      Text(
-                        'Create Password',
-                        style: GoogleFonts.raleway(
-                          fontSize: 28,
-                          fontWeight: FontWeight.bold,
+                      Center(
+                        child: Text(
+                          'Log In to PayUp',
+                          style: GoogleFonts.raleway(
+                            fontSize: 24,
+                            fontWeight: FontWeight.w700,
+                          ),
                         ),
                       ),
-                      Text(
-                        'Create a 4-digit code',
-                        style: GoogleFonts.raleway(
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold,
+                      Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Center(
+                          child: Text(
+                            '''Carpool with friends. It's always fun!!!''',
+                            textAlign: TextAlign.center,
+                            style: GoogleFonts.raleway(
+                              fontSize: 14,
+                              fontWeight: FontWeight.w400,
+                            ),
+                          ),
                         ),
                       ),
                     ],
