@@ -77,7 +77,7 @@ class _BorrowHomeScreenState extends State<BorrowHomeScreen> {
                     FontAwesomeIcons.compass,
                     size: ScreenUtil().setSp(65),
                   ),
-                  label: 'Explore',
+                  label: 'Transfer',
                 ),
                 BottomNavigationBarItem(
                   icon: Icon(
