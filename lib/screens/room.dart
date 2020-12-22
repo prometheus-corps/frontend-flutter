@@ -1,4 +1,5 @@
 import 'package:crowdgain/screens/borrower/borrowHome.dart';
+import 'package:crowdgain/screens/lender/lenderHome.dart';
 import 'package:crowdgain/utilities/constants.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
@@ -96,12 +97,12 @@ class _RoomScreenState extends State<RoomScreen> {
                           height: ScreenUtil().setHeight(150),
                           child: RaisedButton(
                             onPressed: () {
-                              // Navigator.push(
-                              //   context,
-                              //   MaterialPageRoute(
-                              //     builder: (context) => CreateRoomScreen(),
-                              //   ),
-                              // );
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => LendHomeScreen(),
+                                ),
+                              );
                             },
                             color: whiteColor,
                             child: Text(
