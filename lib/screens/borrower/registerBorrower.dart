@@ -165,9 +165,9 @@ class _BorrowerRegistrationScreenState
                                                   ScreenUtil().setHeight(24),
                                             ),
                                             child: TextFormWidget(
-                                              hint: 'Phone Number',
+                                              hint: 'Bank Account Number',
                                               firstNameController:
-                                                  _phoneController,
+                                                  _accountController,
                                               type: TextInputType.phone,
                                               obscure: false,
                                             ),
