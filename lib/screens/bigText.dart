@@ -100,7 +100,8 @@ class _UserGuideState extends State<UserGuide> {
                   child: Padding(
                     padding: EdgeInsets.only(
                       left: ScreenUtil().setWidth(175),
-                      top: ScreenUtil().setHeight(300),
+                      top: ScreenUtil().setHeight(50),
+                      right: ScreenUtil().setWidth(50),
                     ),
                     child: Text(
                       widget.desc,
