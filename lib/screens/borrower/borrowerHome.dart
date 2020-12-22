@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:ui';
 import 'package:crowdgain/utilities/constants.dart';
+import 'package:crowdgain/widgets/drivers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_dash/flutter_dash.dart';
@@ -474,16 +475,16 @@ For Free''',
                                       ),
                                       GestureDetector(
                                         onTap: () {
-                                          Navigator.of(context).push(
-                                            SlideRightRoute(
-                                              page: UserGuide(
-                                                iconData: Icons
-                                                    .wallet_membership_rounded,
-                                                desc: desc[1],
-                                                pageName: title[1],
-                                              ),
-                                            ),
-                                          );
+                                          // Navigator.of(context).push(
+                                          //   SlideRightRoute(
+                                          //     page: UserGuide(
+                                          //       iconData: Icons
+                                          //           .wallet_membership_rounded,
+                                          //       desc: desc[1],
+                                          //       pageName: title[1],
+                                          //     ),
+                                          //   ),
+                                          // );
                                         },
                                         child: Column(
                                           mainAxisAlignment:
