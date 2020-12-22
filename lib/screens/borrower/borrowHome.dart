@@ -119,6 +119,7 @@ class _BorrowHomeScreenState extends State<BorrowHomeScreen> {
                       Padding(
                         padding: EdgeInsets.only(
                           left: ScreenUtil().setWidth(50),
+                          top: ScreenUtil().setHeight(20),
                         ),
                         child: Text(
                           'Simple Steps',
