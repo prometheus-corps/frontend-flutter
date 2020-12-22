@@ -65,7 +65,7 @@ class _UserGuideState extends State<UserGuide> {
                       size: 32.0,
                     ),
                   ),
-                  backgroundColor: mainBgColor,
+                  backgroundColor: whiteColor,
                 ),
               ),
             ),
