@@ -12,8 +12,6 @@ class RoomScreen extends StatefulWidget {
 class _RoomScreenState extends State<RoomScreen> {
   @override
   Widget build(BuildContext context) {
-    bool isDarkMode =
-        MediaQuery.of(context).platformBrightness == Brightness.dark;
     ScreenUtil.init(context,
         designSize: Size(1080, 2400), allowFontScaling: false);
     return WillPopScope(
