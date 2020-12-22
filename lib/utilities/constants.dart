@@ -38,3 +38,18 @@ const MaterialColor black = const MaterialColor(
     900: const Color(0xFF000000),
   },
 );
+const MaterialColor blue = const MaterialColor(
+  0xff2B96ED,
+  const <int, Color>{
+    50: const Color(0xff2B96ED),
+    100: const Color(0xff2B96ED),
+    200: const Color(0xff2B96ED),
+    300: const Color(0xff2B96ED),
+    400: const Color(0xff2B96ED),
+    500: const Color(0xff2B96ED),
+    600: const Color(0xff2B96ED),
+    700: const Color(0xff2B96ED),
+    800: const Color(0xff2B96ED),
+    900: const Color(0xff2B96ED),
+  },
+);

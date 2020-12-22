@@ -31,7 +31,8 @@ class _BorrowHomeScreenState extends State<BorrowHomeScreen> {
         builder: DevicePreview.appBuilder,
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
-          primarySwatch: white,
+          accentColor: blueColor,
+          primarySwatch: blueColor,
           canvasColor: Color(0xFFEFEFF4),
           iconTheme: IconThemeData(color: blackColor),
           primaryTextTheme: Typography.material2018().black,
