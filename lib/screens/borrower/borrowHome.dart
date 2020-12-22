@@ -85,6 +85,23 @@ class _BorrowHomeScreenState extends State<BorrowHomeScreen> {
                 SizedBox(
                   height: ScreenUtil().setHeight(600),
                 ),
+                Padding(
+                  padding: EdgeInsets.only(
+                    top: ScreenUtil().setHeight(45),
+                  ),
+                  child: RaisedButton(
+                    onPressed: () {
+                      Navigator.pushNamed(context, 'loginuser');
+                    },
+                    child: Text(
+                      'Get Started',
+                      style: GoogleFonts.raleway(
+                        fontSize: 22,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
