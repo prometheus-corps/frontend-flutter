@@ -75,7 +75,7 @@ class _BorrowerRegistrationScreenState
                             children: [
                               Center(
                                 child: Text(
-                                  'Sign up to PayUp',
+                                  'Register',
                                   style: GoogleFonts.raleway(
                                     fontSize: ScreenUtil().setSp(65),
                                     fontWeight: FontWeight.w700,
