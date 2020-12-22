@@ -831,7 +831,6 @@ Bank Details''',
             key: _scaffoldKeyHome,
             resizeToAvoidBottomInset: false,
             resizeToAvoidBottomPadding: false,
-            drawer: AppDrawerHome(imageKey: null),
             floatingActionButtonLocation: FloatingActionButtonLocation.endTop,
             floatingActionButton: Padding(
               padding: const EdgeInsets.only(top: 25, right: 25.0),
@@ -902,10 +901,7 @@ Bank Details''',
                       child: Align(
                         alignment: Alignment.topCenter,
                         child: RaisedButton(
-                          increaseHeightBy: 20,
-                          increaseWidthBy: width * 0.58,
-                          gradient: gradientBtn,
-                          shapeRadius: BorderRadius.circular(5),
+                          
                           onPressed: () {
                             Navigator.pushNamed(context, 'loginuser');
                           },
