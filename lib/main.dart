@@ -1,3 +1,4 @@
+import 'package:crowdgain/screens/splash.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -20,7 +21,9 @@ class _MainAppState extends State<MainApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       initialRoute: 'splash',
-      routes: {},
+      routes: {
+        'splash': (context) => SplashScreen(),
+      },
     );
   }
 }
