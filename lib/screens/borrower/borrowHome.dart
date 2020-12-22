@@ -1,4 +1,6 @@
 import 'package:crowdgain/screens/room.dart';
+import 'package:crowdgain/utilities/constants.dart';
+import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -17,11 +19,11 @@ class _BorrowHomeScreenState extends State<BorrowHomeScreen> {
     return WillPopScope(
       onWillPop: () {
         Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => RoomScreen(),
-              ),
-            );
+          context,
+          MaterialPageRoute(
+            builder: (context) => RoomScreen(),
+          ),
+        );
         return Future.value(false);
       },
       child: MaterialApp(
@@ -43,6 +45,9 @@ class _BorrowHomeScreenState extends State<BorrowHomeScreen> {
           textTheme: Typography.material2018().white,
         ),
         home: SafeArea(
-          child: Scaffold(
+          child: Scaffold(),
+        ),
+      ),
+    );
   }
 }
