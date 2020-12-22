@@ -39,7 +39,7 @@ class _UserHomeState extends State<UserHome> {
     SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
     final double width = MediaQuery.of(context).size.width;
     final double height = MediaQuery.of(context).size.height;
-    if (_selectedLocationBottom != '' && _selectedLocationTop != '') {
+    if (true) {
       return SafeArea(
         child: WillPopScope(
           onWillPop: () async {
