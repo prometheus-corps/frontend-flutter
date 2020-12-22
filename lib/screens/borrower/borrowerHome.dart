@@ -364,7 +364,7 @@ class _UserHomeState extends State<UserHome> {
                       padding: EdgeInsets.only(top: 15),
                       child: Align(
                         alignment: Alignment.topCenter,
-                        child: GradientButton(
+                        child: RaisedButton(
                           increaseHeightBy: 20,
                           increaseWidthBy: width * 0.58,
                           gradient: gradientBtn,
@@ -438,7 +438,7 @@ class _UserHomeState extends State<UserHome> {
                                           mainAxisAlignment:
                                               MainAxisAlignment.start,
                                           children: [
-                                            GradientButton(
+                                            RaisedButton(
                                               shape: CircleBorder(),
                                               child: Icon(
                                                 Icons.app_registration,
@@ -457,9 +457,6 @@ class _UserHomeState extends State<UserHome> {
                                                 //   ),
                                                 // );
                                               },
-                                              increaseHeightBy: 25,
-                                              increaseWidthBy: 25,
-                                              gradient: gradientBtn,
                                             ),
                                             Text(
                                               '''Register
@@ -490,7 +487,7 @@ For Free''',
                                           mainAxisAlignment:
                                               MainAxisAlignment.start,
                                           children: [
-                                            GradientButton(
+                                            RaisedButton(
                                               shape: CircleBorder(),
                                               child: Icon(
                                                 Icons.wallet_membership_rounded,
@@ -508,9 +505,6 @@ For Free''',
                                                 //   ),
                                                 // );
                                               },
-                                              increaseHeightBy: 25,
-                                              increaseWidthBy: 25,
-                                              gradient: gradientBtn,
                                             ),
                                             Text(
                                               '''Wallet
@@ -540,7 +534,7 @@ Topup''',
                                           mainAxisAlignment:
                                               MainAxisAlignment.start,
                                           children: [
-                                            GradientButton(
+                                            RaisedButton(
                                                 shape: CircleBorder(),
                                                 child: Icon(
                                                   Icons.comment_bank_rounded,
@@ -621,7 +615,7 @@ Details''',
                                             mainAxisAlignment:
                                                 MainAxisAlignment.start,
                                             children: [
-                                              GradientButton(
+                                              RaisedButton(
                                                 shape: CircleBorder(),
                                                 child: Icon(
                                                   Icons.add_business_rounded,
@@ -673,7 +667,7 @@ Bank Details''',
                                             mainAxisAlignment:
                                                 MainAxisAlignment.start,
                                             children: [
-                                              GradientButton(
+                                              RaisedButton(
                                                 shape: CircleBorder(),
                                                 child: Icon(
                                                   Icons.receipt_long_rounded,
@@ -722,7 +716,7 @@ Bank Details''',
                                             mainAxisAlignment:
                                                 MainAxisAlignment.start,
                                             children: [
-                                              GradientButton(
+                                              RaisedButton(
                                                   shape: CircleBorder(),
                                                   child: Icon(
                                                     Icons.done_outline_rounded,
@@ -915,7 +909,7 @@ Bank Details''',
                       padding: EdgeInsets.only(top: height * 0.005),
                       child: Align(
                         alignment: Alignment.topCenter,
-                        child: GradientButton(
+                        child: RaisedButton(
                           increaseHeightBy: 20,
                           increaseWidthBy: width * 0.58,
                           gradient: gradientBtn,
@@ -989,28 +983,25 @@ Bank Details''',
                                           mainAxisAlignment:
                                               MainAxisAlignment.start,
                                           children: [
-                                            GradientButton(
+                                            RaisedButton(
                                               shape: CircleBorder(),
                                               child: Icon(
                                                 Icons.app_registration,
                                                 color: whiteColor,
                                                 size: 30,
                                               ),
-                                              callback: () {
-                                                Navigator.of(context).push(
-                                                  SlideRightRoute(
-                                                    page: UserGuide(
-                                                      iconData: Icons
-                                                          .app_registration,
-                                                      desc: desc[1],
-                                                      pageName: title[0],
-                                                    ),
-                                                  ),
-                                                );
+                                              onPressed: () {
+                                                // Navigator.of(context).push(
+                                                //   SlideRightRoute(
+                                                //     page: UserGuide(
+                                                //       iconData: Icons
+                                                //           .app_registration,
+                                                //       desc: desc[1],
+                                                //       pageName: title[0],
+                                                //     ),
+                                                //   ),
+                                                // );
                                               },
-                                              increaseHeightBy: 25,
-                                              increaseWidthBy: 25,
-                                              gradient: gradientBtn,
                                             ),
                                             Text(
                                               '''Register 
@@ -1026,22 +1017,22 @@ For Free''',
                                       ),
                                       GestureDetector(
                                         onTap: () {
-                                          Navigator.of(context).push(
-                                            SlideRightRoute(
-                                              page: UserGuide(
-                                                iconData: Icons
-                                                    .wallet_membership_rounded,
-                                                desc: desc[1],
-                                                pageName: title[1],
-                                              ),
-                                            ),
-                                          );
+                                          // Navigator.of(context).push(
+                                          //   SlideRightRoute(
+                                          //     page: UserGuide(
+                                          //       iconData: Icons
+                                          //           .wallet_membership_rounded,
+                                          //       desc: desc[1],
+                                          //       pageName: title[1],
+                                          //     ),
+                                          //   ),
+                                          // );
                                         },
                                         child: Column(
                                           mainAxisAlignment:
                                               MainAxisAlignment.start,
                                           children: [
-                                            GradientButton(
+                                            RaisedButton(
                                               shape: CircleBorder(),
                                               child: Icon(
                                                 Icons.wallet_membership_rounded,
@@ -1059,9 +1050,6 @@ For Free''',
                                                   ),
                                                 );
                                               },
-                                              increaseHeightBy: 25,
-                                              increaseWidthBy: 25,
-                                              gradient: gradientBtn,
                                             ),
                                             Text(
                                               '''Wallet 
@@ -1091,7 +1079,7 @@ Topup''',
                                           mainAxisAlignment:
                                               MainAxisAlignment.start,
                                           children: [
-                                            GradientButton(
+                                            RaisedButton(
                                                 shape: CircleBorder(),
                                                 child: Icon(
                                                   Icons.comment_bank_rounded,
@@ -1172,7 +1160,7 @@ Details''',
                                             mainAxisAlignment:
                                                 MainAxisAlignment.start,
                                             children: [
-                                              GradientButton(
+                                              RaisedButton(
                                                 shape: CircleBorder(),
                                                 child: Icon(
                                                   Icons.add_business_rounded,
@@ -1224,7 +1212,7 @@ Bank Details''',
                                             mainAxisAlignment:
                                                 MainAxisAlignment.start,
                                             children: [
-                                              GradientButton(
+                                              RaisedButton(
                                                 shape: CircleBorder(),
                                                 child: Icon(
                                                   Icons.receipt_long_rounded,
@@ -1273,7 +1261,7 @@ Bank Details''',
                                             mainAxisAlignment:
                                                 MainAxisAlignment.start,
                                             children: [
-                                              GradientButton(
+                                              RaisedButton(
                                                   shape: CircleBorder(),
                                                   child: Icon(
                                                     Icons.done_outline_rounded,
