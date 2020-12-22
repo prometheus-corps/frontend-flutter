@@ -77,6 +77,7 @@ class _CreateLockScreenState extends State<CreateLockScreen> {
             resizeToAvoidBottomPadding: false,
             backgroundColor: splashBgColor,
             body: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Padding(
                   padding: const EdgeInsets.only(top: 50, bottom: 0),
@@ -106,9 +107,6 @@ class _CreateLockScreenState extends State<CreateLockScreen> {
                       ),
                     ],
                   ),
-                ),
-                SizedBox(
-                  height: ScreenUtil().setHeight(200),
                 ),
                 Form(
                   key: formKey,
