@@ -20,7 +20,9 @@ final TextEditingController _userNameController = TextEditingController();
 final TextEditingController _phoneController = TextEditingController();
 final TextEditingController _accountController = TextEditingController();
 GlobalKey<ScaffoldState> _registerSaffoldKey = GlobalKey();
-
+  File _image = null;
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
+  final picker = ImagePicker();
 class _BorrowerRegistrationScreenState
     extends State<BorrowerRegistrationScreen> {
   @override
