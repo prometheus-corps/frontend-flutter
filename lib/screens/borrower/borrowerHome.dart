@@ -307,17 +307,7 @@ class _UserHomeState extends State<UserHome> {
                                                       );
                                                     }).toList(),
                                                     onChanged: (value) {
-                                                      setState(() {
-                                                        indexBottomCount = items
-                                                            .indexOf(value);
-                                                        getRates(
-                                                            items[
-                                                                indexTopCount],
-                                                            items[
-                                                                indexBottomCount]);
-                                                        _selectedLocationBottom =
-                                                            value;
-                                                      });
+                                                      setState(() {});
                                                     },
                                                   ),
                                                 ),
