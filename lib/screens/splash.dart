@@ -33,7 +33,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   vertical: 25,
                 ),
                 child: Image(
-                  image: AssetImage('images/image.png'),
+                  image: AssetImage('images/logo.png'),
                 ),
               ),
               Text(
