@@ -139,16 +139,16 @@ class _BorrowHomeScreenState extends State<BorrowHomeScreen> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              CircularButtonKey(
-                                name: '''Register
+                              buildGestureDetector(
+                                '''Register
 For Free''',
                               ),
-                              CircularButtonKey(
-                                name: """Draft 
+                              buildGestureDetector(
+                                """Draft 
 a Request""",
                               ),
-                              CircularButtonKey(
-                                name: """State
+                              buildGestureDetector(
+                                """State
 Agency Verification""",
                               ),
                             ],
@@ -165,66 +165,53 @@ Agency Verification""",
       ),
     );
   }
-}
 
-class CircularButtonKey extends StatelessWidget {
-  const CircularButtonKey({
-    @required this.name,
-  });
-  final String name;
-
-  @override
-  Widget build(BuildContext context) {
-    // bool isDarkMode =
-    // MediaQuery.of(context).platformBrightness == Brightness.dark;
-    ScreenUtil.init(context,
-        designSize: Size(1080, 2400), allowFontScaling: false);
-    return MaterialApp(
-      builder: DevicePreview.appBuilder,
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        accentColor: blueColor,
-        primarySwatch: blue,
-        canvasColor: Color(0xFFEFEFF4),
-        iconTheme: IconThemeData(color: blackColor),
-        primaryTextTheme: Typography.material2018().black,
-        textTheme: Typography.material2018().black,
-      ),
-      darkTheme: ThemeData(
-        primarySwatch: black,
-        accentColor: black,
-        brightness: Brightness.dark,
-        canvasColor: blackColor,
-        primaryTextTheme: Typography.material2018().white,
-        textTheme: Typography.material2018().white,
-      ),
-      home: Padding(
-        padding: EdgeInsets.only(top: 15),
-        child: GestureDetector(
-          onTap: () {},
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              RaisedButton(
-                shape: CircleBorder(),
-                child: Icon(
-                  Icons.app_registration,
-                  color: whiteColor,
-                  size: 30,
-                ),
-                onPressed: () {},
-              ),
-              Text(
-                name,
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 12,
-                  fontWeight: FontWeight.w600,
-                ),
-              )
-            ],
+  GestureDetector buildGestureDetector(String name) {
+    return GestureDetector(
+      onTap: () {
+        // Navigator.of(context).push(
+        //   SlideRightRoute(
+        //     page: UserGuide(
+        //       iconData: Icons
+        //           .add_business_rounded,
+        //       desc: desc[3],
+        //       pageName: title[3],
+        //     ),
+        //   ),
+        // );
+      },
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: [
+          RaisedButton(
+            shape: CircleBorder(),
+            child: Icon(
+              Icons.add_business_rounded,
+              color: whiteColor,
+              size: 30,
+            ),
+            onPressed: () {
+              // Navigator.of(context).push(
+              //   SlideRightRoute(
+              //     page: UserGuide(
+              //       iconData: Icons
+              //           .add_business_rounded,
+              //       desc: desc[3],
+              //       pageName: title[3],
+              //     ),
+              //   ),
+              // );
+            },
           ),
-        ),
+          Text(
+            name,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontSize: 12,
+              fontWeight: FontWeight.w600,
+            ),
+          )
+        ],
       ),
     );
   }
