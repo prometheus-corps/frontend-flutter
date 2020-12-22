@@ -99,7 +99,7 @@ class _UserHomeState extends State<UserHome> {
                     child: Text(
                       'Home',
                       style: GoogleFonts.roboto(
-                        color: mainBgColor,
+                        color: whiteColor,
                         fontSize: 42,
                         fontWeight: FontWeight.bold,
                       ),
