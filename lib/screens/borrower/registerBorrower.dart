@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:crowdgain/screens/borrower/verification.dart';
 import 'package:crowdgain/utilities/constants.dart';
 import 'package:crowdgain/widgets/textfield.dart';
 import 'package:device_preview/device_preview.dart';
@@ -340,8 +341,17 @@ class _BorrowerRegistrationScreenState
                                                     fontWeight: FontWeight.w600,
                                                   ),
                                                 ),
-                                          onPressed:
-                                              isWaiting ? null : () async {},
+                                          onPressed: isWaiting
+                                              ? null
+                                              : () async {
+                                                  Navigator.push(
+                                                    context,
+                                                    MaterialPageRoute(
+                                                      builder: (context) =>
+                                                          VerificationScreen(),
+                                                    ),
+                                                  );
+                                                },
                                         ),
                                       ),
                                     ),
