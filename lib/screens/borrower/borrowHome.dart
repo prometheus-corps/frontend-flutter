@@ -250,7 +250,18 @@ Verification""",
                 size: 30,
               ),
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                CupertinoPageRoute(
+                  builder: (context) => UserGuide(
+                    desc: desc,
+                    pageName: name,
+                    iconData: icon,
+                  ),
+                ),
+              );
+            },
           ),
           SizedBox(
             height: ScreenUtil().setHeight(20),
