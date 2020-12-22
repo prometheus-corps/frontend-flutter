@@ -729,16 +729,16 @@ Bank Details''',
                                                     size: 30,
                                                   ),
                                                   callback: () {
-                                                    Navigator.of(context).push(
-                                                      SlideRightRoute(
-                                                        page: UserGuide(
-                                                          iconData: Icons
-                                                              .done_outline_rounded,
-                                                          desc: desc[5],
-                                                          pageName: title[5],
-                                                        ),
-                                                      ),
-                                                    );
+                                                    // Navigator.of(context).push(
+                                                    //   SlideRightRoute(
+                                                    //     page: UserGuide(
+                                                    //       iconData: Icons
+                                                    //           .done_outline_rounded,
+                                                    //       desc: desc[5],
+                                                    //       pageName: title[5],
+                                                    //     ),
+                                                    //   ),
+                                                    // );
                                                   },
                                                   increaseHeightBy: 25,
                                                   increaseWidthBy: 25,
