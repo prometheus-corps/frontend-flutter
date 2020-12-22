@@ -2,6 +2,7 @@ import 'package:crowdgain/screens/room.dart';
 import 'package:crowdgain/utilities/constants.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_dash/flutter_dash.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -127,9 +128,9 @@ class _BorrowHomeScreenState extends State<BorrowHomeScreen> {
                           padding: const EdgeInsets.only(left: 40, top: 50),
                           child: Dash(
                             direction: Axis.horizontal,
-                            length: width * 0.7,
+                            length: ScreenUtil().scaleWidth * 0.7,
                             dashLength: 12,
-                            dashColor: whiteColor,
+                            dashColor: isDarkMode ? whiteColor : blackColor,
                           ),
                         ),
                       ],
