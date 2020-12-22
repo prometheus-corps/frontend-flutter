@@ -237,11 +237,8 @@ class _VerificationScreenState extends State<VerificationScreen> {
                                                           FontWeight.w600,
                                                     ),
                                                   ),
-                                            onPressed: isWaiting
-                                                ? null
-                                                : () async {
-                                                    _showPicker(context);
-                                                  },
+                                            onPressed:
+                                                isWaiting ? null : () async {},
                                           ),
                                         ),
                                       ),
