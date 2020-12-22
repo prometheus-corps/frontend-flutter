@@ -1,3 +1,4 @@
+import 'package:crowdgain/screens/borrower/borrowHome.dart';
 import 'package:crowdgain/screens/borrower/borrowerHome.dart';
 import 'package:crowdgain/utilities/constants.dart';
 import 'package:device_preview/device_preview.dart';
@@ -128,7 +129,7 @@ class _RoomScreenState extends State<RoomScreen> {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => BorrowerHome(),
+                                  builder: (context) => BorrowHomeScreen(),
                                 ),
                               );
                             },
