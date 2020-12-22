@@ -73,12 +73,20 @@ class _BorrowerRegistrationScreenState
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Center(
-                                child: Text(
-                                  'Register',
-                                  style: GoogleFonts.raleway(
-                                    fontSize: ScreenUtil().setSp(65),
-                                    fontWeight: FontWeight.w700,
+                              Align(
+                                alignment: Alignment.topLeft,
+                                child: Padding(
+                                  padding: EdgeInsets.only(
+                                      // left: width * 0.1,
+                                      // right: width * 0.1,
+                                      // top: height * 0.05,
+                                      ),
+                                  child: Text(
+                                    'Register',
+                                    style: GoogleFonts.roboto(
+                                      fontSize: 42,
+                                      fontWeight: FontWeight.bold,
+                                    ),
                                   ),
                                 ),
                               ),
