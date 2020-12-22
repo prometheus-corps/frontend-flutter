@@ -245,7 +245,7 @@ Verification""",
                 ScreenUtil().setHeight(50),
               ),
               child: Icon(
-                Icons.add_business_rounded,
+                icon,
                 color: whiteColor,
                 size: 30,
               ),
