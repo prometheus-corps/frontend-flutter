@@ -102,7 +102,7 @@ class _RoomScreenState extends State<RoomScreen> {
                             },
                             color: whiteColor,
                             child: Text(
-                              'Create Room',
+                              'Lend Money',
                               style: TextStyle(
                                 fontFamily: 'Bambino',
                                 fontSize: ScreenUtil().setSp(48),
@@ -131,7 +131,7 @@ class _RoomScreenState extends State<RoomScreen> {
                             },
                             color: whiteColor,
                             child: Text(
-                              'Join Room',
+                              'Borrow Money',
                               style: TextStyle(
                                 fontFamily: 'Bambino',
                                 fontSize: ScreenUtil().setSp(48),
