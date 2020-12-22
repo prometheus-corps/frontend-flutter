@@ -1,4 +1,6 @@
 import 'dart:ui';
+import 'package:crowdgain/utilities/constants.dart';
+import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -19,182 +21,188 @@ class _CreateLockScreenState extends State<CreateLockScreen> {
   Widget build(BuildContext context) {
     ScreenUtil.init(context,
         designSize: Size(1080, 2400), allowFontScaling: false);
-    return MaterialApp(
-      builder: DevicePreview.appBuilder,
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: white,
-        canvasColor: Color(0xFFEFEFF4),
-        iconTheme: IconThemeData(color: darkFadeTextColor),
-        primaryTextTheme: Typography.material2018().black,
-        textTheme: Typography.material2018().black,
-      ),
-      darkTheme: ThemeData(
-        primarySwatch: black,
-        accentColor: black,
-        brightness: Brightness.dark,
-        canvasColor: mainTextColor,
-        primaryTextTheme: Typography.material2018().white,
-        textTheme: Typography.material2018().white,
-      ),
-      home: SafeArea(
-        child: Scaffold(
-          key: _scaffold,
-          resizeToAvoidBottomInset: false,
-          resizeToAvoidBottomPadding: false,
-          backgroundColor: splashBgColor,
-          body: Stack(
-            children: [
-              Align(
-                alignment: Alignment.topCenter,
-                child: Padding(
-                  padding: const EdgeInsets.only(top: 50, bottom: 0),
-                  child: Stack(
-                    children: [
-                      Align(
-                        alignment: Alignment.topCenter,
-                        child: Column(
-                          children: [
-                            Text(
-                              'Create Password',
-                              style: GoogleFonts.raleway(
-                                fontSize: 28,
-                                fontWeight: FontWeight.bold,
-                                color: mainTextColor,
+    return WillPopScope(
+      onWillPop: () {
+        SystemNavigator.pop();
+        return Future.value(false);
+      },
+      child: MaterialApp(
+        builder: DevicePreview.appBuilder,
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          primarySwatch: white,
+          canvasColor: Color(0xFFEFEFF4),
+          iconTheme: IconThemeData(color: blackColor),
+          primaryTextTheme: Typography.material2018().black,
+          textTheme: Typography.material2018().black,
+        ),
+        darkTheme: ThemeData(
+          primarySwatch: black,
+          accentColor: black,
+          brightness: Brightness.dark,
+          canvasColor: blackColor,
+          primaryTextTheme: Typography.material2018().white,
+          textTheme: Typography.material2018().white,
+        ),
+        home: SafeArea(
+          child: Scaffold(
+            key: _scaffold,
+            resizeToAvoidBottomInset: false,
+            resizeToAvoidBottomPadding: false,
+            backgroundColor: splashBgColor,
+            body: Stack(
+              children: [
+                Align(
+                  alignment: Alignment.topCenter,
+                  child: Padding(
+                    padding: const EdgeInsets.only(top: 50, bottom: 0),
+                    child: Stack(
+                      children: [
+                        Align(
+                          alignment: Alignment.topCenter,
+                          child: Column(
+                            children: [
+                              Text(
+                                'Create Password',
+                                style: GoogleFonts.raleway(
+                                  fontSize: 28,
+                                  fontWeight: FontWeight.bold,
+                                  color: mainTextColor,
+                                ),
                               ),
-                            ),
-                            Text(
-                              'Create a 4-digit code',
-                              style: GoogleFonts.raleway(
-                                fontSize: 18,
-                                fontWeight: FontWeight.bold,
-                                color: fadeColor,
+                              Text(
+                                'Create a 4-digit code',
+                                style: GoogleFonts.raleway(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold,
+                                  color: fadeColor,
+                                ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
-                      ),
-                      Align(
-                        alignment: Alignment.topLeft,
-                        child: Padding(
-                          padding: const EdgeInsets.only(left: 25),
-                          child: GestureDetector(
-                            onTap: () {
-                              Navigator.pop(context);
-                            },
-                            child: ShaderMask(
-                              shaderCallback: (Rect bounds) {
-                                return RadialGradient(
-                                  center: Alignment.center,
-                                  radius: 0.5,
-                                  colors: <Color>[
-                                    blueColor,
-                                    blueColor,
-                                  ],
-                                  tileMode: TileMode.repeated,
-                                ).createShader(bounds);
+                        Align(
+                          alignment: Alignment.topLeft,
+                          child: Padding(
+                            padding: const EdgeInsets.only(left: 25),
+                            child: GestureDetector(
+                              onTap: () {
+                                Navigator.pop(context);
                               },
-                              child: Icon(
-                                Icons.arrow_back_ios_rounded,
-                                size: 32.0,
+                              child: ShaderMask(
+                                shaderCallback: (Rect bounds) {
+                                  return RadialGradient(
+                                    center: Alignment.center,
+                                    radius: 0.5,
+                                    colors: <Color>[
+                                      blueColor,
+                                      blueColor,
+                                    ],
+                                    tileMode: TileMode.repeated,
+                                  ).createShader(bounds);
+                                },
+                                child: Icon(
+                                  Icons.arrow_back_ios_rounded,
+                                  size: 32.0,
+                                ),
                               ),
                             ),
                           ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
-              ),
-              Align(
-                alignment: Alignment.center,
-                child: Padding(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 65, vertical: 20),
-                  child: PinInputTextFormField(
-                    controller: _controller,
-                    pinLength: 4,
-                    decoration: UnderlineDecoration(
-                      colorBuilder: PinListenColorBuilder(
-                          cardInsideColor, cardInsideColor),
-                      textStyle: GoogleFonts.raleway(
-                        fontWeight: FontWeight.bold,
-                        color: mainTextColor,
-                        fontSize: 32,
+                Align(
+                  alignment: Alignment.center,
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 65, vertical: 20),
+                    child: PinInputTextFormField(
+                      controller: _controller,
+                      pinLength: 4,
+                      decoration: UnderlineDecoration(
+                        colorBuilder: PinListenColorBuilder(
+                            cardInsideColor, cardInsideColor),
+                        textStyle: GoogleFonts.raleway(
+                          fontWeight: FontWeight.bold,
+                          color: mainTextColor,
+                          fontSize: 32,
+                        ),
+                        obscureStyle: ObscureStyle(
+                          isTextObscure: true,
+                          obscureText: '*',
+                        ),
                       ),
-                      obscureStyle: ObscureStyle(
-                        isTextObscure: true,
-                        obscureText: '*',
-                      ),
+                      textInputAction: TextInputAction.go,
+                      enabled: true,
+                      keyboardType: TextInputType.number,
+                      onChanged: (pin) {
+                        setState(() {
+                          pinKey = pin;
+                        });
+                      },
+                      onSaved: (pin) {
+                        setState(() {
+                          pinKey = pin;
+                        });
+                      },
+                      onSubmit: (pin) {
+                        setState(() {
+                          pinKey = pin;
+                        });
+                      },
                     ),
-                    textInputAction: TextInputAction.go,
-                    enabled: true,
-                    keyboardType: TextInputType.number,
-                    onChanged: (pin) {
-                      setState(() {
-                        pinKey = pin;
-                      });
-                    },
-                    onSaved: (pin) {
-                      setState(() {
-                        pinKey = pin;
-                      });
-                    },
-                    onSubmit: (pin) {
-                      setState(() {
-                        pinKey = pin;
-                      });
-                    },
                   ),
                 ),
-              ),
-              Align(
-                alignment: Alignment.bottomCenter,
-                child: Padding(
-                  padding: EdgeInsets.only(
-                      bottom: 40,
-                      top: MediaQuery.of(context).size.height * 0.7),
-                  child: GradientButton(
-                    increaseHeightBy: 20,
-                    increaseWidthBy: 250,
-                    gradient: gradientBtn,
-                    shapeRadius: BorderRadius.circular(5),
-                    child: Text(
-                      'Enter',
-                      style: GoogleFonts.raleway(
-                        fontSize: 22,
-                        fontWeight: FontWeight.w700,
+                Align(
+                  alignment: Alignment.bottomCenter,
+                  child: Padding(
+                    padding: EdgeInsets.only(
+                        bottom: 40,
+                        top: MediaQuery.of(context).size.height * 0.7),
+                    child: GradientButton(
+                      increaseHeightBy: 20,
+                      increaseWidthBy: 250,
+                      gradient: gradientBtn,
+                      shapeRadius: BorderRadius.circular(5),
+                      child: Text(
+                        'Enter',
+                        style: GoogleFonts.raleway(
+                          fontSize: 22,
+                          fontWeight: FontWeight.w700,
+                        ),
                       ),
-                    ),
-                    callback: () async {
-                      if (pinKey != null && pinKey != '') {
-                        final SharedPreferences prefs =
-                            await SharedPreferences.getInstance();
-                        try {
-                          setState(() {
-                            prefs.setBool('isNew', true);
-                            prefs.setInt('userPass', int.tryParse(pinKey));
-                          });
-                        } catch (e) {}
-                        Navigator.pushNamed(context, 'userHome');
-                      } else {
-                        _scaffold.currentState.showSnackBar(SnackBar(
-                          backgroundColor: errorCardColor,
-                          content: Text(
-                            'Try Another Password',
-                            style: GoogleFonts.raleway(
-                              fontWeight: FontWeight.w700,
+                      callback: () async {
+                        if (pinKey != null && pinKey != '') {
+                          final SharedPreferences prefs =
+                              await SharedPreferences.getInstance();
+                          try {
+                            setState(() {
+                              prefs.setBool('isNew', true);
+                              prefs.setInt('userPass', int.tryParse(pinKey));
+                            });
+                          } catch (e) {}
+                          Navigator.pushNamed(context, 'userHome');
+                        } else {
+                          _scaffold.currentState.showSnackBar(SnackBar(
+                            backgroundColor: errorCardColor,
+                            content: Text(
+                              'Try Another Password',
+                              style: GoogleFonts.raleway(
+                                fontWeight: FontWeight.w700,
+                              ),
                             ),
-                          ),
-                          duration: Duration(seconds: 3),
-                        ));
-                      }
-                      _controller.clear();
-                    },
+                            duration: Duration(seconds: 3),
+                          ));
+                        }
+                        _controller.clear();
+                      },
+                    ),
                   ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),
