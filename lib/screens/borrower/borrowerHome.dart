@@ -215,7 +215,7 @@ class _UserHomeState extends State<UserHome> {
                                                     TextInputType.number,
                                                 textAlign: TextAlign.center,
                                                 style: GoogleFonts.raleway(
-                                                  color: mainBgColor,
+                                                  color: whiteColor,
                                                   fontSize: height * 0.03,
                                                   fontWeight: FontWeight.w600,
                                                 ),
