@@ -25,9 +25,6 @@ String productDropDownValue = stateAgency[0];
 class _VerificationScreenState extends State<VerificationScreen> {
   @override
   Widget build(BuildContext context) {
-    bool isDarkMode =
-        MediaQuery.of(context).platformBrightness == Brightness.dark;
-    int currentIndex = 2;
     ScreenUtil.init(context,
         designSize: Size(1080, 2400), allowFontScaling: false);
     return WillPopScope(
