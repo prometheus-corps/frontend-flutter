@@ -172,20 +172,6 @@ Membership''',
                                                 hint: 'Reference Name',
                                                 firstNameController:
                                                     _emailController,
-                                                type:
-                                                    TextInputType.emailAddress,
-                                                obscure: false,
-                                              ),
-                                            ),
-                                            Padding(
-                                              padding: EdgeInsets.symmetric(
-                                                vertical:
-                                                    ScreenUtil().setHeight(24),
-                                              ),
-                                              child: TextFormWidget(
-                                                hint: 'Reference Number',
-                                                firstNameController:
-                                                    _userNameController,
                                                 type: TextInputType.name,
                                                 obscure: false,
                                               ),
