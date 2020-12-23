@@ -126,7 +126,7 @@ Membership''',
                                                     ScreenUtil().setHeight(24),
                                               ),
                                               child: TextFormWidget(
-                                                hint: 'Name',
+                                                hint: 'Membership Id',
                                                 firstNameController:
                                                     _nameController,
                                                 type: TextInputType.name,
