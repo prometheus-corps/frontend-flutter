@@ -1,4 +1,5 @@
 import 'package:crowdgain/screens/borrower/borrowHome.dart';
+import 'package:crowdgain/screens/borrower/waitingScreen.dart';
 import 'package:crowdgain/utilities/constants.dart';
 import 'package:crowdgain/utilities/data.dart';
 import 'package:crowdgain/widgets/textfield.dart';
@@ -227,8 +228,17 @@ Membership''',
                                                           FontWeight.w600,
                                                     ),
                                                   ),
-                                            onPressed:
-                                                isWaiting ? null : () async {},
+                                            onPressed: isWaiting
+                                                ? null
+                                                : () async {
+                                                    Navigator.push(
+                                                      context,
+                                                      MaterialPageRoute(
+                                                        builder: (context) =>
+                                                            WaitingRoomScreen(),
+                                                      ),
+                                                    );
+                                                  },
                                           ),
                                         ),
                                       ),
