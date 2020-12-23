@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:crowdgain/screens/createLock.dart';
 import 'package:crowdgain/utilities/constants.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
 String routeKey = 'createLock';
@@ -14,15 +15,19 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    Timer(
-      Duration(seconds: 3),
-      () => Navigator.push(
-        context,
-        MaterialPageRoute(
-          builder: (context) => CreateLockScreen(),
+    Firebase.initializeApp().whenComplete(() async {
+      print('Connected');
+      Timer(
+        Duration(seconds: 3),
+        () => Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => CreateLockScreen(),
+          ),
         ),
-      ),
-    );
+      );
+      setState(() {});
+    });
   }
 
   @override
