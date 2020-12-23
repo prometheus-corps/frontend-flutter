@@ -72,7 +72,7 @@ class _WaitingRoomScreenState extends State<WaitingRoomScreen> {
                       padding: EdgeInsets.all(0.0),
                       child: Center(
                         child: Text(
-                          '''Making your money work for you''',
+                          '''We'll verify you request and will get back to you''',
                           textAlign: TextAlign.center,
                           style: GoogleFonts.raleway(
                             fontSize: ScreenUtil().setSp(50),
