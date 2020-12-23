@@ -129,6 +129,7 @@ Membership''',
                                                   value: value,
                                                   child: Text(
                                                     value,
+                                                    overflow: TextOverflow.clip,
                                                     style: GoogleFonts.openSans(
                                                       fontSize: ScreenUtil()
                                                           .setSp(38),
