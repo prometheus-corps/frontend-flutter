@@ -1,5 +1,6 @@
 import 'package:crowdgain/screens/borrower/borrowHome.dart';
 import 'package:crowdgain/utilities/constants.dart';
+import 'package:crowdgain/utilities/data.dart';
 import 'package:crowdgain/widgets/textfield.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
@@ -59,6 +60,7 @@ class _VerificationScreenState extends State<VerificationScreen> {
         ),
         home: SafeArea(
           child: Scaffold(
+            key: _verificationrSaffoldKey,
             body: SingleChildScrollView(
               reverse: false,
               child: Container(
@@ -300,5 +302,41 @@ Membership''',
         ),
       ),
     );
+  }
+
+  _showPicker(context) {
+    showModalBottomSheet(
+        context: context,
+        builder: (BuildContext bc) {
+          return SafeArea(
+            child: Container(
+              padding: EdgeInsets.all(5),
+              color: whiteColor,
+              child: DropdownButton(
+                underline: SizedBox(),
+                value: productDropDownValue,
+                icon: Icon(Icons.arrow_drop_down),
+                items: stateAgency.map((value) {
+                  return DropdownMenuItem<String>(
+                    value: value,
+                    child: Text(
+                      value,
+                      style: GoogleFonts.openSans(
+                        fontSize: 14,
+                        fontWeight: FontWeight.w400,
+                        color: blackColor,
+                      ),
+                    ),
+                  );
+                }).toList(),
+                onChanged: (newValue) async {
+                  setState(() {
+                    productDropDownValue = newValue;
+                  });
+                },
+              ),
+            ),
+          );
+        });
   }
 }
