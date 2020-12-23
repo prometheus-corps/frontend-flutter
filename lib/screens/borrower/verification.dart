@@ -194,7 +194,7 @@ Membership''',
                                       ),
                                       Padding(
                                         padding: EdgeInsets.symmetric(
-                                          vertical: ScreenUtil().setHeight(80),
+                                          vertical: ScreenUtil().setHeight(160),
                                         ),
                                         child: ButtonTheme(
                                           minWidth: ScreenUtil().setWidth(1080),
