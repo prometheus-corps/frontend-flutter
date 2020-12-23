@@ -21,8 +21,11 @@ class _BorrowHomeScreenState extends State<BorrowHomeScreen> {
     bool isDarkMode =
         MediaQuery.of(context).platformBrightness == Brightness.dark;
     int currentIndex = 2;
-    ScreenUtil.init(context,
-        designSize: Size(1080, 2400), allowFontScaling: false);
+    ScreenUtil.init(
+      context,
+      designSize: Size(1080, 2400),
+      allowFontScaling: false,
+    );
     return WillPopScope(
       onWillPop: () {
         Navigator.push(
