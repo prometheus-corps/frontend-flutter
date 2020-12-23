@@ -196,7 +196,7 @@ Membership''',
                                                     ScreenUtil().setHeight(24),
                                               ),
                                               child: TextFormWidget(
-                                                hint: 'Phone Number',
+                                                hint: 'Reference Number',
                                                 firstNameController:
                                                     _phoneController,
                                                 type: TextInputType.phone,
