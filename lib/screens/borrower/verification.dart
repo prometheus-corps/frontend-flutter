@@ -120,6 +120,27 @@ Membership''',
                                                     ScreenUtil().setSp(35),
                                               ),
                                             ),
+                                            DropdownButton(
+                                              underline: SizedBox(),
+                                              value: productDropDownValue,
+                                              icon: Icon(Icons.arrow_drop_down),
+                                              items: productCat.map((value) {
+                                                return DropdownMenuItem<String>(
+                                                  value: value,
+                                                  child: Text(
+                                                    value,
+                                                    style: GoogleFonts.openSans(
+                                                      fontSize: ScreenUtil()
+                                                          .setSp(38),
+                                                      fontWeight:
+                                                          FontWeight.w400,
+                                                      color: mainTextColor,
+                                                    ),
+                                                  ),
+                                                );
+                                              }).toList(),
+                                              onChanged: (newValue) async {},
+                                            ),
                                             Padding(
                                               padding: EdgeInsets.symmetric(
                                                 vertical:
