@@ -128,7 +128,11 @@ Membership''',
                                                 return DropdownMenuItem<String>(
                                                   value: value,
                                                   child: Text(
-                                                    value,
+                                                    value.toString().substring(
+                                                        0,
+                                                        value.length > 35
+                                                            ? 35
+                                                            : value.length),
                                                     overflow: TextOverflow.clip,
                                                     style: GoogleFonts.openSans(
                                                       fontSize: ScreenUtil()
