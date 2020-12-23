@@ -124,7 +124,7 @@ Membership''',
                                               underline: SizedBox(),
                                               value: productDropDownValue,
                                               icon: Icon(Icons.arrow_drop_down),
-                                              items: productCat.map((value) {
+                                              items: stateAgency.map((value) {
                                                 return DropdownMenuItem<String>(
                                                   value: value,
                                                   child: Text(
@@ -134,7 +134,7 @@ Membership''',
                                                           .setSp(38),
                                                       fontWeight:
                                                           FontWeight.w400,
-                                                      color: mainTextColor,
+                                                      color: blackColor,
                                                     ),
                                                   ),
                                                 );
