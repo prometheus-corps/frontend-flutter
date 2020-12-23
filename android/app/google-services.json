@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "321001920605",
+    "project_id": "cis-crowdpay-f7c97",
+    "storage_bucket": "cis-crowdpay-f7c97.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:321001920605:android:e495908181e4aa1e0015b4",
+        "android_client_info": {
+          "package_name": "com.example.crowdgain"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "321001920605-50d9vupmfdlkt6veiukdop8rlji3grmf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDH6s1prf3ursRmwLlPF7o8Zvt55vX82fw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "321001920605-50d9vupmfdlkt6veiukdop8rlji3grmf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
