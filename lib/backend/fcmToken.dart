@@ -24,5 +24,9 @@ Future<String> getFCMToken() async {
     tokenKey = token;
   });
   print(tokenKey);
+  void fcmSubscribe() {
+    _firebaseMessaging.subscribeToTopic('TopicToListen');
+  }
+
   return (tokenKey);
 }
