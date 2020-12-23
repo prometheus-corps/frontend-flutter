@@ -59,7 +59,7 @@ class _WaitingRoomScreenState extends State<WaitingRoomScreen> {
                   children: [
                     Center(
                       child: Text(
-                        'please Wait',
+                        'Please Wait',
                         style: TextStyle(
                           fontFamily: 'Bambino',
                           fontSize: ScreenUtil().setSp(90),
@@ -72,7 +72,7 @@ class _WaitingRoomScreenState extends State<WaitingRoomScreen> {
                       padding: EdgeInsets.all(0.0),
                       child: Center(
                         child: Text(
-                          '''We'll verify you request and will get back to you''',
+                          '''You'll be notified after verification''',
                           textAlign: TextAlign.center,
                           style: GoogleFonts.raleway(
                             fontSize: ScreenUtil().setSp(50),
