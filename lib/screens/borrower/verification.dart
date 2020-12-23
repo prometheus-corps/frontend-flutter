@@ -133,7 +133,7 @@ Membership''',
                                                         value.length > 35
                                                             ? 35
                                                             : value.length),
-                                                    overflow: TextOverflow.clip,
+                                                    overflow: TextOverflow.fade,
                                                     style: GoogleFonts.openSans(
                                                       fontSize: ScreenUtil()
                                                           .setSp(38),
@@ -143,7 +143,12 @@ Membership''',
                                                   ),
                                                 );
                                               }).toList(),
-                                              onChanged: (newValue) async {},
+                                              onChanged: (newValue) async {
+                                                setState(() {
+                                                  productDropDownValue =
+                                                      newValue;
+                                                });
+                                              },
                                             ),
                                             Padding(
                                               padding: EdgeInsets.symmetric(
