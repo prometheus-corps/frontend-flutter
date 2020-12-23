@@ -134,7 +134,6 @@ Membership''',
                                                           .setSp(38),
                                                       fontWeight:
                                                           FontWeight.w400,
-                                                      color: blackColor,
                                                     ),
                                                   ),
                                                 );
