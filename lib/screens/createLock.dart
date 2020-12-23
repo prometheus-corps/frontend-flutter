@@ -78,7 +78,6 @@ class _CreateLockScreenState extends State<CreateLockScreen> {
             key: _scaffold,
             resizeToAvoidBottomInset: false,
             resizeToAvoidBottomPadding: false,
-            backgroundColor: splashBgColor,
             body: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -149,7 +148,11 @@ class _CreateLockScreenState extends State<CreateLockScreen> {
                         ),
                         cursorColor: Colors.black,
                         animationDuration: Duration(milliseconds: 300),
-                        textStyle: TextStyle(fontSize: 20, height: 1.6),
+                        textStyle: TextStyle(
+                          fontSize: 20,
+                          color: blackColor,
+                          height: 1.6,
+                        ),
                         enableActiveFill: true,
                         errorAnimationController: errorController,
                         controller: textEditingController,
