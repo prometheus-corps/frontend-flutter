@@ -194,47 +194,7 @@ Membership''',
                                       ),
                                       Padding(
                                         padding: EdgeInsets.symmetric(
-                                          vertical: ScreenUtil().setHeight(36),
-                                        ),
-                                        child: ButtonTheme(
-                                          minWidth: ScreenUtil().setWidth(1080),
-                                          height: ScreenUtil().setHeight(150),
-                                          child: RaisedButton(
-                                            color: whiteColor,
-                                            child: isWaiting
-                                                ? Container(
-                                                    height: ScreenUtil()
-                                                        .setHeight(120),
-                                                    width: ScreenUtil()
-                                                        .setWidth(120),
-                                                    padding: EdgeInsets.all(8),
-                                                    child:
-                                                        CircularProgressIndicator(
-                                                      strokeWidth: 2,
-                                                      valueColor:
-                                                          AlwaysStoppedAnimation<
-                                                                  Color>(
-                                                              blackColor),
-                                                    ),
-                                                  )
-                                                : Text(
-                                                    'Upload Id Proof',
-                                                    style: GoogleFonts.openSans(
-                                                      fontSize: ScreenUtil()
-                                                          .setSp(48),
-                                                      color: blackColor,
-                                                      fontWeight:
-                                                          FontWeight.w600,
-                                                    ),
-                                                  ),
-                                            onPressed:
-                                                isWaiting ? null : () async {},
-                                          ),
-                                        ),
-                                      ),
-                                      Padding(
-                                        padding: EdgeInsets.symmetric(
-                                          vertical: ScreenUtil().setHeight(0),
+                                          vertical: ScreenUtil().setHeight(80),
                                         ),
                                         child: ButtonTheme(
                                           minWidth: ScreenUtil().setWidth(1080),
