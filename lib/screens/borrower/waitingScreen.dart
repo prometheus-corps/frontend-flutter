@@ -50,7 +50,7 @@ class _WaitingRoomScreenState extends State<WaitingRoomScreen> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Image.asset(
-                  'images/room.png',
+                  'images/verify.png',
                   height: ScreenUtil().setHeight(650),
                   width: ScreenUtil().setWidth(400),
                   fit: BoxFit.fitWidth,
