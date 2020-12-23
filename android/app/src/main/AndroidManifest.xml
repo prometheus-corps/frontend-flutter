@@ -20,6 +20,13 @@
               android:name="io.flutter.embedding.android.SplashScreenDrawable"
               android:resource="@drawable/launch_background"
               />
+            <service
+              android:name=".java.MyFirebaseMessagingService"
+              android:exported="false">
+              <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+              </intent-filter>
+            </service>
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
