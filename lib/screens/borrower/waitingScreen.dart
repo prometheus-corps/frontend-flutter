@@ -1,3 +1,4 @@
+import 'package:crowdgain/utilities/constants.dart';
 import 'package:flutter/material.dart';
 
 class WaitingRoomScreen extends StatefulWidget {
