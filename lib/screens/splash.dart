@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:crowdgain/backend/fcmToken.dart';
 import 'package:crowdgain/screens/createLock.dart';
 import 'package:crowdgain/utilities/constants.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -12,6 +13,8 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
+    final token = getFCMToken();
+    print(token);
     super.initState();
     Firebase.initializeApp().whenComplete(() async {
       print('Connected');
