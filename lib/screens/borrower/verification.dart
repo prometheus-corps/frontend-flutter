@@ -189,33 +189,6 @@ Membership''',
                                                 obscure: false,
                                               ),
                                             ),
-                                            Padding(
-                                              padding: EdgeInsets.symmetric(
-                                                vertical:
-                                                    ScreenUtil().setHeight(24),
-                                              ),
-                                              child: TextFormWidget(
-                                                hint: 'Bank Account Number',
-                                                firstNameController:
-                                                    _accountController,
-                                                type: TextInputType.phone,
-                                                obscure: false,
-                                              ),
-                                            ),
-                                            Padding(
-                                              padding: EdgeInsets.symmetric(
-                                                vertical:
-                                                    ScreenUtil().setHeight(24),
-                                              ),
-                                              child: TextFormWidget(
-                                                hint: 'Password',
-                                                firstNameController:
-                                                    _passwordController,
-                                                type: TextInputType
-                                                    .visiblePassword,
-                                                obscure: true,
-                                              ),
-                                            ),
                                           ],
                                         ),
                                       ),
