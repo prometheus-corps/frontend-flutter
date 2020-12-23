@@ -20,9 +20,9 @@
               android:name="io.flutter.embedding.android.SplashScreenDrawable"
               android:resource="@drawable/launch_background"
               />
-            <meta-data
+            <!-- <meta-data
               android:name="com.google.firebase.messaging.default_notification_icon"
-              android:resource="@drawable/ic_stat_ic_notification" />
+              android:resource="@drawable/ic_stat_ic_notification" /> -->
             <meta-data
               android:name="com.google.firebase.messaging.default_notification_color"
               android:resource="@color/colorAccent" />
