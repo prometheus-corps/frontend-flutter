@@ -15,11 +15,8 @@ class VerificationScreen extends StatefulWidget {
 
 bool isWaiting = false;
 final TextEditingController _emailController = TextEditingController();
-final TextEditingController _passwordController = TextEditingController();
 final TextEditingController _nameController = TextEditingController();
-final TextEditingController _userNameController = TextEditingController();
 final TextEditingController _phoneController = TextEditingController();
-final TextEditingController _accountController = TextEditingController();
 GlobalKey<ScaffoldState> _verificationrSaffoldKey = GlobalKey();
 String productDropDownValue = stateAgency[0];
 
