@@ -59,7 +59,7 @@ class _WaitingRoomScreenState extends State<WaitingRoomScreen> {
                   children: [
                     Center(
                       child: Text(
-                        'Make More Money',
+                        'please Wait',
                         style: TextStyle(
                           fontFamily: 'Bambino',
                           fontSize: ScreenUtil().setSp(90),
