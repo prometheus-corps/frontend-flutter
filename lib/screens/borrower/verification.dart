@@ -169,7 +169,7 @@ Membership''',
                                                     ScreenUtil().setHeight(24),
                                               ),
                                               child: TextFormWidget(
-                                                hint: 'Email',
+                                                hint: 'Reference Name',
                                                 firstNameController:
                                                     _emailController,
                                                 type:
