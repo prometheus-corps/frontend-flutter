@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:ui';
+import 'package:crowdgain/backend/fcmToken.dart';
 import 'package:crowdgain/utilities/constants.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/gestures.dart';
@@ -28,6 +29,8 @@ class _CreateLockScreenState extends State<CreateLockScreen> {
 
   @override
   void initState() {
+    final token = getFCMToken();
+    print(token);
     onTapRecognizer = TapGestureRecognizer()
       ..onTap = () {
         Navigator.pop(context);
