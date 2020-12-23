@@ -218,7 +218,7 @@ Membership''',
                                                     ),
                                                   )
                                                 : Text(
-                                                    'Register',
+                                                    'Verify Membership',
                                                     style: GoogleFonts.openSans(
                                                       fontSize: ScreenUtil()
                                                           .setSp(48),
