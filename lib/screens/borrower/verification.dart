@@ -20,6 +20,7 @@ final TextEditingController _userNameController = TextEditingController();
 final TextEditingController _phoneController = TextEditingController();
 final TextEditingController _accountController = TextEditingController();
 GlobalKey<ScaffoldState> _verificationrSaffoldKey = GlobalKey();
+String productDropDownValue = stateAgency[0];
 
 class _VerificationScreenState extends State<VerificationScreen> {
   @override
