@@ -16,7 +16,12 @@ class _WaitingRoomScreenState extends State<WaitingRoomScreen> {
         designSize: Size(1080, 2400), allowFontScaling: false);
     return WillPopScope(
       onWillPop: () {
-        SystemNavigator.pop();
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => BorrowHomeScreen(),
+          ),
+        );
         return Future.value(false);
       },
       child: MaterialApp(
