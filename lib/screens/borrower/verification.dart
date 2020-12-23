@@ -183,7 +183,7 @@ Membership''',
                                                     ScreenUtil().setHeight(24),
                                               ),
                                               child: TextFormWidget(
-                                                hint: 'Username',
+                                                hint: 'Reference Number',
                                                 firstNameController:
                                                     _userNameController,
                                                 type: TextInputType.name,
