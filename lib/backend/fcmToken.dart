@@ -8,5 +8,6 @@ Future<String> getFCMToken() async {
     assert(token != null);
     tokenKey = token;
   });
+  print(tokenKey);
   return (tokenKey);
 }
