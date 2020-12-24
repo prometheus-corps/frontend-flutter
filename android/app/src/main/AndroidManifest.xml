@@ -2,7 +2,7 @@
     package="com.example.crowdgain">
     <application
         android:name="io.flutter.app.FlutterApplication"
-        android:label="crowdgain"
+        android:label="CrowdPay"
         android:requestLegacyExternalStorage="true"
         android:icon="@mipmap/launcher_icon">
         <activity
