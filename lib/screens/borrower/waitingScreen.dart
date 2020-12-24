@@ -51,8 +51,8 @@ class _WaitingRoomScreenState extends State<WaitingRoomScreen> {
               children: [
                 Image.asset(
                   'images/verify.png',
-                  height: ScreenUtil().setHeight(650),
-                  width: ScreenUtil().setWidth(400),
+                  height: ScreenUtil().setHeight(1200),
+                  width: ScreenUtil().setWidth(800),
                   fit: BoxFit.fitWidth,
                 ),
                 Column(
