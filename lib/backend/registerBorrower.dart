@@ -1,9 +1,9 @@
 import 'package:firebase_auth/firebase_auth.dart';
 
-Future<int> registerBorrower(String name, String) {
+Future<int> registerBorrower(String name, String email, String username, int phoneNumber, String bankId, String password ) {
   final _auth = FirebaseAuth.instance;
   String detailedBody =
-        'Student Name: $studentName \n Parent Name: $parentName \n Parent Contact Number: $parentnumber \n Class: $parentMailId';
+        ' Name: $name \n Email : $email \n Contact Number: $phoneNumber \n UserName: $username\n Contact Number: $phoneNumber \n UserName: $username';
     if (await canLaunch(
             'mailto:info@qwings.in?subject=Register=New&body=$detailedBody%20plugin') &&
         studentName != '' &&
@@ -11,8 +11,7 @@ Future<int> registerBorrower(String name, String) {
         parentName != '' &&
         parentnumber != '') {
       try {
-        await launch(
-            'mailto:info@qwings.in?subject=Register=New&body=$detailedBody%20plugin');
+       
       } catch (e) {
       return 0;
       }
