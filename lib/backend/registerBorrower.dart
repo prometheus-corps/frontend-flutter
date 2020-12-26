@@ -16,6 +16,7 @@ registerBorrower(String name, String email, String username, String phoneNumber,
         email: email,
         password: password,
       );
+      userCredential.additionalUserInfo();
     } catch (e) {
       return 0;
     }
