@@ -2,7 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 
 registerBorrower(String name, String email, String username, String phoneNumber,
     String bankId, String password) {
-  final _auth = FirebaseAuth.instance;
+  FirebaseAuth auth = FirebaseAuth.instance;
   String detailedBody =
       ' Name: $name \n Email : $email \n Contact Number: $phoneNumber \n UserName: $username\n Bank Id: $bankId \n password: $password';
   print(detailedBody);
