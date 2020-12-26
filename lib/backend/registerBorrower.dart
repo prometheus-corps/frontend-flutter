@@ -32,10 +32,10 @@ registerBorrower(String name, String email, String username, String phoneNumber,
                   .set({}).catchError((e) {
                 print(e);
               });
-              await _firestore.collection('uniqueID').doc('lastId').update(
-                  {'key': 'QW' + (productCode + 1).toString().padLeft(4, '0')});
+              // await _firestore.collection('uniqueID').doc('lastId').update(
+              // {'key': 'QW' + (productCode + 1).toString().padLeft(4, '0')});
               print('uploaded');
-              Navigator.pushNamed(context, 'home');
+              // Navigator.pushNamed(context, 'home');
             } on FirebaseException catch (e) {
               print(e.code);
               if (e.code == 'weak-password') {
