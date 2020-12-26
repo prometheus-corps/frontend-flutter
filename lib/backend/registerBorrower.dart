@@ -13,7 +13,9 @@ registerBorrower(String name, String email, String username, String phoneNumber,
       bankId != '') {
     try {
       UserCredential userCredential = await auth.createUserWithEmailAndPassword(
-          email: "barry.allen@example.com", password: "SuperSecretPassword!");
+        email: email,
+        password: password,
+      );
     } catch (e) {
       return 0;
     }
