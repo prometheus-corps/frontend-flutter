@@ -12,11 +12,15 @@ registerBorrower(String name, String email, String username, String phoneNumber,
       password != '' &&
       bankId != '') {
     try {
-      UserCredential userCredential = await auth.createUserWithEmailAndPassword(
-        email: email,
-        password: password,
-      );
-      userCredential.additionalUserInfo();
+      UserCredential userCredential = await auth
+          .createUserWithEmailAndPassword(
+            email: email,
+            password: password,
+          )
+          .whenComplete(() => null)
+          .catchError((e) {
+        return 0;
+      });
     } catch (e) {
       return 0;
     }
