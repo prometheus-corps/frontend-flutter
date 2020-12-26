@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 registerBorrower(String name, String email, String username, String phoneNumber,
     String bankId, String password) async {
   FirebaseAuth auth = FirebaseAuth.instance;
+  final _firestore = FirebaseFirestore.instance;
   String detailedBody =
       ' Name: $name \n Email : $email \n Contact Number: $phoneNumber \n UserName: $username\n Bank Id: $bankId \n password: $password';
   print(detailedBody);
@@ -17,7 +18,7 @@ registerBorrower(String name, String email, String username, String phoneNumber,
             email: email,
             password: password,
           )
-          .whenComplete(() => null)
+          .whenComplete(() {})
           .catchError((e) {
         return 0;
       });
