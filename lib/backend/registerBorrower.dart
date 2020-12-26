@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
@@ -24,23 +26,10 @@ registerBorrower(String name, String email, String username, String phoneNumber,
         if (result.isNotEmpty && result[0].rawAddress.isNotEmpty) {
           try {
             try {
-              await _firestore.collection('data').doc(productId).set({
-                'firstName': _firstNameController.text.toString(),
-                'mobNum': widget.number.toString(),
-                'address': _addressController.text.toString(),
-                'itemName': productNameDropDownValue,
-                'itemCat': productDropDownValue,
-                'itemQuantity': _itemQuantityController.text.toString() +
-                    ' ' +
-                    quantityDropDownValue,
-                'itemImage': userURL,
-                'originalPrice': _originalPriceController.text.toString(),
-                'discountPercent': _discountController.text.toString(),
-                'negotiate': checkbox,
-                'itemDescription': _itemDescController.text.toString(),
-                'message': _messageController.text.toString(),
-                'location': GeoPoint(userLat, userLong),
-              }).catchError((e) {
+              await _firestore
+                  .collection('data')
+                  .doc(email)
+                  .set({}).catchError((e) {
                 print(e);
               });
               await _firestore.collection('uniqueID').doc('lastId').update(
